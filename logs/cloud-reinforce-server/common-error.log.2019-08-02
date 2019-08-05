@@ -1,0 +1,759 @@
+2019-07-30 19:37:45,556 ERROR 15052 [-/127.0.0.1/-/1ms GET /] nodejs.ENOENTError: ENOENT: no such file or directory, mkdir 'C:\video-resources\hospital\doctor\face'
+    at Object.mkdirSync (fs.js:757:3)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:143:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+errno: -4058
+syscall: "mkdir"
+code: "ENOENT"
+path: "C:\\video-resources\\hospital\\doctor\\face"
+name: "ENOENTError"
+pid: 15052
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 19:39:01,312 ERROR 12024 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'toString' of undefined
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:148:60)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 12024
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 19:41:31,021 ERROR 14720 [-/127.0.0.1/-/0ms GET /] nodejs.InternalServerError: upload failed！！
+    at Object.throw (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\lib\context.js:97:11)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:161:18)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "upload failed！！"
+pid: 14720
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 19:43:38,728 ERROR 14720 [-/127.0.0.1/-/0ms GET /] nodejs.InternalServerError: upload failed！！
+    at Object.throw (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\lib\context.js:97:11)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:161:18)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "upload failed！！"
+pid: 14720
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 19:47:08,279 ERROR 14368 [-/127.0.0.1/-/1ms GET /] nodejs.SequelizeValidationError: notNull Violation: file.id cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at FileService.create (D:\nodejs\nodejs\node_project\hospital\app\service\file.js:23:38)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:164:36)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+name: "SequelizeValidationError"
+errors: [{"message":"file.id cannot be null","type":"notNull Violation","path":"id","value":null,"origin":"CORE","instance":{},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 14368
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 19:49:06,041 ERROR 15240 [-/127.0.0.1/-/1ms GET /] nodejs.SequelizeValidationError: notNull Violation: file.id cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at FileService.create (D:\nodejs\nodejs\node_project\hospital\app\service\file.js:23:38)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:164:36)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+name: "SequelizeValidationError"
+errors: [{"message":"file.id cannot be null","type":"notNull Violation","path":"id","value":null,"origin":"CORE","instance":{},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 15240
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 19:51:43,317 ERROR 5620 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: file.id cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at FileService.create (D:\nodejs\nodejs\node_project\hospital\app\service\file.js:24:38)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:164:36)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+name: "SequelizeValidationError"
+errors: [{"message":"file.id cannot be null","type":"notNull Violation","path":"id","value":null,"origin":"CORE","instance":{},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 5620
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 19:57:08,894 ERROR 6820 [-/127.0.0.1/-/2ms GET /] nodejs.SequelizeValidationError: notNull Violation: file.id cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at FileService.create (D:\nodejs\nodejs\node_project\hospital\app\service\file.js:24:38)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:163:36)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+name: "SequelizeValidationError"
+errors: [{"message":"file.id cannot be null","type":"notNull Violation","path":"id","value":null,"origin":"CORE","instance":{},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 6820
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 20:09:12,308 ERROR 8696 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: salty is not defined
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:148:76)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8696
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 20:16:48,770 ERROR 4336 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: extname.digest is not a function
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:148:134)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 4336
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 20:18:04,133 ERROR 8828 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: path.extname(...).digest is not a function
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:148:158)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8828
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 20:29:16,290 ERROR 12340 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Data too long for column 'absolutePath' at row 1
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.insert (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:901:27)
+    at Promise.try.then.then.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3685:53)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3661:8)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at FileService.create (D:\nodejs\nodejs\node_project\hospital\app\service\file.js:24:38)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:167:36)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'absolutePath' at row 1","sql":"INSERT INTO `files` (`id`,`filename`,`extname`,`relativePath`,`absolutePath`,`createdAt`) VALUES ('a53c3a80b2c511e9a4003f99fc4d03da','images.jpg','.jpg','\\\\doctor\\\\face\\\\doctorface15644897561964204.jpg','C:\\\\video-resources\\\\hospital\\\\doctor\\\\face\\\\doctorface15644897561964204.jpg','2019-07-30 12:29:16');"}
+original: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'absolutePath' at row 1","sql":"INSERT INTO `files` (`id`,`filename`,`extname`,`relativePath`,`absolutePath`,`createdAt`) VALUES ('a53c3a80b2c511e9a4003f99fc4d03da','images.jpg','.jpg','\\\\doctor\\\\face\\\\doctorface15644897561964204.jpg','C:\\\\video-resources\\\\hospital\\\\doctor\\\\face\\\\doctorface15644897561964204.jpg','2019-07-30 12:29:16');"}
+sql: "INSERT INTO `files` (`id`,`filename`,`extname`,`relativePath`,`absolutePath`,`createdAt`) VALUES ('a53c3a80b2c511e9a4003f99fc4d03da','images.jpg','.jpg','\\\\doctor\\\\face\\\\doctorface15644897561964204.jpg','C:\\\\video-resources\\\\hospital\\\\doctor\\\\face\\\\doctorface15644897561964204.jpg','2019-07-30 12:29:16');"
+pid: 12340
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 20:30:19,590 ERROR 7488 [-/127.0.0.1/-/1ms GET /] nodejs.Error: Argument passed to findByPk is invalid: [object Object]
+    at Function.findByPk (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:1714:13)
+    at Function.Model.findById (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:4209:25)
+    at DoctorService.updateDoctor (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:90:44)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:169:43)
+
+pid: 7488
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 20:48:23,066 ERROR 3300 [-/127.0.0.1/-/1ms GET /] nodejs.ReferenceError: baseDir is not defined
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:141:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 3300
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 20:49:57,359 ERROR 8516 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: baseDir is not defined
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:141:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8516
+hostname: LAPTOP-57LT11PC
+
+2019-07-30 20:50:42,091 ERROR 14632 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Data too long for column 'absolutePath' at row 1
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.insert (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:901:27)
+    at Promise.try.then.then.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3685:53)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3661:8)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at FileService.create (D:\nodejs\nodejs\node_project\hospital\app\service\file.js:24:38)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:166:36)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'absolutePath' at row 1","sql":"INSERT INTO `files` (`id`,`filename`,`extname`,`relativePath`,`absolutePath`,`createdAt`) VALUES ('a3ac9270b2c811e9a647f75553d334a2','1564491046829.jpg','.jpg','\\\\public\\\\image\\\\1564491046829.jpg','D:\\\\nodejs\\\\nodejs\\\\node_project\\\\hospital\\\\app\\\\public\\\\image\\\\1564491046829.jpg','2019-07-30 12:50:42');"}
+original: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'absolutePath' at row 1","sql":"INSERT INTO `files` (`id`,`filename`,`extname`,`relativePath`,`absolutePath`,`createdAt`) VALUES ('a3ac9270b2c811e9a647f75553d334a2','1564491046829.jpg','.jpg','\\\\public\\\\image\\\\1564491046829.jpg','D:\\\\nodejs\\\\nodejs\\\\node_project\\\\hospital\\\\app\\\\public\\\\image\\\\1564491046829.jpg','2019-07-30 12:50:42');"}
+sql: "INSERT INTO `files` (`id`,`filename`,`extname`,`relativePath`,`absolutePath`,`createdAt`) VALUES ('a3ac9270b2c811e9a647f75553d334a2','1564491046829.jpg','.jpg','\\\\public\\\\image\\\\1564491046829.jpg','D:\\\\nodejs\\\\nodejs\\\\node_project\\\\hospital\\\\app\\\\public\\\\image\\\\1564491046829.jpg','2019-07-30 12:50:42');"
+pid: 14632
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 09:28:31,149 ERROR 11260 [-/127.0.0.1/-/1ms GET /] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.insert (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:901:27)
+    at Promise.try.then.then.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3685:53)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3661:8)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at SetupController.initOtherDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:85:33)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:6:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"1","origin":"DB","instance":{"id":1,"name":"内科"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"PRIMARY":"1"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+sql: "INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"
+pid: 11260
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 09:41:36,809 ERROR 10696 [-/127.0.0.1/-/0ms GET /] nodejs.SyntaxError: Identifier 'office' has already been declared
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:6:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+
+pid: 10696
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 09:43:48,733 ERROR 10696 [-/127.0.0.1/-/0ms GET /] nodejs.SyntaxError: Identifier 'office' has already been declared
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:6:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+
+pid: 10696
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 09:49:16,648 ERROR 2144 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: workInformation.doctorId cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at WorkInfoService.saveWorkInfo (D:\nodejs\nodejs\node_project\hospital\app\service\workInfo.js:22:52)
+    at WorkInfoController.save (D:\nodejs\nodejs\node_project\hospital\app\controller\workInfo.js:22:43)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:6:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "SequelizeValidationError"
+errors: [{"message":"workInformation.doctorId cannot be null","type":"notNull Violation","path":"doctorId","value":null,"origin":"CORE","instance":{"id":"9222a580b3fe11e99efb3b1d20f0b073","department":"test","remaining":"30"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 2144
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 09:53:50,237 ERROR 11568 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 11568
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 10:21:09,944 ERROR 6236 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: ctx is not defined
+    at FileService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\file.js:16:7)
+
+pid: 6236
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 10:27:01,476 ERROR 2460 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'avatarId' of undefined
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:80:32)
+
+pid: 2460
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 10:28:54,128 ERROR 14200 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'avatarId' of undefined
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:80:32)
+
+pid: 14200
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 10:30:31,228 ERROR 960 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot read property 'avatarId' of undefined
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:80:32)
+
+pid: 960
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 10:31:32,654 ERROR 2780 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'avatarId' of undefined
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:80:32)
+
+pid: 2780
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 10:32:23,848 ERROR 1308 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'avatarId' of undefined
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:80:32)
+
+pid: 1308
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 10:33:44,161 ERROR 2600 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'avatarId' of undefined
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:80:38)
+
+pid: 2600
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 10:45:57,268 ERROR 11776 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot create property 'avatarUrl' on string '[{"id":"1","name":"曾康华","description":"test","avatarId":"1","gender":2,"post":"副院长","title":"主任医师 、教授","resume":"南昌大学硕士生导师、心脏康复学科带头人、江西省政府特殊津贴专家、赣州市政府特殊津贴专家、赣南医学院兼职教授、全国“五一”劳动奖章获得者、江西省人大代表、赣州市“十佳”医务工作者。","speciality":"在冠心病、高血压、心衰的诊断治疗上积累了丰富经验，率先在市级医院开展心脏康复，创建赣州市人民医院心脏康复亚专业。","concurrent":"中国心脏联盟委员、江西省康复医学会常委、赣州市康复医学会会长、赣州市康复医学会心血管专业委员会主委、赣州市医学会心血管专业委员会副主委。","achievement":"完成省市级课题多项，多项成果获市科技进步奖。","secondOfficeId":"1","workInformations":[{"id":"1","department":"心血管内一科门诊（南院）","registerType":"正高号","date":null,"classes":"上午","remaining":20,"doctorId":"1"},{"id":"2","department":"心血管内一科门诊（南院）","registerType":"正高号","date":null,"classes":"下午","remaining":19,"doctorId":"1"}]}]'
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:86:25)
+
+pid: 11776
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 10:46:54,247 ERROR 7892 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: Cannot create property 'avatarUrl' on string '[{"id":"1","name":"曾康华","description":"test","avatarId":"1","gender":2,"post":"副院长","title":"主任医师 、教授","resume":"南昌大学硕士生导师、心脏康复学科带头人、江西省政府特殊津贴专家、赣州市政府特殊津贴专家、赣南医学院兼职教授、全国“五一”劳动奖章获得者、江西省人大代表、赣州市“十佳”医务工作者。","speciality":"在冠心病、高血压、心衰的诊断治疗上积累了丰富经验，率先在市级医院开展心脏康复，创建赣州市人民医院心脏康复亚专业。","concurrent":"中国心脏联盟委员、江西省康复医学会常委、赣州市康复医学会会长、赣州市康复医学会心血管专业委员会主委、赣州市医学会心血管专业委员会副主委。","achievement":"完成省市级课题多项，多项成果获市科技进步奖。","secondOfficeId":"1","workInformations":[{"id":"1","department":"心血管内一科门诊（南院）","registerType":"正高号","date":null,"classes":"上午","remaining":20,"doctorId":"1"},{"id":"2","department":"心血管内一科门诊（南院）","registerType":"正高号","date":null,"classes":"下午","remaining":19,"doctorId":"1"}]}]'
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:87:25)
+
+pid: 7892
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 10:50:42,303 ERROR 8904 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot create property 'avatarUrl' on string '[{"id":"1","name":"曾康华","description":"test","avatarId":"1","gender":2,"post":"副院长","title":"主任医师 、教授","resume":"南昌大学硕士生导师、心脏康复学科带头人、江西省政府特殊津贴专家、赣州市政府特殊津贴专家、赣南医学院兼职教授、全国“五一”劳动奖章获得者、江西省人大代表、赣州市“十佳”医务工作者。","speciality":"在冠心病、高血压、心衰的诊断治疗上积累了丰富经验，率先在市级医院开展心脏康复，创建赣州市人民医院心脏康复亚专业。","concurrent":"中国心脏联盟委员、江西省康复医学会常委、赣州市康复医学会会长、赣州市康复医学会心血管专业委员会主委、赣州市医学会心血管专业委员会副主委。","achievement":"完成省市级课题多项，多项成果获市科技进步奖。","secondOfficeId":"1","workInformations":[{"id":"1","department":"心血管内一科门诊（南院）","registerType":"正高号","date":null,"classes":"上午","remaining":20,"doctorId":"1"},{"id":"2","department":"心血管内一科门诊（南院）","registerType":"正高号","date":null,"classes":"下午","remaining":19,"doctorId":"1"}]}]'
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:87:25)
+
+pid: 8904
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 10:51:30,244 ERROR 9956 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: jsonDoctor is not defined
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:86:17)
+
+pid: 9956
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 10:52:37,591 ERROR 9032 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot create property 'avatarUrl' on string '[{"id":"1","name":"曾康华","description":"test","avatarId":"1","gender":2,"post":"副院长","title":"主任医师 、教授","resume":"南昌大学硕士生导师、心脏康复学科带头人、江西省政府特殊津贴专家、赣州市政府特殊津贴专家、赣南医学院兼职教授、全国“五一”劳动奖章获得者、江西省人大代表、赣州市“十佳”医务工作者。","speciality":"在冠心病、高血压、心衰的诊断治疗上积累了丰富经验，率先在市级医院开展心脏康复，创建赣州市人民医院心脏康复亚专业。","concurrent":"中国心脏联盟委员、江西省康复医学会常委、赣州市康复医学会会长、赣州市康复医学会心血管专业委员会主委、赣州市医学会心血管专业委员会副主委。","achievement":"完成省市级课题多项，多项成果获市科技进步奖。","secondOfficeId":"1","workInformations":[{"id":"1","department":"心血管内一科门诊（南院）","registerType":"正高号","date":null,"classes":"上午","remaining":20,"doctorId":"1"},{"id":"2","department":"心血管内一科门诊（南院）","registerType":"正高号","date":null,"classes":"下午","remaining":19,"doctorId":"1"}]}]'
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:87:25)
+
+pid: 9032
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 10:58:25,190 ERROR 12632 [-/127.0.0.1/-/1ms GET /] nodejs.SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:83:25)
+
+pid: 12632
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 11:25:50,521 ERROR 4848 [-/127.0.0.1/-/1ms GET /] nodejs.ReferenceError: app is not defined
+    at DoctorService.findBySecondOfficeId (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:41:16)
+    at DoctorController.showAllDoctor (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:63:42)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 4848
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 12:47:07,593 ERROR 15848 nodejs.TypeError: Cannot read property 'avatarId' of undefined
+    at list.forEach (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:55:28)
+    at Array.forEach (<anonymous>)
+    at DoctorService.findBySecondOfficeId (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:53:10)
+
+pid: 15848
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 12:47:07,604 ERROR 15848 nodejs.TypeError: Cannot read property 'avatarId' of undefined
+    at list.forEach (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:55:28)
+    at Array.forEach (<anonymous>)
+    at DoctorService.findBySecondOfficeId (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:53:10)
+
+pid: 15848
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 12:48:11,639 ERROR 15364 nodejs.NotFoundError: Not Found
+    at Object.throw (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\lib\context.js:97:11)
+    at FileService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\file.js:17:16)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "Not Found"
+pid: 15364
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 12:48:11,645 ERROR 15364 nodejs.TypeError: Cannot convert undefined or null to object
+    at list.forEach (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:62:23)
+
+pid: 15364
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 12:49:13,612 ERROR 16208 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot convert undefined or null to object
+    at DoctorService.findBySecondOfficeId (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:61:23)
+
+pid: 16208
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 12:54:55,280 ERROR 15976 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot destructure property `relativePath` of 'undefined' or 'null'.
+    at DoctorService.findBySecondOfficeId (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:55:26)
+
+pid: 15976
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 12:58:45,608 ERROR 14448 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot convert undefined or null to object
+    at DoctorService.findBySecondOfficeId (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:69:23)
+
+pid: 14448
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 15:41:53,367 ERROR 11772 [-/127.0.0.1/-/1ms GET /] nodejs.SyntaxError: Identifier 'res' has already been declared
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+
+pid: 11772
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 15:45:01,278 ERROR 15440 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'id' of undefined
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:153:65)
+
+pid: 15440
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 15:47:06,884 ERROR 15232 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'id' of undefined
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:152:30)
+
+pid: 15232
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 15:49:46,795 ERROR 13260 [-/127.0.0.1/-/1ms GET /] nodejs.ReferenceError: result is not defined
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:155:17)
+
+pid: 13260
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 16:00:55,460 ERROR 15648 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Incorrect datetime value: 'Invalid date' for column 'date' at row 1
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.insert (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:901:27)
+    at Promise.try.then.then.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3685:53)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3661:8)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at WorkInfoService.saveWorkInfo (D:\nodejs\nodejs\node_project\hospital\app\service\workInfo.js:22:52)
+    at WorkInfoController.save (D:\nodejs\nodejs\node_project\hospital\app\controller\workInfo.js:22:43)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_TRUNCATED_WRONG_VALUE","errno":1292,"sqlState":"22007","sqlMessage":"Incorrect datetime value: 'Invalid date' for column 'date' at row 1","sql":"INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES ('7d3b3ef0b43211e9ace0472d2e9ee0ef','test','test','Invalid date','test','20','1');"}
+original: {"code":"ER_TRUNCATED_WRONG_VALUE","errno":1292,"sqlState":"22007","sqlMessage":"Incorrect datetime value: 'Invalid date' for column 'date' at row 1","sql":"INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES ('7d3b3ef0b43211e9ace0472d2e9ee0ef','test','test','Invalid date','test','20','1');"}
+sql: "INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES ('7d3b3ef0b43211e9ace0472d2e9ee0ef','test','test','Invalid date','test','20','1');"
+pid: 15648
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 23:26:03,275 ERROR 16180 [-/127.0.0.1/-/0ms GET /] nodejs.ENOENTError: ENOENT: no such file or directory, mkdir 'D:\nodejs\nodejs\node_project\hospital\app\public\image\doctor\face'
+    at Object.mkdirSync (fs.js:757:3)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:132:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+errno: -4058
+syscall: "mkdir"
+code: "ENOENT"
+path: "D:\\nodejs\\nodejs\\node_project\\hospital\\app\\public\\image\\doctor\\face"
+name: "ENOENTError"
+pid: 16180
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 23:30:17,026 ERROR 16180 [-/127.0.0.1/-/0ms GET /] nodejs.ENOENTError: ENOENT: no such file or directory, mkdir 'D:\nodejs\nodejs\node_project\hospital\app\public\image\doctor\face'
+    at Object.mkdirSync (fs.js:757:3)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:132:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+errno: -4058
+syscall: "mkdir"
+code: "ENOENT"
+path: "D:\\nodejs\\nodejs\\node_project\\hospital\\app\\public\\image\\doctor\\face"
+name: "ENOENTError"
+pid: 16180
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 23:37:13,052 ERROR 16180 [-/127.0.0.1/-/0ms GET /] nodejs.ENOENTError: ENOENT: no such file or directory, mkdir 'D:\nodejs\nodejs\node_project\hospital\app\public\image\doctor\face'
+    at Object.mkdirSync (fs.js:757:3)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:132:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+errno: -4058
+syscall: "mkdir"
+code: "ENOENT"
+path: "D:\\nodejs\\nodejs\\node_project\\hospital\\app\\public\\image\\doctor\\face"
+name: "ENOENTError"
+pid: 16180
+hostname: LAPTOP-57LT11PC
+
+2019-08-01 23:37:22,367 ERROR 14796 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: relativePath is not defined
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:145:17)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 14796
+hostname: LAPTOP-57LT11PC
+
+2019-08-02 20:00:20,831 ERROR 7228 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 7228
+hostname: LAPTOP-57LT11PC
+
+2019-08-02 20:13:28,663 ERROR 5372 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: avatarUrl is not defined
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:134:17)
+
+pid: 5372
+hostname: LAPTOP-57LT11PC
+
+2019-08-02 20:16:39,675 ERROR 10756 [-/127.0.0.1/-/1ms GET /] nodejs.ReferenceError: path is not defined
+    at DoctorService.findById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:133:28)
+
+pid: 10756
+hostname: LAPTOP-57LT11PC
+
+2019-08-02 20:53:08,409 ERROR 2844 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: list is not iterable
+    at DoctorService.findBySecondOfficeIdNeedOfAndroid (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:101:20)
+
+pid: 2844
+hostname: LAPTOP-57LT11PC
+
+2019-08-02 22:33:36,687 ERROR 7228 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 7228
+hostname: LAPTOP-57LT11PC
+

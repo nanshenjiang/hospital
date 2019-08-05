@@ -1,0 +1,9 @@
+2019-08-03 21:26:33,588 ERROR 1628 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 1628
+hostname: LAPTOP-57LT11PC
+

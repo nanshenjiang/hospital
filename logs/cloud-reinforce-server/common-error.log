@@ -1,0 +1,545 @@
+2019-08-04 11:38:15,258 ERROR 2412 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: doctor.secondOfficeId cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at DoctorService.saveDoctor (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:181:44)
+    at DoctorController.create (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:82:47)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "SequelizeValidationError"
+errors: [{"message":"doctor.secondOfficeId cannot be null","type":"notNull Violation","path":"secondOfficeId","value":null,"origin":"CORE","instance":{"id":"4ab1d320b66911e99fd04d5e95dad385"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 2412
+hostname: LAPTOP-57LT11PC
+
+2019-08-04 11:38:31,213 ERROR 2412 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: doctor.secondOfficeId cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at DoctorService.saveDoctor (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:181:44)
+    at DoctorController.create (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:82:47)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "SequelizeValidationError"
+errors: [{"message":"doctor.secondOfficeId cannot be null","type":"notNull Violation","path":"secondOfficeId","value":null,"origin":"CORE","instance":{"id":"543547b0b66911e99fd04d5e95dad385"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 2412
+hostname: LAPTOP-57LT11PC
+
+2019-08-04 11:39:12,374 ERROR 2412 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: doctor.secondOfficeId cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at DoctorService.saveDoctor (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:181:44)
+    at DoctorController.create (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:82:47)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "SequelizeValidationError"
+errors: [{"message":"doctor.secondOfficeId cannot be null","type":"notNull Violation","path":"secondOfficeId","value":null,"origin":"CORE","instance":{"id":"6cbdf340b66911e99fd04d5e95dad385"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 2412
+hostname: LAPTOP-57LT11PC
+
+2019-08-04 11:42:30,682 ERROR 2412 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: doctor.secondOfficeId cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at DoctorService.saveDoctor (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:181:44)
+    at DoctorController.create (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:82:47)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "SequelizeValidationError"
+errors: [{"message":"doctor.secondOfficeId cannot be null","type":"notNull Violation","path":"secondOfficeId","value":null,"origin":"CORE","instance":{"id":"e2f15980b66911e99fd04d5e95dad385"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 2412
+hostname: LAPTOP-57LT11PC
+
+2019-08-04 11:42:52,045 ERROR 2412 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: doctor.secondOfficeId cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at DoctorService.saveDoctor (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:181:44)
+    at DoctorController.create (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:82:47)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "SequelizeValidationError"
+errors: [{"message":"doctor.secondOfficeId cannot be null","type":"notNull Violation","path":"secondOfficeId","value":null,"origin":"CORE","instance":{"id":"efad15b0b66911e99fd04d5e95dad385"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 2412
+hostname: LAPTOP-57LT11PC
+
+2019-08-04 11:43:18,378 ERROR 2412 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: doctor.secondOfficeId cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at DoctorService.saveDoctor (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:181:44)
+    at DoctorController.create (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:82:47)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "SequelizeValidationError"
+errors: [{"message":"doctor.secondOfficeId cannot be null","type":"notNull Violation","path":"secondOfficeId","value":null,"origin":"CORE","instance":{"id":"ff5f2e80b66911e99fd04d5e95dad385"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 2412
+hostname: LAPTOP-57LT11PC
+
+2019-08-04 11:48:27,842 ERROR 2412 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: doctor.secondOfficeId cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at DoctorService.saveDoctor (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:181:44)
+    at DoctorController.create (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:82:47)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "SequelizeValidationError"
+errors: [{"message":"doctor.secondOfficeId cannot be null","type":"notNull Violation","path":"secondOfficeId","value":null,"origin":"CORE","instance":{"id":"b7d3a400b66a11e99fd04d5e95dad385"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 2412
+hostname: LAPTOP-57LT11PC
+
+2019-08-04 11:50:15,388 ERROR 2412 [-/127.0.0.1/-/1ms GET /] nodejs.SequelizeValidationError: notNull Violation: doctor.secondOfficeId cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at DoctorService.saveDoctor (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:181:44)
+    at DoctorController.create (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:82:47)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "SequelizeValidationError"
+errors: [{"message":"doctor.secondOfficeId cannot be null","type":"notNull Violation","path":"secondOfficeId","value":null,"origin":"CORE","instance":{"id":"f7eddba0b66a11e99fd04d5e95dad385"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 2412
+hostname: LAPTOP-57LT11PC
+
+2019-08-04 12:27:37,212 ERROR 2412 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: doctor.secondOfficeId cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at DoctorService.saveDoctor (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:181:44)
+    at DoctorController.create (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:82:47)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "SequelizeValidationError"
+errors: [{"message":"doctor.secondOfficeId cannot be null","type":"notNull Violation","path":"secondOfficeId","value":null,"origin":"CORE","instance":{"id":"30290da0b67011e99fd04d5e95dad385"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 2412
+hostname: LAPTOP-57LT11PC
+
+2019-08-04 12:28:13,078 ERROR 13424 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 13424
+hostname: LAPTOP-57LT11PC
+
+2019-08-04 12:28:51,510 ERROR 15272 [-/127.0.0.1/-/1ms GET /] nodejs.SequelizeValidationError: notNull Violation: doctor.secondOfficeId cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at DoctorService.saveDoctor (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:181:44)
+    at DoctorController.create (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:84:47)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+name: "SequelizeValidationError"
+errors: [{"message":"doctor.secondOfficeId cannot be null","type":"notNull Violation","path":"secondOfficeId","value":null,"origin":"CORE","instance":{"id":"5c711ce0b67011e9ab30b19be2d54085"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 15272
+hostname: LAPTOP-57LT11PC
+
+2019-08-04 22:50:09,193 ERROR 2700 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeForeignKeyConstraintError: Cannot delete or update a parent row: a foreign key constraint fails (`hospital`.`doctors`, CONSTRAINT `doctors_ibfk_2` FOREIGN KEY (`secondOfficeId`) REFERENCES `secondoffices` (`id`) ON UPDATE CASCADE)
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:236:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at Promise.each.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:1078:29)
+From previous event:
+    at QueryInterface.delete (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:1076:8)
+    at Promise.try.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3910:54)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.destroy (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3883:8)
+    at OfficeService.deleteFirstOffice (D:\nodejs\nodejs\node_project\hospital\app\service\office.js:133:33)
+name: "SequelizeForeignKeyConstraintError"
+parent: {"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`hospital`.`doctors`, CONSTRAINT `doctors_ibfk_2` FOREIGN KEY (`secondOfficeId`) REFERENCES `secondoffices` (`id`) ON UPDATE CASCADE)","sql":"DELETE FROM `firstOffices` WHERE `id` = '4' LIMIT 1"}
+original: {"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`hospital`.`doctors`, CONSTRAINT `doctors_ibfk_2` FOREIGN KEY (`secondOfficeId`) REFERENCES `secondoffices` (`id`) ON UPDATE CASCADE)","sql":"DELETE FROM `firstOffices` WHERE `id` = '4' LIMIT 1"}
+sql: "DELETE FROM `firstOffices` WHERE `id` = '4' LIMIT 1"
+fields: ["secondOfficeId"]
+table: "secondoffices"
+value: undefined
+index: "doctors_ibfk_2"
+reltype: "parent"
+pid: 2700
+hostname: LAPTOP-57LT11PC
+
+2019-08-04 22:52:13,379 ERROR 2700 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeForeignKeyConstraintError: Cannot delete or update a parent row: a foreign key constraint fails (`hospital`.`doctors`, CONSTRAINT `doctors_ibfk_2` FOREIGN KEY (`secondOfficeId`) REFERENCES `secondoffices` (`id`) ON UPDATE CASCADE)
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:236:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at Promise.each.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:1078:29)
+From previous event:
+    at QueryInterface.delete (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:1076:8)
+    at Promise.try.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3910:54)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.destroy (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3883:8)
+    at OfficeService.deleteFirstOffice (D:\nodejs\nodejs\node_project\hospital\app\service\office.js:133:33)
+name: "SequelizeForeignKeyConstraintError"
+parent: {"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`hospital`.`doctors`, CONSTRAINT `doctors_ibfk_2` FOREIGN KEY (`secondOfficeId`) REFERENCES `secondoffices` (`id`) ON UPDATE CASCADE)","sql":"DELETE FROM `firstOffices` WHERE `id` = '4' LIMIT 1"}
+original: {"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`hospital`.`doctors`, CONSTRAINT `doctors_ibfk_2` FOREIGN KEY (`secondOfficeId`) REFERENCES `secondoffices` (`id`) ON UPDATE CASCADE)","sql":"DELETE FROM `firstOffices` WHERE `id` = '4' LIMIT 1"}
+sql: "DELETE FROM `firstOffices` WHERE `id` = '4' LIMIT 1"
+fields: ["secondOfficeId"]
+table: "secondoffices"
+value: undefined
+index: "doctors_ibfk_2"
+reltype: "parent"
+pid: 2700
+hostname: LAPTOP-57LT11PC
+

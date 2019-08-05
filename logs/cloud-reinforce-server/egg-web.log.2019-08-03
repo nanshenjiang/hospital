@@ -1,0 +1,158 @@
+2019-08-03 00:00:01,049 INFO 14892 [egg-logrotator] app logger reload: got log-reload message
+2019-08-03 07:40:52,786 INFO 15056 [egg:logger] init all loggers with options: {"dir":"D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cloud-reinforce-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-03 07:40:52,823 INFO 15056 [egg-multipart] stream mode enable
+2019-08-03 07:40:53,624 INFO 15056 [egg-static] starting static serve /public/ -> D:\nodejs\nodejs\node_project\hospital\app\public
+2019-08-03 07:40:53,627 INFO 15056 [egg-security] use methodnoallow middleware
+2019-08-03 07:40:53,628 INFO 15056 [egg-security] use noopen middleware
+2019-08-03 07:40:53,629 INFO 15056 [egg-security] use nosniff middleware
+2019-08-03 07:40:53,630 INFO 15056 [egg-security] use xssProtection middleware
+2019-08-03 07:40:53,630 INFO 15056 [egg-security] use xframe middleware
+2019-08-03 07:40:53,635 INFO 15056 [egg-security] use dta middleware
+2019-08-03 07:40:53,635 INFO 15056 [egg-security] compose 6 middlewares into one security middleware
+2019-08-03 07:40:53,951 INFO 15056 [egg:core] dump config after load, 21ms
+2019-08-03 07:40:53,986 INFO 15056 [egg-watcher:application] watcher start success
+2019-08-03 07:40:54,031 INFO 15056 [egg:core] dump config after ready, 26ms
+2019-08-03 18:02:17,491 INFO 13660 [egg:logger] init all loggers with options: {"dir":"D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cloud-reinforce-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-03 18:02:17,533 INFO 13660 [egg-multipart] stream mode enable
+2019-08-03 18:02:18,598 INFO 13660 [egg-static] starting static serve /public/ -> D:\nodejs\nodejs\node_project\hospital\app\public
+2019-08-03 18:02:18,606 INFO 13660 [egg-security] use methodnoallow middleware
+2019-08-03 18:02:18,611 INFO 13660 [egg-security] use noopen middleware
+2019-08-03 18:02:18,617 INFO 13660 [egg-security] use nosniff middleware
+2019-08-03 18:02:18,621 INFO 13660 [egg-security] use xssProtection middleware
+2019-08-03 18:02:18,627 INFO 13660 [egg-security] use xframe middleware
+2019-08-03 18:02:18,632 INFO 13660 [egg-security] use dta middleware
+2019-08-03 18:02:18,632 INFO 13660 [egg-security] compose 6 middlewares into one security middleware
+2019-08-03 18:02:18,987 INFO 13660 [egg:core] dump config after load, 21ms
+2019-08-03 18:02:18,380 INFO 7808 [egg:logger] init all loggers with options: {"dir":"D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cloud-reinforce-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-03 18:02:18,417 INFO 7808 [egg-multipart] stream mode enable
+2019-08-03 18:02:18,862 INFO 7808 [egg-static] starting static serve /public/ -> D:\nodejs\nodejs\node_project\hospital\app\public
+2019-08-03 18:02:18,866 INFO 7808 [egg-security] use methodnoallow middleware
+2019-08-03 18:02:18,866 INFO 7808 [egg-security] use noopen middleware
+2019-08-03 18:02:18,867 INFO 7808 [egg-security] use nosniff middleware
+2019-08-03 18:02:18,868 INFO 7808 [egg-security] use xssProtection middleware
+2019-08-03 18:02:18,868 INFO 7808 [egg-security] use xframe middleware
+2019-08-03 18:02:18,869 INFO 7808 [egg-security] use dta middleware
+2019-08-03 18:02:18,869 INFO 7808 [egg-security] compose 6 middlewares into one security middleware
+2019-08-03 18:02:18,993 INFO 7808 [egg:core] dump config after load, 25ms
+2019-08-03 18:02:19,027 INFO 7808 [egg-watcher:application] watcher start success
+2019-08-03 18:02:19,082 INFO 7808 [egg:core] dump config after ready, 34ms
+2019-08-03 18:02:20,301 INFO 8800 [egg:logger] init all loggers with options: {"dir":"D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cloud-reinforce-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-03 18:02:20,338 INFO 8800 [egg-multipart] stream mode enable
+2019-08-03 18:02:20,734 INFO 8800 [egg-static] starting static serve /public/ -> D:\nodejs\nodejs\node_project\hospital\app\public
+2019-08-03 18:02:20,738 INFO 8800 [egg-security] use methodnoallow middleware
+2019-08-03 18:02:20,738 INFO 8800 [egg-security] use noopen middleware
+2019-08-03 18:02:20,739 INFO 8800 [egg-security] use nosniff middleware
+2019-08-03 18:02:20,740 INFO 8800 [egg-security] use xssProtection middleware
+2019-08-03 18:02:20,740 INFO 8800 [egg-security] use xframe middleware
+2019-08-03 18:02:20,740 INFO 8800 [egg-security] use dta middleware
+2019-08-03 18:02:20,740 INFO 8800 [egg-security] compose 6 middlewares into one security middleware
+2019-08-03 18:02:20,850 INFO 8800 [egg:core] dump config after load, 20ms
+2019-08-03 18:02:20,882 INFO 8800 [egg-watcher:application] watcher start success
+2019-08-03 18:02:20,937 INFO 8800 [egg:core] dump config after ready, 37ms
+2019-08-03 18:02:22,150 INFO 5504 [egg:logger] init all loggers with options: {"dir":"D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cloud-reinforce-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-03 18:02:22,181 INFO 5504 [egg-multipart] stream mode enable
+2019-08-03 18:02:22,571 INFO 5504 [egg-static] starting static serve /public/ -> D:\nodejs\nodejs\node_project\hospital\app\public
+2019-08-03 18:02:22,574 INFO 5504 [egg-security] use methodnoallow middleware
+2019-08-03 18:02:22,575 INFO 5504 [egg-security] use noopen middleware
+2019-08-03 18:02:22,576 INFO 5504 [egg-security] use nosniff middleware
+2019-08-03 18:02:22,576 INFO 5504 [egg-security] use xssProtection middleware
+2019-08-03 18:02:22,577 INFO 5504 [egg-security] use xframe middleware
+2019-08-03 18:02:22,577 INFO 5504 [egg-security] use dta middleware
+2019-08-03 18:02:22,577 INFO 5504 [egg-security] compose 6 middlewares into one security middleware
+2019-08-03 18:02:22,683 INFO 5504 [egg:core] dump config after load, 19ms
+2019-08-03 18:02:22,715 INFO 5504 [egg-watcher:application] watcher start success
+2019-08-03 18:02:22,776 INFO 5504 [egg:core] dump config after ready, 39ms
+2019-08-03 18:32:36,404 INFO 12916 [egg:logger] init all loggers with options: {"dir":"D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cloud-reinforce-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-03 18:32:36,477 INFO 12916 [egg-multipart] stream mode enable
+2019-08-03 18:32:38,890 INFO 12916 [egg-static] starting static serve /public/ -> D:\nodejs\nodejs\node_project\hospital\app\public
+2019-08-03 18:32:38,897 INFO 12916 [egg-security] use methodnoallow middleware
+2019-08-03 18:32:38,901 INFO 12916 [egg-security] use noopen middleware
+2019-08-03 18:32:38,906 INFO 12916 [egg-security] use nosniff middleware
+2019-08-03 18:32:38,911 INFO 12916 [egg-security] use xssProtection middleware
+2019-08-03 18:32:38,915 INFO 12916 [egg-security] use xframe middleware
+2019-08-03 18:32:38,919 INFO 12916 [egg-security] use dta middleware
+2019-08-03 18:32:38,919 INFO 12916 [egg-security] compose 6 middlewares into one security middleware
+2019-08-03 18:32:39,232 INFO 12916 [egg:core] dump config after load, 20ms
+2019-08-03 18:32:39,272 INFO 12916 [egg-watcher:application] watcher start success
+2019-08-03 18:32:39,318 INFO 12916 [egg:core] dump config after ready, 27ms
+2019-08-03 21:26:27,622 INFO 7756 [egg:logger] init all loggers with options: {"dir":"D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cloud-reinforce-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-03 21:26:27,696 INFO 7756 [egg-multipart] stream mode enable
+2019-08-03 21:26:30,686 INFO 7756 [egg-static] starting static serve /public/ -> D:\nodejs\nodejs\node_project\hospital\app\public
+2019-08-03 21:26:30,694 INFO 7756 [egg-security] use methodnoallow middleware
+2019-08-03 21:26:30,699 INFO 7756 [egg-security] use noopen middleware
+2019-08-03 21:26:30,705 INFO 7756 [egg-security] use nosniff middleware
+2019-08-03 21:26:30,710 INFO 7756 [egg-security] use xssProtection middleware
+2019-08-03 21:26:30,714 INFO 7756 [egg-security] use xframe middleware
+2019-08-03 21:26:30,719 INFO 7756 [egg-security] use dta middleware
+2019-08-03 21:26:30,719 INFO 7756 [egg-security] compose 6 middlewares into one security middleware
+2019-08-03 21:26:31,207 INFO 7756 [egg:core] dump config after load, 22ms
+2019-08-03 21:26:31,252 INFO 7756 [egg-watcher:application] watcher start success
+2019-08-03 21:26:31,303 INFO 7756 [egg:core] dump config after ready, 30ms
+2019-08-03 21:26:32,899 INFO 9716 [egg:logger] init all loggers with options: {"dir":"D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cloud-reinforce-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-03 21:26:32,946 INFO 9716 [egg-multipart] stream mode enable
+2019-08-03 21:26:33,478 INFO 9716 [egg-static] starting static serve /public/ -> D:\nodejs\nodejs\node_project\hospital\app\public
+2019-08-03 21:26:33,482 INFO 9716 [egg-security] use methodnoallow middleware
+2019-08-03 21:26:33,482 INFO 9716 [egg-security] use noopen middleware
+2019-08-03 21:26:33,491 INFO 9716 [egg-security] use nosniff middleware
+2019-08-03 21:26:33,492 INFO 9716 [egg-security] use xssProtection middleware
+2019-08-03 21:26:33,493 INFO 9716 [egg-security] use xframe middleware
+2019-08-03 21:26:33,493 INFO 9716 [egg-security] use dta middleware
+2019-08-03 21:26:33,493 INFO 9716 [egg-security] compose 6 middlewares into one security middleware
+2019-08-03 21:26:33,634 INFO 9716 [egg:core] dump config after load, 29ms
+2019-08-03 21:26:33,677 INFO 9716 [egg-watcher:application] watcher start success
+2019-08-03 21:26:33,732 INFO 9716 [egg:core] dump config after ready, 34ms
+2019-08-03 21:27:01,727 INFO 5804 [egg:logger] init all loggers with options: {"dir":"D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cloud-reinforce-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-03 21:27:01,768 INFO 5804 [egg-multipart] stream mode enable
+2019-08-03 21:27:02,222 INFO 5804 [egg-static] starting static serve /public/ -> D:\nodejs\nodejs\node_project\hospital\app\public
+2019-08-03 21:27:02,226 INFO 5804 [egg-security] use methodnoallow middleware
+2019-08-03 21:27:02,226 INFO 5804 [egg-security] use noopen middleware
+2019-08-03 21:27:02,227 INFO 5804 [egg-security] use nosniff middleware
+2019-08-03 21:27:02,228 INFO 5804 [egg-security] use xssProtection middleware
+2019-08-03 21:27:02,229 INFO 5804 [egg-security] use xframe middleware
+2019-08-03 21:27:02,230 INFO 5804 [egg-security] use dta middleware
+2019-08-03 21:27:02,230 INFO 5804 [egg-security] compose 6 middlewares into one security middleware
+2019-08-03 21:27:02,342 INFO 5804 [egg:core] dump config after load, 20ms
+2019-08-03 21:27:02,375 INFO 5804 [egg-watcher:application] watcher start success
+2019-08-03 21:27:02,420 INFO 5804 [egg:core] dump config after ready, 27ms
+2019-08-03 21:27:31,446 INFO 14100 [egg:logger] init all loggers with options: {"dir":"D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cloud-reinforce-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-03 21:27:31,483 INFO 14100 [egg-multipart] stream mode enable
+2019-08-03 21:27:32,441 INFO 14100 [egg-static] starting static serve /public/ -> D:\nodejs\nodejs\node_project\hospital\app\public
+2019-08-03 21:27:32,445 INFO 14100 [egg-security] use methodnoallow middleware
+2019-08-03 21:27:32,446 INFO 14100 [egg-security] use noopen middleware
+2019-08-03 21:27:32,451 INFO 14100 [egg-security] use nosniff middleware
+2019-08-03 21:27:32,453 INFO 14100 [egg-security] use xssProtection middleware
+2019-08-03 21:27:32,459 INFO 14100 [egg-security] use xframe middleware
+2019-08-03 21:27:32,460 INFO 14100 [egg-security] use dta middleware
+2019-08-03 21:27:32,460 INFO 14100 [egg-security] compose 6 middlewares into one security middleware
+2019-08-03 21:27:33,101 INFO 14100 [egg:core] dump config after load, 23ms
+2019-08-03 21:27:33,166 INFO 14100 [egg-watcher:application] watcher start success
+2019-08-03 21:27:33,216 INFO 14100 [egg:core] dump config after ready, 27ms
+2019-08-03 22:47:33,957 INFO 14020 [egg:logger] init all loggers with options: {"dir":"D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cloud-reinforce-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-03 22:47:33,994 INFO 14020 [egg-multipart] stream mode enable
+2019-08-03 22:47:34,475 INFO 14020 [egg-static] starting static serve /public/ -> D:\nodejs\nodejs\node_project\hospital\app\public
+2019-08-03 22:47:34,479 INFO 14020 [egg-security] use methodnoallow middleware
+2019-08-03 22:47:34,480 INFO 14020 [egg-security] use noopen middleware
+2019-08-03 22:47:34,481 INFO 14020 [egg-security] use nosniff middleware
+2019-08-03 22:47:34,482 INFO 14020 [egg-security] use xssProtection middleware
+2019-08-03 22:47:34,482 INFO 14020 [egg-security] use xframe middleware
+2019-08-03 22:47:34,483 INFO 14020 [egg-security] use dta middleware
+2019-08-03 22:47:34,483 INFO 14020 [egg-security] compose 6 middlewares into one security middleware
+2019-08-03 22:47:34,605 INFO 14020 [egg:core] dump config after load, 22ms
+2019-08-03 22:47:34,637 INFO 14020 [egg-watcher:application] watcher start success
+2019-08-03 22:47:34,684 INFO 14020 [egg:core] dump config after ready, 29ms
+2019-08-03 22:47:36,065 INFO 6272 [egg:logger] init all loggers with options: {"dir":"D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"cloud-reinforce-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-08-03 22:47:36,100 INFO 6272 [egg-multipart] stream mode enable
+2019-08-03 22:47:36,537 INFO 6272 [egg-static] starting static serve /public/ -> D:\nodejs\nodejs\node_project\hospital\app\public
+2019-08-03 22:47:36,540 INFO 6272 [egg-security] use methodnoallow middleware
+2019-08-03 22:47:36,541 INFO 6272 [egg-security] use noopen middleware
+2019-08-03 22:47:36,542 INFO 6272 [egg-security] use nosniff middleware
+2019-08-03 22:47:36,542 INFO 6272 [egg-security] use xssProtection middleware
+2019-08-03 22:47:36,543 INFO 6272 [egg-security] use xframe middleware
+2019-08-03 22:47:36,543 INFO 6272 [egg-security] use dta middleware
+2019-08-03 22:47:36,543 INFO 6272 [egg-security] compose 6 middlewares into one security middleware
+2019-08-03 22:47:36,655 INFO 6272 [egg:core] dump config after load, 20ms
+2019-08-03 22:47:36,688 INFO 6272 [egg-watcher:application] watcher start success
+2019-08-03 22:47:36,736 INFO 6272 [egg:core] dump config after ready, 29ms
+2019-08-04 00:00:00,069 INFO 6272 [egg-logrotator] clean all log before 31 days
+2019-08-04 00:00:01,024 INFO 6272 [egg-logrotator] broadcast log-reload
+2019-08-04 00:00:01,024 INFO 6272 [egg-logrotator] rotate files success by DayRotator, files ["D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server\\common-error.log -> D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server\\common-error.log.2019-08-03","D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server\\cloud-reinforce-server-web.log -> D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server\\cloud-reinforce-server-web.log.2019-08-03","D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server\\egg-web.log -> D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server\\egg-web.log.2019-08-03","D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server\\egg-schedule.log -> D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server\\egg-schedule.log.2019-08-03","D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server\\egg-agent.log -> D:\\nodejs\\nodejs\\node_project\\hospital\\logs\\cloud-reinforce-server\\egg-agent.log.2019-08-03"]
