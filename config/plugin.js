@@ -21,6 +21,11 @@ exports.cors = {
   package: 'egg-cors',
 };
 
+//开启文件支持
+exports.multipart = {
+  mode: 'file', 
+};
+
 //validate：对参数进行校验（含ctx.request.body，cxt.query，ctx.params）
 exports.validate = {
   enable: true,

@@ -18,7 +18,7 @@ class WorkInfoService extends Service {
           doctorId: doctorId,
         }
       },{transaction:t})
-      if(!Object.getOwnPropertySymbols(list).length){  //判断对象是否为空
+      if(!Object.getOwnPropertyNames(list).length){  //判断对象是否为空
         ctx.throw();
       }
       await t.commit();
@@ -69,20 +69,25 @@ class WorkInfoService extends Service {
   //删除出诊信息
   async deleteById(id){
     const ctx=this.ctx;
-    let t;
-    try {
-      t=await ctx.model.transaction();
-      const WorkInfo=await ctx.model.WorkInformation.findById(id,{transaction:t});
-      if(!WorkInfo){
-        ctx.throw();
-      }
-      const res=await WorkInfo.destroy({transaction:t});
-      await t.commit();
-      return res;
-    }catch(e){
-      await t.rollback();
+    const WorkInfo=await ctx.model.WorkInformation.findById(id);
+    if(!WorkInfo){
       ctx.throw(400,'Delete Failed');
     }
+    const res=await WorkInfo.destroy();
+    return res;
+  }
+
+  /**
+   * 辅助函数：用于根据医生id删除相关出诊信息
+   */
+  async deleteByDoctorId(id){
+    const ctx=this.ctx;
+    const res=await ctx.model.WorkInformation.destroy({
+      where: {
+        doctorId: id,
+      }
+    });
+    return res;
   }
 }
 

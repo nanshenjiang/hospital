@@ -18,13 +18,45 @@ module.exports = appInfo => {
   // 添加中间件
   config.middleware = ['errorHandler'];    //'limit'中间件还没绑定
 
-  // add your user config here
-  const userConfig = {
-    // myAppName: 'egg',
+  //ORM配置：mysql配置
+  config.sequelize = {
+    dialect: 'mysql',
+    database: 'hospital', 
+    host: '127.0.0.1',
+    port: 3306,
+    username: 'root',
+    password: '123456',
+    timezone: '+08:00', // 东八时区
   };
 
-  return {
-    ...config,
-    ...userConfig,
+  // // redis配置
+  // config.redis = {
+  //   client: {
+  //     host: '127.0.0.1',
+  //     port: '6379',
+  //     password: '',
+  //     db: '0',
+  //   },
+  //   agent: true,
+  // };
+
+  // 传输文件大小设置
+  config.multipart = {
+    fileSize: '50mb',
   };
+
+  //安全配置：关闭csrf
+  config.security = {
+    csrf: {
+      enable: false,   //在node_modules中egg-security中config中修改为false了，记得修改回
+    },
+  };
+  
+  //跨域防护
+  config.cors = {
+    origin:'*',
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
+  };
+
+  return config;
 };

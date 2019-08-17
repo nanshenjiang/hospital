@@ -18,7 +18,7 @@ module.exports = app => {
   //获取所有医生信息（使用了分页，需传入所需页数和数量）
   router.get('/android/doctor/all',controller.android.showPartDoctor);
   //获取所有医生信息（不使用分页）
-  router.get('/android/doctor/all/:id',controller.android.showAllDoctorByNeedOfAndroid);
+  router.get('/android/doctor/all/:id',controller.android.showAllDoctor);
   //获取某个医生具体信息（根据医生id）
   router.get('/android/doctor/one/:id',controller.android.showOne);
   //获取所有一级科室信息
@@ -57,7 +57,7 @@ module.exports = app => {
   //删除医生信息（根据id）
   router.delete('/web/doctor/delete/:id',loggedOut,controller.doctor.delete);
   //上传和修改医生头像图片
-  router.post('/web/doctor/uploadAvatar/:id', loggedOut, controller.doctor.uploadAvatar);
+  router.put('/web/doctor/uploadAvatar/:id', loggedOut, controller.doctor.uploadAvatar);
              /*-----------出诊信息中所包含接口-------------*/
   //查询所有出诊信息
   router.get('/web/workinfo/all/:id',loggedOut,controller.workInfo.getAllWorkInfo);
@@ -67,14 +67,18 @@ module.exports = app => {
   router.put('/web/workinfo/update/:id',loggedOut,controller.workInfo.update);
   //删除医生出诊信息（需传入对应出诊信息的id）
   router.delete('/web/workinfo/delete/:id',loggedOut,controller.workInfo.delete);
+             /*-----------医院信息中所包含接口-------------*/
+  //保存医院信息
+  router.post('/web/introduction/save',loggedOut,controller.introduction.save);
+  router.put('/web/introduction/update/:id',loggedOut,controller.introduction.update);
   
 
   /*------------------------初始化数据库的部分接口---------------------------*/
   //初始化数据库，及设置中的role类：包括超级管理员，管理员，普通用户
-  router.get('/setup/database/init', controller.setup.initDatabase);
+  router.get('/setup/database/init1', controller.setup.initDatabase);
   //初始数据库：包括一个超级管理员账户，一个管理员账户和一个普通账户
-  router.get('/setup/dev/init', controller.setup.initDevDatabase);
+  router.get('/setup/database/init2', controller.setup.initDevDatabase);
   //初始化数据库，初始化一些数据进行测试
-  router.get ('/setup/database/init2',controller.setup.initOtherDatabase);
+  router.get ('/setup/database/init3',controller.setup.initOtherDatabase);
 
 };

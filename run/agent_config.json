@@ -106,7 +106,7 @@
       "fieldNameSize": 100,
       "fieldSize": "100kb",
       "fields": 10,
-      "fileSize": "10mb",
+      "fileSize": "50mb",
       "files": 10,
       "fileExtensions": [],
       "whitelist": null,
@@ -149,7 +149,7 @@
     "sequelize": {
       "dialect": "mysql",
       "database": "hospital",
-      "host": "localhost",
+      "host": "127.0.0.1",
       "port": 3306,
       "username": "root",
       "password": "<String len: 6>"
@@ -163,7 +163,10 @@
     "sessionRedis": {
       "name": ""
     },
-    "cors": {},
+    "cors": {
+      "origin": "*",
+      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
+    },
     "validate": {},
     "env": "local",
     "name": "cloud-reinforce-server",
@@ -334,11 +337,6 @@
     "middleware": [
       "errorHandler"
     ],
-    "data_dir": "C:\\Users\\NJxie\\hospital\\",
-    "system": {
-      "avatar_root": "C:\\Users\\NJxie\\hospital\\doctor_avatar\\",
-      "attachment_root": "C:\\Users\\NJxie\\hospital\\video\\"
-    },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
     "appMiddleware": "~config~middleware"
@@ -436,7 +434,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\plugin.js",
+      "from": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\plugin.js",
+      "mode": "file",
       "path": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart",
       "version": "2.7.1"
     },

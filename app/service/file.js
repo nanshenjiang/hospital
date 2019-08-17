@@ -48,7 +48,7 @@ class FileService extends Service {
     const { ctx } = this
     const file = await ctx.model.File.findById(id)
     if (!file) {
-      ctx.throw(404, 'Delete Failed')
+      // ctx.throw(404, 'Delete Failed')
     }else{
       const target = file.absolutePath;
       //fs操作，根据路径删除文件

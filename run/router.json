@@ -372,7 +372,7 @@
   {
     "name": null,
     "methods": [
-      "POST"
+      "PUT"
     ],
     "paramNames": [
       {
@@ -482,13 +482,37 @@
   {
     "name": null,
     "methods": [
-      "HEAD",
-      "GET"
+      "POST"
     ],
     "paramNames": [],
-    "path": "/setup/database/init",
-    "regexp": "/^\\/setup\\/database\\/init(?:\\/(?=$))?$/",
+    "path": "/web/introduction/save",
+    "regexp": "/^\\/web\\/introduction\\/save(?:\\/(?=$))?$/",
     "stack": [
+      "limit",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/web/introduction/update/:id",
+    "regexp": "/^\\/web\\/introduction\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "limit",
       "wrappedController"
     ]
   },
@@ -499,8 +523,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/setup/dev/init",
-    "regexp": "/^\\/setup\\/dev\\/init(?:\\/(?=$))?$/",
+    "path": "/setup/database/init1",
+    "regexp": "/^\\/setup\\/database\\/init1(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -514,6 +538,19 @@
     "paramNames": [],
     "path": "/setup/database/init2",
     "regexp": "/^\\/setup\\/database\\/init2(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/setup/database/init3",
+    "regexp": "/^\\/setup\\/database\\/init3(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

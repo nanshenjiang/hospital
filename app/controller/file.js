@@ -13,42 +13,60 @@ class FileController extends Controller {
      * 返回：文件存储的相对路径
      */
     async singleFileStream() {
-        const { ctx, service, config } = this;
-        //从config中获取绝对存储路径的头
-        const baseDir = config.baseDir;
-        //設置相對路徑
-        const url = '/app/upload';
-        // 要通过 ctx.getFileStream 便捷的获取到用户上传的文件，需要满足两个条件：
-        // 只支持上传一个文件。
-        // 上传文件必须在所有其他的 fields 后面，否则在拿到文件流时可能还获取不到 fields。
-        const stream = await ctx.getFileStream()
-        // 所有表单字段都能通过 `stream.fields` 获取到
-        const filename = path.basename(stream.filename) // 文件名称
-        const extname = path.extname(stream.filename).toLowerCase() // 文件扩展名称
-        //判断是否存在文件，不存在生产厂文件夹
-        if (!fs.existsSync())
-            fs.mkdirSync(paht.join(baseDir, url));
-        // 组装参数 model
-        const fileModel = new ctx.model.File
-        fileModel.extname = extname
-        fileModel.filename = filename
-        fileModel.relativePath = path.join(url, `${filename.id.toString()}${extname}`)
-        // 组装参数 stream
-        const target = path.join(baseDir, url, `${fileModel.id.toString()}${fileModel.extname}`)
-        fileModel.absolutePath = target;
-        const writeStream = fs.createWriteStream(target)
-        // 文件处理，上传到云存储等等
-        try {
-            await awaitWriteStream(stream.pipe(writeStream))
-        } catch (err) {
-            // 必须将上传的文件流消费掉，要不然浏览器响应会卡死
-            await sendToWormhole(stream)
-            ctx.throw('400', 'upload failed！！');
-        }
-        // 调用 Service 进行业务处理
-        const res = await service.file.create(fileModel)
-        // 设置响应内容和响应状态码
-        ctx.body= res;
+      const { ctx, service, config } = this;
+      //获取要上传头像的医生的id
+      const {id}=ctx.params;
+      //获取绝对路径的一部分
+      const baseDir=config.baseDir;
+      //设置相对路径的一部分
+      const url = 'app/public/image/doctor/face';
+      // 要通过 ctx.getFileStream 便捷的获取到用户上传的文件，需要满足两个条件：
+      //   1.只支持上传一个文件。
+      //   2.上传文件必须在所有其他的 fields 后面，否则在拿到文件流时可能还获取不到 fields。
+      const stream = await ctx.getFileStream()
+      // 所有表单字段都能通过 `stream.fields` 获取到
+      // 文件扩展名称
+      const extname = path.extname(stream.filename).toLowerCase() 
+      //判断是否为图片格式
+      if(extname !== '.jpg' && extname !== '.png' && extname !== '.gif' && extname!=='.jpeg') {
+        ctx.throw(400,'头像上传的图片格式不支持!');
+      }
+  
+      //判断是否存在文件，不存在生产厂文件夹
+      const filepath=path.join(baseDir, url);
+      //递归生成
+      fs.mkdir(filepath, { recursive: true }, (err) => {
+          if (err) throw err;
+      });
+      // 生成文件名 ( 时间 + 10000以内的随机数 )
+      const filename=Date.now() + Number.parseInt(Math.random() * 10000);
+      // 组装参数 model
+      let fileModel = {}
+      fileModel.extname = extname;
+      fileModel.filename = filename+extname;
+      fileModel.relativePath = path.join('/public/image/doctor/face', `${filename}${extname}`)  //相对路径
+      // console.log('===========================');
+      // 组装参数 stream
+      const target = path.join(baseDir , url , `${filename}${extname}`);   //绝对路径
+      fileModel.absolutePath = target;
+      const writeStream = fs.createWriteStream(target)
+      // 文件处理，上传到云存储等等
+      try {
+          await awaitStreamReady(stream.pipe(writeStream))
+      } catch (err) {
+          // 必须将上传的文件流消费掉，要不然浏览器响应会卡死
+          await sendToWormhole(stream)
+          ctx.throw(400, 'upload failed！！');
+      }
+      // 调用 Service 进行业务处理
+      const file = await service.file.create(fileModel);
+      //更新医生中的头像关联
+      const doctorExp=await ctx.service.doctor.updateDoctor(id , {avatarId: file.id});
+      
+      //搜索最新医生信息
+      const res=await ctx.service.doctor.findById(doctorExp.id);
+      // 设置响应内容和响应状态码
+      ctx.helper.success({ctx,res});
     }
 
     /**

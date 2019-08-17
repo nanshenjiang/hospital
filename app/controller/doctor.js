@@ -74,15 +74,34 @@ class DoctorController extends Controller {
   }
   /**
    * 新建医生信息
+   * 设置默认头像
    */
   async create() {
-    const { ctx } = this;
+    const { ctx ,config} = this;
     // ctx.validate(createRule, ctx.request.body);
     const doctor = ctx.request.body || {};
-    console.log("==================");
-    console.log(doctor);
-    const doctorExp =await ctx.service.doctor.saveDoctor(doctor);
-    const res=await ctx.service.doctor.findById(doctorExp.id);
+    //复制默认文件夹中的医生头像设置为默认初始化头像
+    //初始化头像存放路径
+    const oldpath=path.join(config.baseDir,'app/public/origin','doctor2.jpg');
+    const url='app/public/image/doctor/face';
+    //判断是否存在文件，不存在生产厂文件夹
+    const filepath=path.join(config.baseDir, url);
+    //递归生成
+    fs.mkdir(filepath, { recursive: true }, (err) => {
+        if (err) throw err;
+    });
+    const filename=Date.now() + Number.parseInt(Math.random() * 10000)+'.jpg';
+    const newpath=path.join(url,filename);
+    //doctor存入相对路径
+    doctor.avatarUrl=path.join('/public/image/doctor/face',filename);
+    //复制
+    try{
+      fs.createReadStream(oldpath).pipe(fs.createWriteStream(newpath));
+    }catch(e){
+      ctx.throw(400,'Upload Failed');
+    }
+    const res =await ctx.service.doctor.saveDoctor(doctor);
+    // const res=await ctx.service.doctor.findById(doctorExp.id);
     ctx.helper.success({ctx,res});
   }
   /**
@@ -110,58 +129,34 @@ class DoctorController extends Controller {
    * 上传头像
    */
   async uploadAvatar() {
-    const { ctx, service, config } = this;
+    const { ctx, config } = this;
     //获取要上传头像的医生的id
     const {id}=ctx.params;
-    //获取绝对路径的一部分
-    const baseDir=config.baseDir;
-    //设置相对路径的一部分
-    const url = 'app/public/image/doctor/face';
-    // 要通过 ctx.getFileStream 便捷的获取到用户上传的文件，需要满足两个条件：
-    //   1.只支持上传一个文件。
-    //   2.上传文件必须在所有其他的 fields 后面，否则在拿到文件流时可能还获取不到 fields。
-    const stream = await ctx.getFileStream()
-    // 所有表单字段都能通过 `stream.fields` 获取到
-    // 文件扩展名称
-    const extname = path.extname(stream.filename).toLowerCase() 
+    // console.log('===========================');
+    const url = '/public/image/doctor/face';   //设置相对路径的一部分
+    const baseDir=path.join(config.baseDir,'app',url);   //获取绝对路径的一部分
+    const stream = await ctx.getFileStream()   //获取文件流
+    const extname = path.extname(stream.filename).toLowerCase() // 文件扩展名称
     //判断是否为图片格式
     if(extname !== '.jpg' && extname !== '.png' && extname !== '.gif' && extname!=='.jpeg') {
-      ctx.throw(400,'头像支持的图片格式为 .jpg .gif .png!');
+      ctx.throw(400,'头像上传的图片格式不支持!');
     }
-
-    //判断是否存在文件，不存在生产厂文件夹
-    const filepath=path.join(baseDir, url);
-    //递归生成
-    fs.mkdir(filepath, { recursive: true }, (err) => {
-        if (err) throw err;
-    });
     // 生成文件名 ( 时间 + 10000以内的随机数 )
     const filename=Date.now() + Number.parseInt(Math.random() * 10000);
-    // 组装参数 model
-    let fileModel = {}
-    fileModel.extname = extname;
-    fileModel.filename = filename+extname;
-    fileModel.relativePath = path.join('/public/image/doctor/face', `${filename}${extname}`)  //相对路径
-    console.log('===========================');
+    const relativePath = path.join(url, `${filename}${extname}`)  //相对路径
     // 组装参数 stream
-    const target = path.join(baseDir , url , `${filename}${extname}`);   //绝对路径
-    fileModel.absolutePath = target;
+    const target = path.join(baseDir , `${filename}${extname}`);   //绝对路径
     const writeStream = fs.createWriteStream(target)
     // 文件处理，上传到云存储等等
     try {
         await awaitStreamReady(stream.pipe(writeStream))
     } catch (err) {
-        // 必须将上传的文件流消费掉，要不然浏览器响应会卡死
-        await sendToWormhole(stream)
-        ctx.throw(400, 'upload failed！！');
+      // 必须将上传的文件流消费掉，要不然浏览器响应会卡死
+      await sendToWormhole(stream)
+      ctx.throw(400, 'upload failed！！');
     }
-    // 调用 Service 进行业务处理
-    const file = await service.file.create(fileModel);
     //更新医生中的头像关联
-    const doctorExp=await ctx.service.doctor.updateDoctor(id , {avatarId: file.id});
-    
-    //搜索最新医生信息
-    const res=await ctx.service.doctor.findById(doctorExp.id);
+    const res=await ctx.service.doctor.updateDoctor(id , {avatarUrl: relativePath},true); 
     // 设置响应内容和响应状态码
     ctx.helper.success({ctx,res});
   }

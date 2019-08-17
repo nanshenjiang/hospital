@@ -20,17 +20,21 @@ module.exports = app => {
     extname: STRING(64),   //文件扩展名
     relativePath: STRING(256),    //文件存储的相对地址
     absolutePath: STRING(256),   //文件存储的绝对路径
+    photoId: {   //图片的关联id
+      type: UUID,
+      allowNull: false,
+    },
     createdAt: {   //文件创立时间
       type: DATE, 
       defaultValue: Date.now,
     }
-  }, {
+  }, { 
     timestamps: false,  
   });
 
   File.associate = function() {
-    //文件流表与医生表中的头像图片是一对一的关系
-    app.model.File.hasOne(app.model.Doctor, {foreignKey: 'avatarId'});
+    //关系数据库中医院介绍表的主键--photo.id
+    app.model.File.belongsTo(app.model.Introduction, { foreignKey: 'photoId', targetKey: 'id' });    
   };
   return File;
 };

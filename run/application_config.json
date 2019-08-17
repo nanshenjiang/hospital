@@ -144,7 +144,7 @@
       "fieldNameSize": 100,
       "fieldSize": 102400,
       "fields": 10,
-      "fileSize": 10485760,
+      "fileSize": 52428800,
       "files": 10,
       "fileExtensions": [],
       "whitelist": null,
@@ -187,7 +187,7 @@
     "sequelize": {
       "dialect": "mysql",
       "database": "hospital",
-      "host": "localhost",
+      "host": "127.0.0.1",
       "port": 3306,
       "username": "root",
       "password": "<String len: 6>"
@@ -202,7 +202,8 @@
       "name": ""
     },
     "cors": {
-      "origin": "<Function corsOrigin>"
+      "origin": "*",
+      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
     },
     "validate": {},
     "env": "local",
@@ -380,11 +381,6 @@
     "middleware": [
       "errorHandler"
     ],
-    "data_dir": "C:\\Users\\NJxie\\hospital\\",
-    "system": {
-      "avatar_root": "C:\\Users\\NJxie\\hospital\\doctor_avatar\\",
-      "attachment_root": "C:\\Users\\NJxie\\hospital\\video\\"
-    },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
     "appMiddleware": "~config~middleware",
@@ -395,7 +391,7 @@
         "fieldNameSize": 100,
         "fieldSize": 102400,
         "fields": 10,
-        "fileSize": 10485760,
+        "fileSize": 52428800,
         "files": 10
       },
       "checkFile": "<Function checkFile>"
@@ -494,7 +490,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\plugin.js",
+      "from": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\plugin.js",
+      "mode": "file",
       "path": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart",
       "version": "2.7.1"
     },

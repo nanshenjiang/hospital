@@ -1,0 +1,72 @@
+2019-08-10 11:46:23,838 ERROR 12572 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Unknown column 'avatarId' in 'field list'
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.select (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:1104:27)
+    at Promise.try.then.then.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:1598:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:1595:8)
+    at DoctorService.findBySecondOfficeIdNeedOfAndroid (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:115:41)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'avatarId' in 'field list'","sql":"SELECT `id`, `name`, `post`, `avatarId`, `title`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`secondOfficeId` = '1';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'avatarId' in 'field list'","sql":"SELECT `id`, `name`, `post`, `avatarId`, `title`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`secondOfficeId` = '1';"}
+sql: "SELECT `id`, `name`, `post`, `avatarId`, `title`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`secondOfficeId` = '1';"
+pid: 12572
+hostname: LAPTOP-57LT11PC
+
+2019-08-10 11:49:11,598 ERROR 13092 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 13092
+hostname: LAPTOP-57LT11PC
+
+2019-08-10 11:49:14,142 ERROR 13092 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 13092
+hostname: LAPTOP-57LT11PC
+
+2019-08-10 22:00:14,705 ERROR 13092 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 13092
+hostname: LAPTOP-57LT11PC
+
+2019-08-15 14:11:19,077 ERROR 1412 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 1412
+hostname: LAPTOP-57LT11PC
+

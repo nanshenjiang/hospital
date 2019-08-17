@@ -14,7 +14,8 @@ class OfficeService extends Service {
     try {
       t=await ctx.model.transaction();  //事务操作
       const list=await ctx.model.FirstOffice.findAll({transaction:t});
-      if(!Object.getOwnPropertySymbols(list).length){  //判断对象是否为空
+      // console.log(list);
+      if(!Object.getOwnPropertyNames(list).length){  //判断对象是否为空
         ctx.throw();
       }
       await t.commit();
@@ -36,7 +37,7 @@ class OfficeService extends Service {
           firstOfficeId: firstOfficeId,
         }
       },{transaction:t});
-      if(!Object.getOwnPropertySymbols(list).length){
+      if(!Object.getOwnPropertyNames(list).length){
         ctx.throw();
       }
       await t.commit();
@@ -124,38 +125,40 @@ class OfficeService extends Service {
   //删除一级科室
   async deleteFirstOffice(id){
     const ctx=this.ctx;
-    let t;
-    try {
-      t=await ctx.model.transaction();
-      const firstOffice=await ctx.model.FirstOffice.findById(id,{transaction:t});
-      if(!firstOffice){
-        ctx.throw();
-      }
-      const res=await firstOffice.destroy({transaction:t});
-      await t.commit();
-      return res;
-    }catch(e){
-      await t.rollback();
+    const firstOffice=await ctx.model.FirstOffice.findById(id);
+    if(!firstOffice){
       ctx.throw(400,'Delete Failed');
     }
+    await ctx.service.office.deleteByFirstOfficeId(id);
+    const res=await firstOffice.destroy();
+    return res;
   }
 
   //删除二级科室
   async deleteSecondOffice(id){
     const ctx=this.ctx;
-    let t;
-    try {
-      t=await ctx.model.transaction();
-      const secondOffice=await ctx.model.SecondOffice.findById(id,{transaction:t});
-      if(!secondOffice){
-        ctx.throw();
-      }
-      const res=await secondOffice.destroy({transaction:t});
-      await t.commit();
-      return res;
-    }catch(e){
-      await t.rollback();
+    const secondOffice=await ctx.model.SecondOffice.findById(id);
+    if(!secondOffice){
       ctx.throw(400,'Delete Failed');
+    }
+    await ctx.service.doctor.deleteByOfficeId(id);
+    const res=await secondOffice.destroy();
+    return res;
+  }
+
+  /**
+   * 辅助函数：用于根据一级科室id删除相关二级科室信息
+   */
+  async deleteByFirstOfficeId(id){
+    const ctx=this.ctx;
+    const offices=await ctx.model.SecondOffice.findAll({
+      attributes: ['id'],
+      where: {
+        firstOfficeId: id,
+      }
+    });
+    for(let obj of offices){
+      await ctx.service.office.deleteSecondOffice(obj.id);
     }
   }
 }

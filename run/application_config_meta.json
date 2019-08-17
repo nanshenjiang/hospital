@@ -1,23 +1,33 @@
 {
   "keys": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
   "middleware": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
-  "data_dir": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.local.js",
-  "system": {
-    "avatar_root": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.local.js",
-    "attachment_root": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.local.js"
+  "sequelize": {
+    "dialect": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+    "database": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+    "host": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+    "port": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+    "username": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+    "password": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js"
   },
-  "session": {
-    "maxAge": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-session\\config\\config.default.js"
+  "multipart": {
+    "fileSize": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+    "mode": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
+    "autoFields": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js"
+    }
   },
   "security": {
-    "domainWhiteList": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js",
-    "protocolWhiteList": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js",
     "csrf": {
-      "enable": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js",
+      "enable": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
       "useSession": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js",
       "ignoreJSON": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js",
       "cookieName": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js",
@@ -26,6 +36,9 @@
       "bodyName": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js",
       "queryName": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js"
     },
+    "domainWhiteList": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js",
     "xframe": {
       "enable": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js",
       "value": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js"
@@ -64,6 +77,16 @@
       "checkAddress": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js"
     }
   },
+  "cors": {
+    "origin": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+    "allowMethods": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js"
+  },
+  "session": {
+    "maxAge": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-session\\config\\config.default.js"
+  },
   "helper": {
     "shtml": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-security\\config\\config.default.js"
   },
@@ -101,22 +124,6 @@
   "schedule": {
     "directory": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-schedule\\config\\config.default.js"
   },
-  "multipart": {
-    "mode": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
-    "autoFields": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
-    "defaultCharset": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldNameSize": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldSize": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fields": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileSize": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
-    "files": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileExtensions": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
-    "whitelist": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
-    "tmpdir": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
-    "cleanSchedule": {
-      "cron": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js"
-    }
-  },
   "development": {
     "watchDirs": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-development\\config\\config.default.js",
     "ignoreDirs": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-development\\config\\config.default.js",
@@ -148,14 +155,6 @@
     "defaultViewEngine": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-view\\config\\config.default.js",
     "mapping": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-view\\config\\config.default.js"
   },
-  "sequelize": {
-    "dialect": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-sequelize\\config\\config.default.js",
-    "database": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-sequelize\\config\\config.default.js",
-    "host": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-sequelize\\config\\config.default.js",
-    "port": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-sequelize\\config\\config.default.js",
-    "username": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-sequelize\\config\\config.default.js",
-    "password": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-sequelize\\config\\config.default.js"
-  },
   "redis": {
     "default": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-redis\\config\\config.default.js",
     "app": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-redis\\config\\config.default.js",
@@ -165,7 +164,6 @@
   "sessionRedis": {
     "name": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-session-redis\\config\\config.default.js"
   },
-  "cors": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-cors\\config\\config.default.js",
   "validate": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-validate\\config\\config.default.js",
   "env": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
   "name": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
