@@ -1,0 +1,781 @@
+2019-08-16 12:36:26,392 INFO 16264 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 14:57:49,091 INFO 8732 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 14:57:50,897 INFO 16324 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 14:57:52,682 INFO 14768 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 15:11:26,838 INFO 14768 [egg-sequelize](1ms) Executed (9d942c10-f81c-4b98-a963-0767491ebd35): START TRANSACTION;
+2019-08-16 15:11:26,978 INFO 14768 [egg-sequelize](134ms) Executed (9d942c10-f81c-4b98-a963-0767491ebd35): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice`;
+2019-08-16 15:11:26,982 INFO 14768 [egg-sequelize](0ms) Executed (9d942c10-f81c-4b98-a963-0767491ebd35): COMMIT;
+2019-08-16 15:12:05,522 INFO 14768 [egg-sequelize](0ms) Executed (e477b9ae-a61b-4400-93fd-d5b73ed744a5): START TRANSACTION;
+2019-08-16 15:12:05,705 INFO 14768 [egg-sequelize](173ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`id` = '1';
+2019-08-16 15:12:05,712 INFO 14768 [egg-sequelize](1ms) Executed (e477b9ae-a61b-4400-93fd-d5b73ed744a5): COMMIT;
+2019-08-16 15:12:06,281 INFO 14768 [egg-sequelize](1ms) Executed (d78926f5-fc15-4a17-974c-678686fed542): START TRANSACTION;
+2019-08-16 15:12:06,290 INFO 14768 [egg-sequelize](6ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`secondOfficeId` = 'undefined';
+2019-08-16 15:12:06,294 INFO 14768 [egg-sequelize](1ms) Executed (d78926f5-fc15-4a17-974c-678686fed542): COMMIT;
+2019-08-16 15:12:07,335 INFO 14768 [egg-sequelize](1ms) Executed (0e177913-8330-4a66-afa1-7a87f06b9685): START TRANSACTION;
+2019-08-16 15:12:07,338 INFO 14768 [egg-sequelize](0ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`secondOfficeId` = 'undefined';
+2019-08-16 15:12:07,342 INFO 14768 [egg-sequelize](0ms) Executed (0e177913-8330-4a66-afa1-7a87f06b9685): COMMIT;
+2019-08-16 15:12:08,393 INFO 14768 [egg-sequelize](1ms) Executed (a266b70a-8d3d-4459-a88e-212f85605777): START TRANSACTION;
+2019-08-16 15:12:08,397 INFO 14768 [egg-sequelize](0ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`secondOfficeId` = 'undefined';
+2019-08-16 15:12:08,401 INFO 14768 [egg-sequelize](1ms) Executed (a266b70a-8d3d-4459-a88e-212f85605777): COMMIT;
+2019-08-16 15:12:09,445 INFO 14768 [egg-sequelize](1ms) Executed (a5a73e4c-7dac-4230-bb5e-6cfea979e527): START TRANSACTION;
+2019-08-16 15:12:09,448 INFO 14768 [egg-sequelize](1ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`secondOfficeId` = 'undefined';
+2019-08-16 15:12:09,452 INFO 14768 [egg-sequelize](1ms) Executed (a5a73e4c-7dac-4230-bb5e-6cfea979e527): COMMIT;
+2019-08-16 15:12:10,523 INFO 14768 [egg-sequelize](0ms) Executed (25d2e0b1-2fb6-4e63-9ad4-6fce9f67c01c): START TRANSACTION;
+2019-08-16 15:12:10,527 INFO 14768 [egg-sequelize](1ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`secondOfficeId` = 'undefined';
+2019-08-16 15:12:10,530 INFO 14768 [egg-sequelize](0ms) Executed (25d2e0b1-2fb6-4e63-9ad4-6fce9f67c01c): COMMIT;
+2019-08-16 15:12:11,577 INFO 14768 [egg-sequelize](0ms) Executed (5fd14773-edc2-42b8-b8a6-3977c41900b8): START TRANSACTION;
+2019-08-16 15:12:11,581 INFO 14768 [egg-sequelize](1ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`secondOfficeId` = 'undefined';
+2019-08-16 15:12:11,584 INFO 14768 [egg-sequelize](0ms) Executed (5fd14773-edc2-42b8-b8a6-3977c41900b8): COMMIT;
+2019-08-16 15:12:12,647 INFO 14768 [egg-sequelize](0ms) Executed (9d90eb34-f90c-4815-82ac-8d82a35cccec): START TRANSACTION;
+2019-08-16 15:12:12,651 INFO 14768 [egg-sequelize](1ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`secondOfficeId` = 'undefined';
+2019-08-16 15:12:12,655 INFO 14768 [egg-sequelize](0ms) Executed (9d90eb34-f90c-4815-82ac-8d82a35cccec): COMMIT;
+2019-08-16 15:12:13,703 INFO 14768 [egg-sequelize](0ms) Executed (d4571e82-c9aa-4e17-b401-cf8792ed0fb1): START TRANSACTION;
+2019-08-16 15:12:13,707 INFO 14768 [egg-sequelize](1ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`secondOfficeId` = 'undefined';
+2019-08-16 15:12:13,710 INFO 14768 [egg-sequelize](0ms) Executed (d4571e82-c9aa-4e17-b401-cf8792ed0fb1): COMMIT;
+2019-08-16 15:12:14,759 INFO 14768 [egg-sequelize](0ms) Executed (2e4618db-27a3-4ab6-a4e8-ba7cd31c0870): START TRANSACTION;
+2019-08-16 15:12:14,763 INFO 14768 [egg-sequelize](1ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`secondOfficeId` = 'undefined';
+2019-08-16 15:12:14,766 INFO 14768 [egg-sequelize](0ms) Executed (2e4618db-27a3-4ab6-a4e8-ba7cd31c0870): COMMIT;
+2019-08-16 15:12:15,809 INFO 14768 [egg-sequelize](0ms) Executed (b588d97f-6401-4c60-9d9f-04031e1fe11b): START TRANSACTION;
+2019-08-16 15:12:15,812 INFO 14768 [egg-sequelize](0ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`secondOfficeId` = 'undefined';
+2019-08-16 15:12:15,816 INFO 14768 [egg-sequelize](1ms) Executed (b588d97f-6401-4c60-9d9f-04031e1fe11b): COMMIT;
+2019-08-16 15:12:16,872 INFO 14768 [egg-sequelize](0ms) Executed (4d9f714c-2b56-4391-8ce1-b53613448173): START TRANSACTION;
+2019-08-16 15:12:16,876 INFO 14768 [egg-sequelize](0ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`secondOfficeId` = 'undefined';
+2019-08-16 15:12:16,880 INFO 14768 [egg-sequelize](0ms) Executed (4d9f714c-2b56-4391-8ce1-b53613448173): COMMIT;
+2019-08-16 15:12:17,943 INFO 14768 [egg-sequelize](1ms) Executed (e2eecf01-c1e2-4880-9902-2b0b0d20b44d): START TRANSACTION;
+2019-08-16 15:12:17,947 INFO 14768 [egg-sequelize](1ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`secondOfficeId` = 'undefined';
+2019-08-16 15:12:17,951 INFO 14768 [egg-sequelize](1ms) Executed (e2eecf01-c1e2-4880-9902-2b0b0d20b44d): COMMIT;
+2019-08-16 15:12:19,017 INFO 14768 [egg-sequelize](1ms) Executed (b6581a5c-190f-4d07-ad52-597907ca8bb2): START TRANSACTION;
+2019-08-16 15:12:19,020 INFO 14768 [egg-sequelize](1ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`secondOfficeId` = 'undefined';
+2019-08-16 15:12:19,023 INFO 14768 [egg-sequelize](0ms) Executed (b6581a5c-190f-4d07-ad52-597907ca8bb2): COMMIT;
+2019-08-16 20:16:33,835 INFO 12068 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 20:16:35,988 INFO 15576 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 20:17:13,904 INFO 15576 [egg-sequelize](1ms) Executed (0b405d58-382d-4bfc-85d0-83dd0161a4af): START TRANSACTION;
+2019-08-16 20:17:13,916 INFO 15576 [egg-sequelize](2ms) Executed (0b405d58-382d-4bfc-85d0-83dd0161a4af): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '45eac220ba6f11e9821163c439e1a6e0';
+2019-08-16 20:17:14,078 INFO 15576 [egg-sequelize](92ms) Executed (0b405d58-382d-4bfc-85d0-83dd0161a4af): UPDATE `doctors` SET `avatarUrl`='\\public\\image\\doctor\\face\\1565957838750.jpg' WHERE `id` = '45eac220ba6f11e9821163c439e1a6e0'
+2019-08-16 20:17:14,170 INFO 15576 [egg-sequelize](89ms) Executed (0b405d58-382d-4bfc-85d0-83dd0161a4af): COMMIT;
+2019-08-16 20:17:26,748 INFO 15576 [egg-sequelize](0ms) Executed (639951a7-8497-4384-a40d-dc3841a36f0a): START TRANSACTION;
+2019-08-16 20:17:26,754 INFO 15576 [egg-sequelize](1ms) Executed (639951a7-8497-4384-a40d-dc3841a36f0a): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '45eac220ba6f11e9821163c439e1a6e0';
+2019-08-16 20:17:26,760 INFO 15576 [egg-sequelize](1ms) Executed (639951a7-8497-4384-a40d-dc3841a36f0a): UPDATE `doctors` SET `avatarUrl`='\\public\\image\\doctor\\face\\1565957856442.jpg' WHERE `id` = '45eac220ba6f11e9821163c439e1a6e0'
+2019-08-16 20:17:26,946 INFO 15576 [egg-sequelize](171ms) Executed (639951a7-8497-4384-a40d-dc3841a36f0a): COMMIT;
+2019-08-16 20:17:40,955 INFO 15576 [egg-sequelize](0ms) Executed (e3e5e417-277f-4507-8456-b7c085beca21): START TRANSACTION;
+2019-08-16 20:17:40,959 INFO 15576 [egg-sequelize](1ms) Executed (e3e5e417-277f-4507-8456-b7c085beca21): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = 'df4fab20ba6e11e995068161da74b87a';
+2019-08-16 20:17:41,021 INFO 15576 [egg-sequelize](60ms) Executed (e3e5e417-277f-4507-8456-b7c085beca21): ROLLBACK;
+2019-08-16 20:17:41,025 WARN 15576 [-/127.0.0.1/-/0ms GET /] nodejs.BadRequestError: Update Failed
+    at Object.throw (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\lib\context.js:97:11)
+    at DoctorService.updateDoctor (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:226:16)
+message: "Update Failed"
+pid: 15576
+hostname: LAPTOP-57LT11PC
+
+2019-08-16 20:20:48,491 INFO 15576 [egg-sequelize](1ms) Executed (f61f318f-7379-4757-a9e8-721e61cb6b0b): START TRANSACTION;
+2019-08-16 20:20:48,585 INFO 15576 [egg-sequelize](90ms) Executed (f61f318f-7379-4757-a9e8-721e61cb6b0b): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`secondOfficeId`) VALUES ('47a3e2c0c02011e98d1aedbfb3730a9b','777','\\public\\image\\doctor\\face\\1565958052868.jpg','1');
+2019-08-16 20:20:48,689 INFO 15576 [egg-sequelize](100ms) Executed (f61f318f-7379-4757-a9e8-721e61cb6b0b): COMMIT;
+2019-08-16 20:21:51,889 INFO 15576 [egg-sequelize](0ms) Executed (d196166e-1e60-409c-993d-e7e1ed8e170c): START TRANSACTION;
+2019-08-16 20:21:51,893 INFO 15576 [egg-sequelize](1ms) Executed (d196166e-1e60-409c-993d-e7e1ed8e170c): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '47a3e2c0c02011e98d1aedbfb3730a9b';
+2019-08-16 20:21:51,976 INFO 15576 [egg-sequelize](66ms) Executed (d196166e-1e60-409c-993d-e7e1ed8e170c): UPDATE `doctors` SET `name`='777酱' WHERE `id` = '47a3e2c0c02011e98d1aedbfb3730a9b'
+2019-08-16 20:21:52,209 INFO 15576 [egg-sequelize](213ms) Executed (d196166e-1e60-409c-993d-e7e1ed8e170c): COMMIT;
+2019-08-16 20:21:52,212 INFO 15576 [egg-sequelize](0ms) Executed (ef06e483-a05b-4e32-baf2-b30d689018bb): START TRANSACTION;
+2019-08-16 20:21:52,223 INFO 15576 [egg-sequelize](3ms) Executed (default): SELECT `doctor`.`id`, `doctor`.`name`, `doctor`.`avatarUrl`, `doctor`.`gender`, `doctor`.`post`, `doctor`.`title`, `doctor`.`resume`, `doctor`.`concurrent`, `doctor`.`achievement`, `doctor`.`speciality`, `doctor`.`secondOfficeId`, `workInformations`.`id` AS `workInformations.id`, `workInformations`.`department` AS `workInformations.department`, `workInformations`.`registerType` AS `workInformations.registerType`, `workInformations`.`date` AS `workInformations.date`, `workInformations`.`classes` AS `workInformations.classes`, `workInformations`.`remaining` AS `workInformations.remaining`, `workInformations`.`doctorId` AS `workInformations.doctorId` FROM `doctors` AS `doctor` LEFT OUTER JOIN `workInformations` AS `workInformations` ON `doctor`.`id` = `workInformations`.`doctorId` WHERE `doctor`.`id` = '47a3e2c0c02011e98d1aedbfb3730a9b';
+2019-08-16 20:21:52,233 INFO 15576 [egg-sequelize](0ms) Executed (ef06e483-a05b-4e32-baf2-b30d689018bb): COMMIT;
+2019-08-16 20:22:24,853 INFO 15576 [egg-sequelize](0ms) Executed (3fd3fac5-72df-4706-afcb-e2d2ffec5e96): START TRANSACTION;
+2019-08-16 20:22:24,857 INFO 15576 [egg-sequelize](1ms) Executed (3fd3fac5-72df-4706-afcb-e2d2ffec5e96): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '47a3e2c0c02011e98d1aedbfb3730a9b';
+2019-08-16 20:22:24,861 INFO 15576 [egg-sequelize](0ms) Executed (3fd3fac5-72df-4706-afcb-e2d2ffec5e96): UPDATE `doctors` SET `avatarUrl`='\\public\\image\\doctor\\face\\1565958151200.jpg' WHERE `id` = '47a3e2c0c02011e98d1aedbfb3730a9b'
+2019-08-16 20:22:24,972 INFO 15576 [egg-sequelize](109ms) Executed (3fd3fac5-72df-4706-afcb-e2d2ffec5e96): COMMIT;
+2019-08-16 20:23:22,340 INFO 15576 [egg-sequelize](1ms) Executed (a6fe603d-0617-42c1-8fbe-ce895a9a3ca4): START TRANSACTION;
+2019-08-16 20:23:22,344 INFO 15576 [egg-sequelize](2ms) Executed (a6fe603d-0617-42c1-8fbe-ce895a9a3ca4): SELECT `id`, `department`, `registerType`, `date`, `classes`, `remaining`, `doctorId` FROM `workInformations` AS `workInformation` WHERE `workInformation`.`id` = '30788d40bf7011e98fed9743d65308c3';
+2019-08-16 20:23:22,348 INFO 15576 [egg-sequelize](1ms) Executed (a6fe603d-0617-42c1-8fbe-ce895a9a3ca4): COMMIT;
+2019-08-16 20:23:50,959 INFO 15576 [egg-sequelize](1ms) Executed (default): SELECT `id`, `department`, `registerType`, `date`, `classes`, `remaining`, `doctorId` FROM `workInformations` AS `workInformation` WHERE `workInformation`.`id` = '30788d40bf7011e98fed9743d65308c3';
+2019-08-16 20:23:51,126 INFO 15576 [egg-sequelize](164ms) Executed (default): DELETE FROM `workInformations` WHERE `id` = '30788d40bf7011e98fed9743d65308c3' LIMIT 1
+2019-08-16 20:24:24,214 INFO 15576 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice` WHERE `firstOffice`.`id` = '9b2374b0bf0311e9a37db51c3763a99a';
+2019-08-16 20:24:24,278 INFO 15576 [egg-sequelize](59ms) Executed (default): SELECT `id` FROM `secondOffices` AS `secondOffice` WHERE `secondOffice`.`firstOfficeId` = '9b2374b0bf0311e9a37db51c3763a99a';
+2019-08-16 20:24:24,422 INFO 15576 [egg-sequelize](141ms) Executed (default): DELETE FROM `firstOffices` WHERE `id` = '9b2374b0bf0311e9a37db51c3763a99a' LIMIT 1
+2019-08-16 20:24:37,243 INFO 15576 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice` WHERE `firstOffice`.`id` = '1';
+2019-08-16 20:24:37,246 INFO 15576 [egg-sequelize](1ms) Executed (default): SELECT `id` FROM `secondOffices` AS `secondOffice` WHERE `secondOffice`.`firstOfficeId` = '1';
+2019-08-16 20:24:37,251 INFO 15576 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `firstOfficeId` FROM `secondOffices` AS `secondOffice` WHERE `secondOffice`.`id` = '1';
+2019-08-16 20:24:37,259 INFO 15576 [egg-sequelize](1ms) Executed (default): SELECT `id` FROM `doctors` AS `doctor` WHERE `doctor`.`secondOfficeId` = '1';
+2019-08-16 20:24:37,276 INFO 15576 [egg-sequelize](0ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '027bc920bf7011e98fed9743d65308c3';
+2019-08-16 20:24:37,281 INFO 15576 [egg-sequelize](1ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = '027bc920bf7011e98fed9743d65308c3'
+2019-08-16 20:24:37,414 INFO 15576 [egg-sequelize](129ms) Executed (default): DELETE FROM `doctors` WHERE `id` = '027bc920bf7011e98fed9743d65308c3' LIMIT 1
+2019-08-16 20:24:37,418 INFO 15576 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '1';
+2019-08-16 20:24:37,548 INFO 15576 [egg-sequelize](110ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = '1'
+2019-08-16 20:24:37,690 INFO 15576 [egg-sequelize](140ms) Executed (default): DELETE FROM `doctors` WHERE `id` = '1' LIMIT 1
+2019-08-16 20:24:37,694 INFO 15576 [egg-sequelize](0ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '2';
+2019-08-16 20:24:37,727 ERROR 15576 [-/127.0.0.1/-/0ms GET /] nodejs.ENOENTError: ENOENT: no such file or directory, unlink 'D:\nodejs\nodejs\node_project\hospital\app\public\image\doctor\face\doctor.jpg'
+    at Object.unlinkSync (fs.js:956:3)
+    at DoctorService.deleteDoctorById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:242:8)
+errno: -4058
+syscall: "unlink"
+code: "ENOENT"
+path: "D:\\nodejs\\nodejs\\node_project\\hospital\\app\\public\\image\\doctor\\face\\doctor.jpg"
+name: "ENOENTError"
+pid: 15576
+hostname: LAPTOP-57LT11PC
+
+2019-08-16 20:28:13,773 INFO 15576 [egg-sequelize](67ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');
+2019-08-16 20:28:13,823 ERROR 15576 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.insert (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:901:27)
+    at Promise.try.then.then.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3685:53)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3661:8)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at SetupController.initOtherDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:88:33)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"1","origin":"DB","instance":{"id":1,"name":"内科"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"PRIMARY":"1"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+sql: "INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"
+pid: 15576
+hostname: LAPTOP-57LT11PC
+
+2019-08-16 20:28:55,387 INFO 15576 [egg-sequelize](2ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');
+2019-08-16 20:28:55,432 ERROR 15576 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.insert (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:901:27)
+    at Promise.try.then.then.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3685:53)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3661:8)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at SetupController.initOtherDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:88:33)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"1","origin":"DB","instance":{"id":1,"name":"内科"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"PRIMARY":"1"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+sql: "INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"
+pid: 15576
+hostname: LAPTOP-57LT11PC
+
+2019-08-16 20:29:22,467 INFO 15576 [egg-sequelize](735ms) Executed (default): DROP TABLE IF EXISTS `workInformations`;
+2019-08-16 20:29:22,709 INFO 15576 [egg-sequelize](240ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-08-16 20:29:22,898 INFO 15576 [egg-sequelize](187ms) Executed (default): DROP TABLE IF EXISTS `roles`;
+2019-08-16 20:29:23,142 INFO 15576 [egg-sequelize](242ms) Executed (default): DROP TABLE IF EXISTS `floors`;
+2019-08-16 20:29:23,513 INFO 15576 [egg-sequelize](369ms) Executed (default): DROP TABLE IF EXISTS `files`;
+2019-08-16 20:29:23,686 INFO 15576 [egg-sequelize](171ms) Executed (default): DROP TABLE IF EXISTS `introductions`;
+2019-08-16 20:29:23,998 INFO 15576 [egg-sequelize](310ms) Executed (default): DROP TABLE IF EXISTS `doctors`;
+2019-08-16 20:29:24,253 INFO 15576 [egg-sequelize](253ms) Executed (default): DROP TABLE IF EXISTS `secondOffices`;
+2019-08-16 20:29:24,453 INFO 15576 [egg-sequelize](198ms) Executed (default): DROP TABLE IF EXISTS `firstOffices`;
+2019-08-16 20:29:24,720 INFO 15576 [egg-sequelize](265ms) Executed (default): DROP TABLE IF EXISTS `buildings`;
+2019-08-16 20:29:24,897 INFO 15576 [egg-sequelize](175ms) Executed (default): DROP TABLE IF EXISTS `appkeys`;
+2019-08-16 20:29:24,953 INFO 15576 [egg-sequelize](53ms) Executed (default): DROP TABLE IF EXISTS `appkeys`;
+2019-08-16 20:29:26,138 INFO 15576 [egg-sequelize](1181ms) Executed (default): CREATE TABLE IF NOT EXISTS `appkeys` (`id` CHAR(36) BINARY NOT NULL , `code` VARCHAR(64), `expire_at` DATETIME, `is_auth` TINYINT(1) DEFAULT false, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:29:26,208 INFO 15576 [egg-sequelize](68ms) Executed (default): SHOW INDEX FROM `appkeys` FROM `hospital`
+2019-08-16 20:29:26,248 INFO 15576 [egg-sequelize](37ms) Executed (default): DROP TABLE IF EXISTS `buildings`;
+2019-08-16 20:29:26,615 INFO 15576 [egg-sequelize](364ms) Executed (default): CREATE TABLE IF NOT EXISTS `buildings` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `photoUrl` VARCHAR(256), `isMain` TINYINT(1) DEFAULT false, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:29:26,672 INFO 15576 [egg-sequelize](54ms) Executed (default): SHOW INDEX FROM `buildings` FROM `hospital`
+2019-08-16 20:29:26,719 INFO 15576 [egg-sequelize](45ms) Executed (default): DROP TABLE IF EXISTS `firstOffices`;
+2019-08-16 20:29:27,014 INFO 15576 [egg-sequelize](292ms) Executed (default): CREATE TABLE IF NOT EXISTS `firstOffices` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:29:27,061 INFO 15576 [egg-sequelize](44ms) Executed (default): SHOW INDEX FROM `firstOffices` FROM `hospital`
+2019-08-16 20:29:27,094 INFO 15576 [egg-sequelize](31ms) Executed (default): DROP TABLE IF EXISTS `secondOffices`;
+2019-08-16 20:29:27,470 INFO 15576 [egg-sequelize](373ms) Executed (default): CREATE TABLE IF NOT EXISTS `secondOffices` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `firstOfficeId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`firstOfficeId`) REFERENCES `firstOffices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:29:27,539 INFO 15576 [egg-sequelize](67ms) Executed (default): SHOW INDEX FROM `secondOffices` FROM `hospital`
+2019-08-16 20:29:27,569 INFO 15576 [egg-sequelize](27ms) Executed (default): DROP TABLE IF EXISTS `doctors`;
+2019-08-16 20:29:27,991 INFO 15576 [egg-sequelize](419ms) Executed (default): CREATE TABLE IF NOT EXISTS `doctors` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `avatarUrl` VARCHAR(256), `gender` INTEGER, `post` VARCHAR(25), `title` VARCHAR(25), `resume` TEXT, `concurrent` TEXT, `achievement` TEXT, `speciality` TEXT, `secondOfficeId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`secondOfficeId`) REFERENCES `secondOffices` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:29:28,071 INFO 15576 [egg-sequelize](77ms) Executed (default): SHOW INDEX FROM `doctors` FROM `hospital`
+2019-08-16 20:29:28,102 INFO 15576 [egg-sequelize](29ms) Executed (default): DROP TABLE IF EXISTS `introductions`;
+2019-08-16 20:29:28,401 INFO 15576 [egg-sequelize](296ms) Executed (default): CREATE TABLE IF NOT EXISTS `introductions` (`id` CHAR(36) BINARY NOT NULL , `message` VARCHAR(25), `description` TEXT, `photoId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:29:28,459 INFO 15576 [egg-sequelize](55ms) Executed (default): SHOW INDEX FROM `introductions` FROM `hospital`
+2019-08-16 20:29:28,490 INFO 15576 [egg-sequelize](29ms) Executed (default): DROP TABLE IF EXISTS `files`;
+2019-08-16 20:29:28,957 INFO 15576 [egg-sequelize](463ms) Executed (default): CREATE TABLE IF NOT EXISTS `files` (`id` CHAR(36) BINARY NOT NULL , `filename` VARCHAR(64), `extname` VARCHAR(64), `relativePath` VARCHAR(256), `absolutePath` VARCHAR(256), `createdAt` DATETIME, `photoId` CHAR(36) BINARY, PRIMARY KEY (`id`), FOREIGN KEY (`photoId`) REFERENCES `introductions` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:29:29,037 INFO 15576 [egg-sequelize](78ms) Executed (default): SHOW INDEX FROM `files` FROM `hospital`
+2019-08-16 20:29:29,069 INFO 15576 [egg-sequelize](30ms) Executed (default): DROP TABLE IF EXISTS `floors`;
+2019-08-16 20:29:29,434 INFO 15576 [egg-sequelize](362ms) Executed (default): CREATE TABLE IF NOT EXISTS `floors` (`id` CHAR(36) BINARY NOT NULL , `name` INTEGER, `photoUrl` VARCHAR(256), `buildingId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`buildingId`) REFERENCES `buildings` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:29:29,559 INFO 15576 [egg-sequelize](122ms) Executed (default): SHOW INDEX FROM `floors` FROM `hospital`
+2019-08-16 20:29:29,588 INFO 15576 [egg-sequelize](27ms) Executed (default): DROP TABLE IF EXISTS `roles`;
+2019-08-16 20:29:29,890 INFO 15576 [egg-sequelize](299ms) Executed (default): CREATE TABLE IF NOT EXISTS `roles` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25) NOT NULL, `description` VARCHAR(200), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:29:29,935 INFO 15576 [egg-sequelize](42ms) Executed (default): SHOW INDEX FROM `roles` FROM `hospital`
+2019-08-16 20:29:29,966 INFO 15576 [egg-sequelize](29ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-08-16 20:29:30,612 INFO 15576 [egg-sequelize](644ms) Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` CHAR(36) BINARY NOT NULL , `username` VARCHAR(30) NOT NULL UNIQUE, `password` VARCHAR(60) NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME, `role_id` CHAR(36) BINARY, PRIMARY KEY (`id`), FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:29:30,723 INFO 15576 [egg-sequelize](109ms) Executed (default): SHOW INDEX FROM `users` FROM `hospital`
+2019-08-16 20:29:30,753 INFO 15576 [egg-sequelize](27ms) Executed (default): DROP TABLE IF EXISTS `workInformations`;
+2019-08-16 20:29:31,145 INFO 15576 [egg-sequelize](388ms) Executed (default): CREATE TABLE IF NOT EXISTS `workInformations` (`id` CHAR(36) BINARY NOT NULL , `department` VARCHAR(25), `registerType` VARCHAR(25), `date` DATETIME, `classes` VARCHAR(25), `remaining` INTEGER, `doctorId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`doctorId`) REFERENCES `doctors` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:29:31,212 INFO 15576 [egg-sequelize](65ms) Executed (default): SHOW INDEX FROM `workInformations` FROM `hospital`
+2019-08-16 20:29:31,275 INFO 15576 [egg-sequelize](58ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (1,'超级管理员','超级管理员, 最高管理权限');
+2019-08-16 20:29:31,366 INFO 15576 [egg-sequelize](87ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (2,'管理员','普通管理员');
+2019-08-16 20:29:31,565 INFO 15576 [egg-sequelize](195ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (3,'普通用户','普通用户');
+2019-08-16 20:29:35,737 INFO 15576 [egg-sequelize](95ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');
+2019-08-16 20:29:35,814 INFO 15576 [egg-sequelize](72ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (2,'外科');
+2019-08-16 20:29:35,903 INFO 15576 [egg-sequelize](85ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (3,'医技科室');
+2019-08-16 20:29:35,992 INFO 15576 [egg-sequelize](85ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (1,'心血管内一科',1);
+2019-08-16 20:29:36,081 INFO 15576 [egg-sequelize](86ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (2,'消化内科',1);
+2019-08-16 20:29:36,169 INFO 15576 [egg-sequelize](84ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (3,'胃肠疝外科',2);
+2019-08-16 20:29:36,270 INFO 15576 [egg-sequelize](97ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (4,'康复医学科',3);
+2019-08-16 20:29:36,346 INFO 15576 [egg-sequelize](72ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES (1,'曾康华',2,'副院长','主任医师 、教授','南昌大学硕士生导师、心脏康复学科带头人、江西省政府特殊津贴专家、赣州市政府特殊津贴专家、赣南医学院兼职教授、全国“五一”劳动奖章获得者、江西省人大代表、赣州市“十佳”医务工作者。','中国心脏联盟委员、江西省康复医学会常委、赣州市康复医学会会长、赣州市康复医学会心血管专业委员会主委、赣州市医学会心血管专业委员会副主委。','完成省市级课题多项，多项成果获市科技进步奖。','在冠心病、高血压、心衰的诊断治疗上积累了丰富经验，率先在市级医院开展心脏康复，创建赣州市人民医院心脏康复亚专业。',1);
+2019-08-16 20:29:36,468 INFO 15576 [egg-sequelize](70ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES (2,'罗骏',1,'党委委员、副院长、心血管内一科主任','主任医师 、教授','博士后，硕士研究生导师，曾在南京医科大学附属南京市第一医院和江西省人民医院长期工作并担任科室主任助理和副主任。曾在美国杜克大学和UCLA大学研修，从事心内科临床工作近三十年在心血管疑难危重病人抢救上积累了丰富的经验。','从事心血管临床工作三十余年，在心脏介入和心血管疑难危重病人诊治上积累了丰富的经验。擅长各种心脏病介入治疗，特别是在复杂冠心病支架术，复杂心律失常射频消融术，三腔起搏器植入及主动脉夹层经皮腔内隔绝等心脏介入治疗上积累丰富经验，年介入量千余台。较早开展房颤射频消融、经桡动脉冠脉介入、主动脉夹层介入治疗，指导省内外数十家医院开展心脏介入治疗。率先在赣州地区独立开展房颤的射频消融治疗、房颤的冷冻消融、左心耳封堵、零X线射频消融、无内腔起搏电极植入、FFR等介入技术。','主持国家自然基金、省自然基金等课题十余项，发表国家级论文数十篇，获市级科技成果奖多项，指导硕士研究生十余人。','硕士生导师、江西省百千万人才工程人选、江西省卫生计生系统有突出贡献中青年专家、江西省卫生系统学术和技术带头人培养对象、中国老年医学会心血管分会委员、江西省生物医学工程学会起博与电生理分会常委兼副秘书长、江西省心血管分会房颤工作组副组长、赣州医学会心血管分会副主任委员。',1);
+2019-08-16 20:29:36,557 INFO 15576 [egg-sequelize](70ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`post`,`title`,`resume`,`concurrent`,`speciality`,`secondOfficeId`) VALUES (3,'汤建华',1,'主任','主任医师','1986年参加工作，消化专业研究生毕业，获医学硕士学位。一直从事消化内科临床及内镜工作。','江西省肝病学会委员、江西省胃癌学会委员、赣州市消化病学会常委。','长期从事临床消化及内镜工作，理论扎实，经验丰富，擅长于消化系危、急、重症及疑难病例诊治，对消化系统常见病、多发病如食管疾病、胃肠疾病、胰腺病、慢性肝病的诊治有独到之处，熟练掌握上消化道内窥镜诊断及治疗操作，尤其是胆、胰疾病内镜下诊疗如胆管结石、胆管肿瘤、梗阻性黄疸、急慢性胰腺炎、胰腺囊肿、胰腺肿瘤、胰管结石等。',2);
+2019-08-16 20:29:36,646 INFO 15576 [egg-sequelize](84ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES ('8264ab00c02111e98d1aedbfb3730a9b','陈友佳',1,'党委委员、工会主席','主任医师','心脏重症学科带头人，中共党员，现任赣州市人民医院党委委员、工会主席。1993年7月毕业于赣南医学院；历任赣州市人民医院介入导管科副主任、放射介入科主任、心血管内科副主任（正科级）、门诊部主任兼心血管内科副主任、医务部主任兼心血管内科副主任；2017年9月起任赣州市人民医院工会主席。','较早在赣州开展介入治疗，在介入和心脏重症救治上积累了丰富经验，特别擅长外周血管和冠心病的介入治疗及危重患者的抢救。','江西省研究性医学会医疗分会副主任委员、江西省心血管专业委员会高血压学组成员、江西省介入心脏病学会第一届理事、赣州市医学会心血管分会常委。','完成省市级课题多项。',2);
+2019-08-16 20:29:36,735 INFO 15576 [egg-sequelize](73ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES ('8273c630c02111e98d1aedbfb3730a9b','陈仁华',1,'副主任医师','医学博士，心血管病专业，毕业于上海交通大学，副主任医师，从事心血管专业临床工作近20年，从事心血管介入诊疗10余年。先后在河北医科大学第一附属医院、南昌大学第一附属医院、首都医科大学附属安贞医院、上海交通大学附属新华医院、上海复旦大学附属中山医院进修、访问或学习，发表SCI论文多篇，理论知识扎实，临床经验丰富','擅长心血管系统危、急、重症抢救(如急性心肌梗死的急诊介入治疗和恶性心律失常的治疗)及疑难病例诊治；对心脏介入治疗如冠心病的支架植入治疗，大动脉夹层的覆膜支架腔内隔绝术等有很高的造诣，尤其擅长心律失常的诊治，如阵发性室上性心动过速、房性心动过速、心房颤动、室性早搏、室性心动速的射频消融治疗，心动过缓，病态窦房结综合征的起搏器植入治疗等。','赣州市心血管专业委员会委员。','主持江西省卫生与计划委员课题一项，完成赣州市科技局课题二项。近年来发表SCI论文多篇。',1);
+2019-08-16 20:29:36,835 INFO 15576 [egg-sequelize](93ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`title`,`resume`,`concurrent`,`achievement`,`secondOfficeId`) VALUES ('827fd420c02111e98d1aedbfb3730a9b','袁文金',1,'主任医师','冠心病学科带头人，西部之光访问学者。1990年9月—1995年7月就读于江西赣南医学院临床医学系，获医学学士； 2000年9月—2003年7月就读于广东汕头大学医学院，获医学硕士（内科学）；2005年11月在北京大学人民医院参加第16届高级心脏电生理学习班','曾赴意大利进修学习，从事临床工作二十余年，在各种心脏介入治疗和危重病人抢救上积累了丰富的经验，擅长冠心病的介入治疗，特别是复杂冠心病的介入治疗。','赣州市心血管专业委员会委员。',1);
+2019-08-16 20:29:36,923 INFO 15576 [egg-sequelize](84ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`title`,`concurrent`,`secondOfficeId`) VALUES ('828eef50c02111e98d1aedbfb3730a9b','王诚高',1,'副主任医师','临床规培医师导师，从事冠心病、高血压病、高脂血症、心肌病、心律失常、先心病等心血管疾病诊断及治疗，在冠心病、高血压病、高脂血症、心肌病方面拥有丰富经验，擅长冠心病的介入手术治疗',1);
+2019-08-16 20:29:37,012 INFO 15576 [egg-sequelize](84ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`title`,`secondOfficeId`) VALUES ('829c83e0c02111e98d1aedbfb3730a9b','谢绍峰',1,'副主任医师',1);
+2019-08-16 20:29:37,101 INFO 15576 [egg-sequelize](85ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (1,'心血管内一科门诊（南院）','正高号',NULL,'上午',20,1);
+2019-08-16 20:29:37,189 INFO 15576 [egg-sequelize](84ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (2,'心血管内一科门诊（南院）','正高号',NULL,'下午',19,1);
+2019-08-16 20:29:37,278 INFO 15576 [egg-sequelize](84ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (3,'心血管内一科门诊（南院）','正高号',NULL,'上午',20,2);
+2019-08-16 20:40:12,327 INFO 12988 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 20:40:23,966 INFO 368 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 20:40:26,608 INFO 2300 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 20:40:30,491 INFO 4608 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 20:40:35,274 INFO 4608 [egg-sequelize](438ms) Executed (default): DROP TABLE IF EXISTS `workInformations`;
+2019-08-16 20:40:35,474 INFO 4608 [egg-sequelize](198ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-08-16 20:40:35,756 INFO 4608 [egg-sequelize](281ms) Executed (default): DROP TABLE IF EXISTS `roles`;
+2019-08-16 20:40:35,927 INFO 4608 [egg-sequelize](169ms) Executed (default): DROP TABLE IF EXISTS `floors`;
+2019-08-16 20:40:36,138 INFO 4608 [egg-sequelize](209ms) Executed (default): DROP TABLE IF EXISTS `files`;
+2019-08-16 20:40:36,317 INFO 4608 [egg-sequelize](177ms) Executed (default): DROP TABLE IF EXISTS `introductions`;
+2019-08-16 20:40:36,495 INFO 4608 [egg-sequelize](176ms) Executed (default): DROP TABLE IF EXISTS `doctors`;
+2019-08-16 20:40:36,770 INFO 4608 [egg-sequelize](273ms) Executed (default): DROP TABLE IF EXISTS `secondOffices`;
+2019-08-16 20:40:36,925 INFO 4608 [egg-sequelize](154ms) Executed (default): DROP TABLE IF EXISTS `firstOffices`;
+2019-08-16 20:40:37,092 INFO 4608 [egg-sequelize](165ms) Executed (default): DROP TABLE IF EXISTS `buildings`;
+2019-08-16 20:40:37,582 INFO 4608 [egg-sequelize](489ms) Executed (default): DROP TABLE IF EXISTS `appkeys`;
+2019-08-16 20:40:37,613 INFO 4608 [egg-sequelize](28ms) Executed (default): DROP TABLE IF EXISTS `appkeys`;
+2019-08-16 20:40:38,201 INFO 4608 [egg-sequelize](583ms) Executed (default): CREATE TABLE IF NOT EXISTS `appkeys` (`id` CHAR(36) BINARY NOT NULL , `code` VARCHAR(64), `expire_at` DATETIME, `is_auth` TINYINT(1) DEFAULT false, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:40:38,258 INFO 4608 [egg-sequelize](55ms) Executed (default): SHOW INDEX FROM `appkeys` FROM `hospital`
+2019-08-16 20:40:38,289 INFO 4608 [egg-sequelize](28ms) Executed (default): DROP TABLE IF EXISTS `buildings`;
+2019-08-16 20:40:38,645 INFO 4608 [egg-sequelize](354ms) Executed (default): CREATE TABLE IF NOT EXISTS `buildings` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `photoUrl` VARCHAR(256), `isMain` TINYINT(1) DEFAULT false, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:40:38,701 INFO 4608 [egg-sequelize](54ms) Executed (default): SHOW INDEX FROM `buildings` FROM `hospital`
+2019-08-16 20:40:38,733 INFO 4608 [egg-sequelize](29ms) Executed (default): DROP TABLE IF EXISTS `firstOffices`;
+2019-08-16 20:40:39,045 INFO 4608 [egg-sequelize](310ms) Executed (default): CREATE TABLE IF NOT EXISTS `firstOffices` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:40:39,101 INFO 4608 [egg-sequelize](54ms) Executed (default): SHOW INDEX FROM `firstOffices` FROM `hospital`
+2019-08-16 20:40:39,143 INFO 4608 [egg-sequelize](40ms) Executed (default): DROP TABLE IF EXISTS `secondOffices`;
+2019-08-16 20:40:40,010 INFO 4608 [egg-sequelize](864ms) Executed (default): CREATE TABLE IF NOT EXISTS `secondOffices` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `firstOfficeId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`firstOfficeId`) REFERENCES `firstOffices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:40:40,103 INFO 4608 [egg-sequelize](91ms) Executed (default): SHOW INDEX FROM `secondOffices` FROM `hospital`
+2019-08-16 20:40:40,141 INFO 4608 [egg-sequelize](36ms) Executed (default): DROP TABLE IF EXISTS `doctors`;
+2019-08-16 20:40:40,730 INFO 4608 [egg-sequelize](586ms) Executed (default): CREATE TABLE IF NOT EXISTS `doctors` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `avatarUrl` VARCHAR(256), `gender` INTEGER, `post` VARCHAR(25), `title` VARCHAR(25), `resume` TEXT, `concurrent` TEXT, `achievement` TEXT, `speciality` TEXT, `secondOfficeId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`secondOfficeId`) REFERENCES `secondOffices` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:40:40,820 INFO 4608 [egg-sequelize](88ms) Executed (default): SHOW INDEX FROM `doctors` FROM `hospital`
+2019-08-16 20:40:40,851 INFO 4608 [egg-sequelize](29ms) Executed (default): DROP TABLE IF EXISTS `introductions`;
+2019-08-16 20:40:41,184 INFO 4608 [egg-sequelize](330ms) Executed (default): CREATE TABLE IF NOT EXISTS `introductions` (`id` CHAR(36) BINARY NOT NULL , `message` VARCHAR(25), `description` TEXT, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:40:41,247 INFO 4608 [egg-sequelize](61ms) Executed (default): SHOW INDEX FROM `introductions` FROM `hospital`
+2019-08-16 20:40:41,284 INFO 4608 [egg-sequelize](35ms) Executed (default): DROP TABLE IF EXISTS `files`;
+2019-08-16 20:40:41,862 INFO 4608 [egg-sequelize](576ms) Executed (default): CREATE TABLE IF NOT EXISTS `files` (`id` CHAR(36) BINARY NOT NULL , `filename` VARCHAR(64), `extname` VARCHAR(64), `relativePath` VARCHAR(256), `absolutePath` VARCHAR(256), `photoId` CHAR(36) BINARY NOT NULL, `createdAt` DATETIME, PRIMARY KEY (`id`), FOREIGN KEY (`photoId`) REFERENCES `introductions` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:40:41,974 INFO 4608 [egg-sequelize](110ms) Executed (default): SHOW INDEX FROM `files` FROM `hospital`
+2019-08-16 20:40:42,005 INFO 4608 [egg-sequelize](29ms) Executed (default): DROP TABLE IF EXISTS `floors`;
+2019-08-16 20:40:42,483 INFO 4608 [egg-sequelize](475ms) Executed (default): CREATE TABLE IF NOT EXISTS `floors` (`id` CHAR(36) BINARY NOT NULL , `name` INTEGER, `photoUrl` VARCHAR(256), `buildingId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`buildingId`) REFERENCES `buildings` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:40:42,629 INFO 4608 [egg-sequelize](144ms) Executed (default): SHOW INDEX FROM `floors` FROM `hospital`
+2019-08-16 20:40:42,660 INFO 4608 [egg-sequelize](29ms) Executed (default): DROP TABLE IF EXISTS `roles`;
+2019-08-16 20:40:42,993 INFO 4608 [egg-sequelize](331ms) Executed (default): CREATE TABLE IF NOT EXISTS `roles` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25) NOT NULL, `description` VARCHAR(200), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:40:43,046 INFO 4608 [egg-sequelize](51ms) Executed (default): SHOW INDEX FROM `roles` FROM `hospital`
+2019-08-16 20:40:43,082 INFO 4608 [egg-sequelize](34ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-08-16 20:40:43,670 INFO 4608 [egg-sequelize](585ms) Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` CHAR(36) BINARY NOT NULL , `username` VARCHAR(30) NOT NULL UNIQUE, `password` VARCHAR(60) NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME, `role_id` CHAR(36) BINARY, PRIMARY KEY (`id`), FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:40:43,768 INFO 4608 [egg-sequelize](96ms) Executed (default): SHOW INDEX FROM `users` FROM `hospital`
+2019-08-16 20:40:43,803 INFO 4608 [egg-sequelize](33ms) Executed (default): DROP TABLE IF EXISTS `workInformations`;
+2019-08-16 20:40:44,225 INFO 4608 [egg-sequelize](420ms) Executed (default): CREATE TABLE IF NOT EXISTS `workInformations` (`id` CHAR(36) BINARY NOT NULL , `department` VARCHAR(25), `registerType` VARCHAR(25), `date` DATETIME, `classes` VARCHAR(25), `remaining` INTEGER, `doctorId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`doctorId`) REFERENCES `doctors` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:40:44,305 INFO 4608 [egg-sequelize](77ms) Executed (default): SHOW INDEX FROM `workInformations` FROM `hospital`
+2019-08-16 20:40:44,369 INFO 4608 [egg-sequelize](54ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (1,'超级管理员','超级管理员, 最高管理权限');
+2019-08-16 20:40:44,458 INFO 4608 [egg-sequelize](84ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (2,'管理员','普通管理员');
+2019-08-16 20:40:44,594 INFO 4608 [egg-sequelize](131ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (3,'普通用户','普通用户');
+2019-08-16 20:40:48,865 INFO 4608 [egg-sequelize](221ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');
+2019-08-16 20:40:49,083 INFO 4608 [egg-sequelize](214ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (2,'外科');
+2019-08-16 20:40:49,162 INFO 4608 [egg-sequelize](76ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (3,'医技科室');
+2019-08-16 20:40:49,251 INFO 4608 [egg-sequelize](84ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (1,'心血管内一科',1);
+2019-08-16 20:40:49,351 INFO 4608 [egg-sequelize](96ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (2,'消化内科',1);
+2019-08-16 20:40:49,429 INFO 4608 [egg-sequelize](75ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (3,'胃肠疝外科',2);
+2019-08-16 20:40:49,517 INFO 4608 [egg-sequelize](85ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (4,'康复医学科',3);
+2019-08-16 20:40:49,606 INFO 4608 [egg-sequelize](84ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES (1,'曾康华',2,'副院长','主任医师 、教授','南昌大学硕士生导师、心脏康复学科带头人、江西省政府特殊津贴专家、赣州市政府特殊津贴专家、赣南医学院兼职教授、全国“五一”劳动奖章获得者、江西省人大代表、赣州市“十佳”医务工作者。','中国心脏联盟委员、江西省康复医学会常委、赣州市康复医学会会长、赣州市康复医学会心血管专业委员会主委、赣州市医学会心血管专业委员会副主委。','完成省市级课题多项，多项成果获市科技进步奖。','在冠心病、高血压、心衰的诊断治疗上积累了丰富经验，率先在市级医院开展心脏康复，创建赣州市人民医院心脏康复亚专业。',1);
+2019-08-16 20:40:49,741 INFO 4608 [egg-sequelize](130ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES (2,'罗骏',1,'党委委员、副院长、心血管内一科主任','主任医师 、教授','博士后，硕士研究生导师，曾在南京医科大学附属南京市第一医院和江西省人民医院长期工作并担任科室主任助理和副主任。曾在美国杜克大学和UCLA大学研修，从事心内科临床工作近三十年在心血管疑难危重病人抢救上积累了丰富的经验。','从事心血管临床工作三十余年，在心脏介入和心血管疑难危重病人诊治上积累了丰富的经验。擅长各种心脏病介入治疗，特别是在复杂冠心病支架术，复杂心律失常射频消融术，三腔起搏器植入及主动脉夹层经皮腔内隔绝等心脏介入治疗上积累丰富经验，年介入量千余台。较早开展房颤射频消融、经桡动脉冠脉介入、主动脉夹层介入治疗，指导省内外数十家医院开展心脏介入治疗。率先在赣州地区独立开展房颤的射频消融治疗、房颤的冷冻消融、左心耳封堵、零X线射频消融、无内腔起搏电极植入、FFR等介入技术。','主持国家自然基金、省自然基金等课题十余项，发表国家级论文数十篇，获市级科技成果奖多项，指导硕士研究生十余人。','硕士生导师、江西省百千万人才工程人选、江西省卫生计生系统有突出贡献中青年专家、江西省卫生系统学术和技术带头人培养对象、中国老年医学会心血管分会委员、江西省生物医学工程学会起博与电生理分会常委兼副秘书长、江西省心血管分会房颤工作组副组长、赣州医学会心血管分会副主任委员。',1);
+2019-08-16 20:40:49,817 INFO 4608 [egg-sequelize](60ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`post`,`title`,`resume`,`concurrent`,`speciality`,`secondOfficeId`) VALUES (3,'汤建华',1,'主任','主任医师','1986年参加工作，消化专业研究生毕业，获医学硕士学位。一直从事消化内科临床及内镜工作。','江西省肝病学会委员、江西省胃癌学会委员、赣州市消化病学会常委。','长期从事临床消化及内镜工作，理论扎实，经验丰富，擅长于消化系危、急、重症及疑难病例诊治，对消化系统常见病、多发病如食管疾病、胃肠疾病、胰腺病、慢性肝病的诊治有独到之处，熟练掌握上消化道内窥镜诊断及治疗操作，尤其是胆、胰疾病内镜下诊疗如胆管结石、胆管肿瘤、梗阻性黄疸、急慢性胰腺炎、胰腺囊肿、胰腺肿瘤、胰管结石等。',2);
+2019-08-16 20:40:49,906 INFO 4608 [egg-sequelize](84ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES ('13affdc0c02311e99eff37f7f3312713','陈友佳',1,'党委委员、工会主席','主任医师','心脏重症学科带头人，中共党员，现任赣州市人民医院党委委员、工会主席。1993年7月毕业于赣南医学院；历任赣州市人民医院介入导管科副主任、放射介入科主任、心血管内科副主任（正科级）、门诊部主任兼心血管内科副主任、医务部主任兼心血管内科副主任；2017年9月起任赣州市人民医院工会主席。','较早在赣州开展介入治疗，在介入和心脏重症救治上积累了丰富经验，特别擅长外周血管和冠心病的介入治疗及危重患者的抢救。','江西省研究性医学会医疗分会副主任委员、江西省心血管专业委员会高血压学组成员、江西省介入心脏病学会第一届理事、赣州市医学会心血管分会常委。','完成省市级课题多项。',2);
+2019-08-16 20:40:49,994 INFO 4608 [egg-sequelize](73ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES ('13bf18f0c02311e99eff37f7f3312713','陈仁华',1,'副主任医师','医学博士，心血管病专业，毕业于上海交通大学，副主任医师，从事心血管专业临床工作近20年，从事心血管介入诊疗10余年。先后在河北医科大学第一附属医院、南昌大学第一附属医院、首都医科大学附属安贞医院、上海交通大学附属新华医院、上海复旦大学附属中山医院进修、访问或学习，发表SCI论文多篇，理论知识扎实，临床经验丰富','擅长心血管系统危、急、重症抢救(如急性心肌梗死的急诊介入治疗和恶性心律失常的治疗)及疑难病例诊治；对心脏介入治疗如冠心病的支架植入治疗，大动脉夹层的覆膜支架腔内隔绝术等有很高的造诣，尤其擅长心律失常的诊治，如阵发性室上性心动过速、房性心动过速、心房颤动、室性早搏、室性心动速的射频消融治疗，心动过缓，病态窦房结综合征的起搏器植入治疗等。','赣州市心血管专业委员会委员。','主持江西省卫生与计划委员课题一项，完成赣州市科技局课题二项。近年来发表SCI论文多篇。',1);
+2019-08-16 20:40:50,094 INFO 4608 [egg-sequelize](85ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`title`,`resume`,`concurrent`,`achievement`,`secondOfficeId`) VALUES ('13cc8670c02311e99eff37f7f3312713','袁文金',1,'主任医师','冠心病学科带头人，西部之光访问学者。1990年9月—1995年7月就读于江西赣南医学院临床医学系，获医学学士； 2000年9月—2003年7月就读于广东汕头大学医学院，获医学硕士（内科学）；2005年11月在北京大学人民医院参加第16届高级心脏电生理学习班','曾赴意大利进修学习，从事临床工作二十余年，在各种心脏介入治疗和危重病人抢救上积累了丰富的经验，擅长冠心病的介入治疗，特别是复杂冠心病的介入治疗。','赣州市心血管专业委员会委员。',1);
+2019-08-16 20:40:50,194 INFO 4608 [egg-sequelize](96ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`title`,`concurrent`,`secondOfficeId`) VALUES ('13da1b00c02311e99eff37f7f3312713','王诚高',1,'副主任医师','临床规培医师导师，从事冠心病、高血压病、高脂血症、心肌病、心律失常、先心病等心血管疾病诊断及治疗，在冠心病、高血压病、高脂血症、心肌病方面拥有丰富经验，擅长冠心病的介入手术治疗',1);
+2019-08-16 20:40:50,283 INFO 4608 [egg-sequelize](85ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`gender`,`title`,`secondOfficeId`) VALUES ('13e95d40c02311e99eff37f7f3312713','谢绍峰',1,'副主任医师',1);
+2019-08-16 20:40:50,372 INFO 4608 [egg-sequelize](85ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (1,'心血管内一科门诊（南院）','正高号',NULL,'上午',20,1);
+2019-08-16 20:40:50,461 INFO 4608 [egg-sequelize](84ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (2,'心血管内一科门诊（南院）','正高号',NULL,'下午',19,1);
+2019-08-16 20:40:50,549 INFO 4608 [egg-sequelize](84ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (3,'心血管内一科门诊（南院）','正高号',NULL,'上午',20,2);
+2019-08-16 20:43:54,090 INFO 5436 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 20:44:01,021 INFO 2848 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 20:45:19,451 INFO 2848 [egg-sequelize](1ms) Executed (7774bce9-a6c4-4b6a-9152-0e3f041a799f): START TRANSACTION;
+2019-08-16 20:45:19,463 INFO 2848 [egg-sequelize](1ms) Executed (7774bce9-a6c4-4b6a-9152-0e3f041a799f): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`secondOfficeId`) VALUES ('b466b8d0c02311e9a5671982570ed1cf','test','\\public\\image\\doctor\\face\\1565959523612.jpg','1');
+2019-08-16 20:45:19,628 INFO 2848 [egg-sequelize](153ms) Executed (7774bce9-a6c4-4b6a-9152-0e3f041a799f): COMMIT;
+2019-08-16 20:46:27,027 INFO 10332 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 20:46:43,564 INFO 10332 [egg-sequelize](399ms) Executed (default): DROP TABLE IF EXISTS `workInformations`;
+2019-08-16 20:46:43,771 INFO 10332 [egg-sequelize](204ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-08-16 20:46:44,063 INFO 10332 [egg-sequelize](290ms) Executed (default): DROP TABLE IF EXISTS `roles`;
+2019-08-16 20:46:44,262 INFO 10332 [egg-sequelize](197ms) Executed (default): DROP TABLE IF EXISTS `floors`;
+2019-08-16 20:46:44,573 INFO 10332 [egg-sequelize](309ms) Executed (default): DROP TABLE IF EXISTS `files`;
+2019-08-16 20:46:44,736 INFO 10332 [egg-sequelize](162ms) Executed (default): DROP TABLE IF EXISTS `introductions`;
+2019-08-16 20:46:44,981 INFO 10332 [egg-sequelize](243ms) Executed (default): DROP TABLE IF EXISTS `doctors`;
+2019-08-16 20:46:45,236 INFO 10332 [egg-sequelize](253ms) Executed (default): DROP TABLE IF EXISTS `secondOffices`;
+2019-08-16 20:46:45,438 INFO 10332 [egg-sequelize](200ms) Executed (default): DROP TABLE IF EXISTS `firstOffices`;
+2019-08-16 20:46:45,625 INFO 10332 [egg-sequelize](185ms) Executed (default): DROP TABLE IF EXISTS `buildings`;
+2019-08-16 20:46:45,927 INFO 10332 [egg-sequelize](300ms) Executed (default): DROP TABLE IF EXISTS `appkeys`;
+2019-08-16 20:46:45,969 INFO 10332 [egg-sequelize](38ms) Executed (default): DROP TABLE IF EXISTS `appkeys`;
+2019-08-16 20:46:46,391 INFO 10332 [egg-sequelize](416ms) Executed (default): CREATE TABLE IF NOT EXISTS `appkeys` (`id` CHAR(36) BINARY NOT NULL , `code` VARCHAR(64), `expire_at` DATETIME, `is_auth` TINYINT(1) DEFAULT false, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:46:46,447 INFO 10332 [egg-sequelize](53ms) Executed (default): SHOW INDEX FROM `appkeys` FROM `hospital`
+2019-08-16 20:46:46,482 INFO 10332 [egg-sequelize](31ms) Executed (default): DROP TABLE IF EXISTS `buildings`;
+2019-08-16 20:46:46,791 INFO 10332 [egg-sequelize](307ms) Executed (default): CREATE TABLE IF NOT EXISTS `buildings` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `photoUrl` VARCHAR(256), `isMain` TINYINT(1) DEFAULT false, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:46:46,855 INFO 10332 [egg-sequelize](62ms) Executed (default): SHOW INDEX FROM `buildings` FROM `hospital`
+2019-08-16 20:46:46,924 INFO 10332 [egg-sequelize](67ms) Executed (default): DROP TABLE IF EXISTS `firstOffices`;
+2019-08-16 20:46:47,292 INFO 10332 [egg-sequelize](366ms) Executed (default): CREATE TABLE IF NOT EXISTS `firstOffices` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:46:47,359 INFO 10332 [egg-sequelize](65ms) Executed (default): SHOW INDEX FROM `firstOffices` FROM `hospital`
+2019-08-16 20:46:47,390 INFO 10332 [egg-sequelize](29ms) Executed (default): DROP TABLE IF EXISTS `secondOffices`;
+2019-08-16 20:46:47,812 INFO 10332 [egg-sequelize](420ms) Executed (default): CREATE TABLE IF NOT EXISTS `secondOffices` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `firstOfficeId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`firstOfficeId`) REFERENCES `firstOffices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:46:47,911 INFO 10332 [egg-sequelize](97ms) Executed (default): SHOW INDEX FROM `secondOffices` FROM `hospital`
+2019-08-16 20:46:47,946 INFO 10332 [egg-sequelize](33ms) Executed (default): DROP TABLE IF EXISTS `doctors`;
+2019-08-16 20:46:48,345 INFO 10332 [egg-sequelize](396ms) Executed (default): CREATE TABLE IF NOT EXISTS `doctors` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `avatarUrl` VARCHAR(256), `gender` INTEGER, `post` VARCHAR(25), `title` VARCHAR(25), `resume` TEXT, `concurrent` TEXT, `achievement` TEXT, `speciality` TEXT, `secondOfficeId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`secondOfficeId`) REFERENCES `secondOffices` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:46:48,424 INFO 10332 [egg-sequelize](76ms) Executed (default): SHOW INDEX FROM `doctors` FROM `hospital`
+2019-08-16 20:46:48,455 INFO 10332 [egg-sequelize](29ms) Executed (default): DROP TABLE IF EXISTS `introductions`;
+2019-08-16 20:46:48,788 INFO 10332 [egg-sequelize](331ms) Executed (default): CREATE TABLE IF NOT EXISTS `introductions` (`id` CHAR(36) BINARY NOT NULL , `message` VARCHAR(25), `description` TEXT, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:46:48,879 INFO 10332 [egg-sequelize](89ms) Executed (default): SHOW INDEX FROM `introductions` FROM `hospital`
+2019-08-16 20:46:48,921 INFO 10332 [egg-sequelize](40ms) Executed (default): DROP TABLE IF EXISTS `files`;
+2019-08-16 20:46:49,332 INFO 10332 [egg-sequelize](409ms) Executed (default): CREATE TABLE IF NOT EXISTS `files` (`id` CHAR(36) BINARY NOT NULL , `filename` VARCHAR(64), `extname` VARCHAR(64), `relativePath` VARCHAR(256), `absolutePath` VARCHAR(256), `photoId` CHAR(36) BINARY NOT NULL, `createdAt` DATETIME, PRIMARY KEY (`id`), FOREIGN KEY (`photoId`) REFERENCES `introductions` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:46:49,411 INFO 10332 [egg-sequelize](77ms) Executed (default): SHOW INDEX FROM `files` FROM `hospital`
+2019-08-16 20:46:49,442 INFO 10332 [egg-sequelize](28ms) Executed (default): DROP TABLE IF EXISTS `floors`;
+2019-08-16 20:46:49,878 INFO 10332 [egg-sequelize](433ms) Executed (default): CREATE TABLE IF NOT EXISTS `floors` (`id` CHAR(36) BINARY NOT NULL , `name` INTEGER, `photoUrl` VARCHAR(256), `buildingId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`buildingId`) REFERENCES `buildings` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:46:49,932 INFO 10332 [egg-sequelize](51ms) Executed (default): SHOW INDEX FROM `floors` FROM `hospital`
+2019-08-16 20:46:49,966 INFO 10332 [egg-sequelize](32ms) Executed (default): DROP TABLE IF EXISTS `roles`;
+2019-08-16 20:46:50,241 INFO 10332 [egg-sequelize](272ms) Executed (default): CREATE TABLE IF NOT EXISTS `roles` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25) NOT NULL, `description` VARCHAR(200), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 20:46:50,298 INFO 10332 [egg-sequelize](54ms) Executed (default): SHOW INDEX FROM `roles` FROM `hospital`
+2019-08-16 20:46:50,332 INFO 10332 [egg-sequelize](33ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-08-16 20:46:50,786 INFO 10332 [egg-sequelize](450ms) Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` CHAR(36) BINARY NOT NULL , `username` VARCHAR(30) NOT NULL UNIQUE, `password` VARCHAR(60) NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME, `role_id` CHAR(36) BINARY, PRIMARY KEY (`id`), FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:46:50,931 INFO 10332 [egg-sequelize](142ms) Executed (default): SHOW INDEX FROM `users` FROM `hospital`
+2019-08-16 20:46:50,964 INFO 10332 [egg-sequelize](31ms) Executed (default): DROP TABLE IF EXISTS `workInformations`;
+2019-08-16 20:46:51,341 INFO 10332 [egg-sequelize](375ms) Executed (default): CREATE TABLE IF NOT EXISTS `workInformations` (`id` CHAR(36) BINARY NOT NULL , `department` VARCHAR(25), `registerType` VARCHAR(25), `date` DATETIME, `classes` VARCHAR(25), `remaining` INTEGER, `doctorId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`doctorId`) REFERENCES `doctors` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 20:46:51,431 INFO 10332 [egg-sequelize](88ms) Executed (default): SHOW INDEX FROM `workInformations` FROM `hospital`
+2019-08-16 20:46:51,495 INFO 10332 [egg-sequelize](54ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (1,'超级管理员','超级管理员, 最高管理权限');
+2019-08-16 20:46:51,584 INFO 10332 [egg-sequelize](84ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (2,'管理员','普通管理员');
+2019-08-16 20:46:51,674 INFO 10332 [egg-sequelize](86ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (3,'普通用户','普通用户');
+2019-08-16 20:46:55,190 INFO 10332 [egg-sequelize](98ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');
+2019-08-16 20:46:55,279 INFO 10332 [egg-sequelize](85ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (2,'外科');
+2019-08-16 20:46:55,367 INFO 10332 [egg-sequelize](84ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (3,'医技科室');
+2019-08-16 20:46:55,469 INFO 10332 [egg-sequelize](96ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (1,'心血管内一科',1);
+2019-08-16 20:46:55,591 INFO 10332 [egg-sequelize](118ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (2,'消化内科',1);
+2019-08-16 20:46:55,700 INFO 10332 [egg-sequelize](106ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (3,'胃肠疝外科',2);
+2019-08-16 20:46:55,822 INFO 10332 [egg-sequelize](118ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (4,'康复医学科',3);
+2019-08-16 20:46:56,012 INFO 10332 [egg-sequelize](184ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES (1,'曾康华','\\public\\image\\doctor\\face\\doctor.jpg',2,'副院长','主任医师 、教授','南昌大学硕士生导师、心脏康复学科带头人、江西省政府特殊津贴专家、赣州市政府特殊津贴专家、赣南医学院兼职教授、全国“五一”劳动奖章获得者、江西省人大代表、赣州市“十佳”医务工作者。','中国心脏联盟委员、江西省康复医学会常委、赣州市康复医学会会长、赣州市康复医学会心血管专业委员会主委、赣州市医学会心血管专业委员会副主委。','完成省市级课题多项，多项成果获市科技进步奖。','在冠心病、高血压、心衰的诊断治疗上积累了丰富经验，率先在市级医院开展心脏康复，创建赣州市人民医院心脏康复亚专业。',1);
+2019-08-16 20:46:56,272 INFO 10332 [egg-sequelize](255ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES (2,'罗骏','\\public\\image\\doctor\\face\\doctor.jpg',1,'党委委员、副院长、心血管内一科主任','主任医师 、教授','博士后，硕士研究生导师，曾在南京医科大学附属南京市第一医院和江西省人民医院长期工作并担任科室主任助理和副主任。曾在美国杜克大学和UCLA大学研修，从事心内科临床工作近三十年在心血管疑难危重病人抢救上积累了丰富的经验。','从事心血管临床工作三十余年，在心脏介入和心血管疑难危重病人诊治上积累了丰富的经验。擅长各种心脏病介入治疗，特别是在复杂冠心病支架术，复杂心律失常射频消融术，三腔起搏器植入及主动脉夹层经皮腔内隔绝等心脏介入治疗上积累丰富经验，年介入量千余台。较早开展房颤射频消融、经桡动脉冠脉介入、主动脉夹层介入治疗，指导省内外数十家医院开展心脏介入治疗。率先在赣州地区独立开展房颤的射频消融治疗、房颤的冷冻消融、左心耳封堵、零X线射频消融、无内腔起搏电极植入、FFR等介入技术。','主持国家自然基金、省自然基金等课题十余项，发表国家级论文数十篇，获市级科技成果奖多项，指导硕士研究生十余人。','硕士生导师、江西省百千万人才工程人选、江西省卫生计生系统有突出贡献中青年专家、江西省卫生系统学术和技术带头人培养对象、中国老年医学会心血管分会委员、江西省生物医学工程学会起博与电生理分会常委兼副秘书长、江西省心血管分会房颤工作组副组长、赣州医学会心血管分会副主任委员。',1);
+2019-08-16 20:46:56,470 INFO 10332 [egg-sequelize](163ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`post`,`title`,`resume`,`concurrent`,`speciality`,`secondOfficeId`) VALUES (3,'汤建华','\\public\\image\\doctor\\face\\doctor.jpg',1,'主任','主任医师','1986年参加工作，消化专业研究生毕业，获医学硕士学位。一直从事消化内科临床及内镜工作。','江西省肝病学会委员、江西省胃癌学会委员、赣州市消化病学会常委。','长期从事临床消化及内镜工作，理论扎实，经验丰富，擅长于消化系危、急、重症及疑难病例诊治，对消化系统常见病、多发病如食管疾病、胃肠疾病、胰腺病、慢性肝病的诊治有独到之处，熟练掌握上消化道内窥镜诊断及治疗操作，尤其是胆、胰疾病内镜下诊疗如胆管结石、胆管肿瘤、梗阻性黄疸、急慢性胰腺炎、胰腺囊肿、胰腺肿瘤、胰管结石等。',2);
+2019-08-16 20:46:56,583 INFO 10332 [egg-sequelize](75ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES ('ee3fae90c02311e984b821d4a7de2e2f','陈友佳','\\public\\image\\doctor\\face\\doctor.jpg',1,'党委委员、工会主席','主任医师','心脏重症学科带头人，中共党员，现任赣州市人民医院党委委员、工会主席。1993年7月毕业于赣南医学院；历任赣州市人民医院介入导管科副主任、放射介入科主任、心血管内科副主任（正科级）、门诊部主任兼心血管内科副主任、医务部主任兼心血管内科副主任；2017年9月起任赣州市人民医院工会主席。','较早在赣州开展介入治疗，在介入和心脏重症救治上积累了丰富经验，特别擅长外周血管和冠心病的介入治疗及危重患者的抢救。','江西省研究性医学会医疗分会副主任委员、江西省心血管专业委员会高血压学组成员、江西省介入心脏病学会第一届理事、赣州市医学会心血管分会常委。','完成省市级课题多项。',2);
+2019-08-16 20:46:56,716 INFO 10332 [egg-sequelize](127ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES ('ee4c31b0c02311e984b821d4a7de2e2f','陈仁华','\\public\\image\\doctor\\face\\doctor.jpg',1,'副主任医师','医学博士，心血管病专业，毕业于上海交通大学，副主任医师，从事心血管专业临床工作近20年，从事心血管介入诊疗10余年。先后在河北医科大学第一附属医院、南昌大学第一附属医院、首都医科大学附属安贞医院、上海交通大学附属新华医院、上海复旦大学附属中山医院进修、访问或学习，发表SCI论文多篇，理论知识扎实，临床经验丰富','擅长心血管系统危、急、重症抢救(如急性心肌梗死的急诊介入治疗和恶性心律失常的治疗)及疑难病例诊治；对心脏介入治疗如冠心病的支架植入治疗，大动脉夹层的覆膜支架腔内隔绝术等有很高的造诣，尤其擅长心律失常的诊治，如阵发性室上性心动过速、房性心动过速、心房颤动、室性早搏、室性心动速的射频消融治疗，心动过缓，病态窦房结综合征的起搏器植入治疗等。','赣州市心血管专业委员会委员。','主持江西省卫生与计划委员课题一项，完成赣州市科技局课题二项。近年来发表SCI论文多篇。',1);
+2019-08-16 20:46:56,878 INFO 10332 [egg-sequelize](128ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`title`,`resume`,`concurrent`,`achievement`,`secondOfficeId`) VALUES ('ee64c2c0c02311e984b821d4a7de2e2f','袁文金','\\public\\image\\doctor\\face\\doctor.jpg',1,'主任医师','冠心病学科带头人，西部之光访问学者。1990年9月—1995年7月就读于江西赣南医学院临床医学系，获医学学士； 2000年9月—2003年7月就读于广东汕头大学医学院，获医学硕士（内科学）；2005年11月在北京大学人民医院参加第16届高级心脏电生理学习班','曾赴意大利进修学习，从事临床工作二十余年，在各种心脏介入治疗和危重病人抢救上积累了丰富的经验，擅长冠心病的介入治疗，特别是复杂冠心病的介入治疗。','赣州市心血管专业委员会委员。',1);
+2019-08-16 20:46:56,949 INFO 10332 [egg-sequelize](65ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`title`,`concurrent`,`secondOfficeId`) VALUES ('ee790e10c02311e984b821d4a7de2e2f','王诚高','\\public\\image\\doctor\\face\\doctor.jpg',1,'副主任医师','临床规培医师导师，从事冠心病、高血压病、高脂血症、心肌病、心律失常、先心病等心血管疾病诊断及治疗，在冠心病、高血压病、高脂血症、心肌病方面拥有丰富经验，擅长冠心病的介入手术治疗',1);
+2019-08-16 20:46:57,027 INFO 10332 [egg-sequelize](74ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`title`,`secondOfficeId`) VALUES ('ee83e380c02311e984b821d4a7de2e2f','谢绍峰','\\public\\image\\doctor\\face\\doctor.jpg',1,'副主任医师',1);
+2019-08-16 20:46:57,111 INFO 10332 [egg-sequelize](79ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (1,'心血管内一科门诊（南院）','正高号',NULL,'上午',20,1);
+2019-08-16 20:46:57,182 INFO 10332 [egg-sequelize](68ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (2,'心血管内一科门诊（南院）','正高号',NULL,'下午',19,1);
+2019-08-16 20:46:57,277 INFO 10332 [egg-sequelize](90ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (3,'心血管内一科门诊（南院）','正高号',NULL,'上午',20,2);
+2019-08-16 20:47:25,026 INFO 15308 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 21:55:40,640 INFO 11092 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 21:55:42,091 INFO 8028 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 21:55:43,976 INFO 1824 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-16 21:58:20,824 ERROR 1824 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: user.username cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at SetupController.initDevDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:50:26)
+name: "SequelizeValidationError"
+errors: [{"message":"user.username cannot be null","type":"notNull Violation","path":"username","value":null,"origin":"CORE","instance":{"id":1,"password":"$2b$10$hl2u.zM7VPyhy/iSvDQODOsFiE2xpsIZsI2/uvZYqm6N3sifrmieK","role_id":1,"updated_at":"2019-08-16T13:58:20.791Z","created_at":"2019-08-16T13:58:20.791Z"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 1824
+hostname: LAPTOP-57LT11PC
+
+2019-08-16 21:58:25,156 INFO 1824 [egg-sequelize](2ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');
+2019-08-16 21:58:25,188 ERROR 1824 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.insert (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:901:27)
+    at Promise.try.then.then.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3685:53)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3661:8)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at SetupController.initOtherDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:88:33)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"1","origin":"DB","instance":{"id":1,"name":"内科"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"PRIMARY":"1"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+sql: "INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"
+pid: 1824
+hostname: LAPTOP-57LT11PC
+
+2019-08-16 21:58:32,739 INFO 1824 [egg-sequelize](293ms) Executed (default): DROP TABLE IF EXISTS `workInformations`;
+2019-08-16 21:58:33,083 INFO 1824 [egg-sequelize](342ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-08-16 21:58:33,272 INFO 1824 [egg-sequelize](186ms) Executed (default): DROP TABLE IF EXISTS `roles`;
+2019-08-16 21:58:33,460 INFO 1824 [egg-sequelize](186ms) Executed (default): DROP TABLE IF EXISTS `floors`;
+2019-08-16 21:58:33,649 INFO 1824 [egg-sequelize](187ms) Executed (default): DROP TABLE IF EXISTS `files`;
+2019-08-16 21:58:33,849 INFO 1824 [egg-sequelize](198ms) Executed (default): DROP TABLE IF EXISTS `introductions`;
+2019-08-16 21:58:34,127 INFO 1824 [egg-sequelize](276ms) Executed (default): DROP TABLE IF EXISTS `doctors`;
+2019-08-16 21:58:34,349 INFO 1824 [egg-sequelize](221ms) Executed (default): DROP TABLE IF EXISTS `secondOffices`;
+2019-08-16 21:58:34,537 INFO 1824 [egg-sequelize](186ms) Executed (default): DROP TABLE IF EXISTS `firstOffices`;
+2019-08-16 21:58:34,715 INFO 1824 [egg-sequelize](175ms) Executed (default): DROP TABLE IF EXISTS `buildings`;
+2019-08-16 21:58:34,882 INFO 1824 [egg-sequelize](164ms) Executed (default): DROP TABLE IF EXISTS `appkeys`;
+2019-08-16 21:58:34,962 INFO 1824 [egg-sequelize](77ms) Executed (default): DROP TABLE IF EXISTS `appkeys`;
+2019-08-16 21:58:35,313 INFO 1824 [egg-sequelize](347ms) Executed (default): CREATE TABLE IF NOT EXISTS `appkeys` (`id` CHAR(36) BINARY NOT NULL , `code` VARCHAR(64), `expire_at` DATETIME, `is_auth` TINYINT(1) DEFAULT false, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 21:58:35,359 INFO 1824 [egg-sequelize](44ms) Executed (default): SHOW INDEX FROM `appkeys` FROM `hospital`
+2019-08-16 21:58:35,395 INFO 1824 [egg-sequelize](32ms) Executed (default): DROP TABLE IF EXISTS `buildings`;
+2019-08-16 21:58:35,713 INFO 1824 [egg-sequelize](315ms) Executed (default): CREATE TABLE IF NOT EXISTS `buildings` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `photoUrl` VARCHAR(256), `isMain` TINYINT(1) DEFAULT false, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 21:58:35,758 INFO 1824 [egg-sequelize](43ms) Executed (default): SHOW INDEX FROM `buildings` FROM `hospital`
+2019-08-16 21:58:35,784 INFO 1824 [egg-sequelize](23ms) Executed (default): DROP TABLE IF EXISTS `firstOffices`;
+2019-08-16 21:58:36,139 INFO 1824 [egg-sequelize](353ms) Executed (default): CREATE TABLE IF NOT EXISTS `firstOffices` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 21:58:36,191 INFO 1824 [egg-sequelize](50ms) Executed (default): SHOW INDEX FROM `firstOffices` FROM `hospital`
+2019-08-16 21:58:36,216 INFO 1824 [egg-sequelize](22ms) Executed (default): DROP TABLE IF EXISTS `secondOffices`;
+2019-08-16 21:58:36,616 INFO 1824 [egg-sequelize](397ms) Executed (default): CREATE TABLE IF NOT EXISTS `secondOffices` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `firstOfficeId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`firstOfficeId`) REFERENCES `firstOffices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 21:58:36,702 INFO 1824 [egg-sequelize](82ms) Executed (default): SHOW INDEX FROM `secondOffices` FROM `hospital`
+2019-08-16 21:58:36,738 INFO 1824 [egg-sequelize](34ms) Executed (default): DROP TABLE IF EXISTS `doctors`;
+2019-08-16 21:58:37,271 INFO 1824 [egg-sequelize](530ms) Executed (default): CREATE TABLE IF NOT EXISTS `doctors` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `avatarUrl` VARCHAR(256), `gender` INTEGER, `post` VARCHAR(25), `title` VARCHAR(25), `resume` TEXT, `concurrent` TEXT, `achievement` TEXT, `speciality` TEXT, `secondOfficeId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`secondOfficeId`) REFERENCES `secondOffices` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 21:58:37,357 INFO 1824 [egg-sequelize](83ms) Executed (default): SHOW INDEX FROM `doctors` FROM `hospital`
+2019-08-16 21:58:37,393 INFO 1824 [egg-sequelize](33ms) Executed (default): DROP TABLE IF EXISTS `introductions`;
+2019-08-16 21:58:37,681 INFO 1824 [egg-sequelize](286ms) Executed (default): CREATE TABLE IF NOT EXISTS `introductions` (`id` CHAR(36) BINARY NOT NULL , `message` VARCHAR(25), `description` TEXT, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 21:58:37,732 INFO 1824 [egg-sequelize](48ms) Executed (default): SHOW INDEX FROM `introductions` FROM `hospital`
+2019-08-16 21:58:37,759 INFO 1824 [egg-sequelize](25ms) Executed (default): DROP TABLE IF EXISTS `files`;
+2019-08-16 21:58:38,347 INFO 1824 [egg-sequelize](585ms) Executed (default): CREATE TABLE IF NOT EXISTS `files` (`id` CHAR(36) BINARY NOT NULL , `filename` VARCHAR(64), `extname` VARCHAR(64), `relativePath` VARCHAR(256), `absolutePath` VARCHAR(256), `photoId` CHAR(36) BINARY NOT NULL, `createdAt` DATETIME, PRIMARY KEY (`id`), FOREIGN KEY (`photoId`) REFERENCES `introductions` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 21:58:38,421 INFO 1824 [egg-sequelize](72ms) Executed (default): SHOW INDEX FROM `files` FROM `hospital`
+2019-08-16 21:58:38,446 INFO 1824 [egg-sequelize](23ms) Executed (default): DROP TABLE IF EXISTS `floors`;
+2019-08-16 21:58:38,813 INFO 1824 [egg-sequelize](364ms) Executed (default): CREATE TABLE IF NOT EXISTS `floors` (`id` CHAR(36) BINARY NOT NULL , `name` INTEGER, `photoUrl` VARCHAR(256), `buildingId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`buildingId`) REFERENCES `buildings` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 21:58:38,904 INFO 1824 [egg-sequelize](89ms) Executed (default): SHOW INDEX FROM `floors` FROM `hospital`
+2019-08-16 21:58:38,957 INFO 1824 [egg-sequelize](50ms) Executed (default): DROP TABLE IF EXISTS `roles`;
+2019-08-16 21:58:39,279 INFO 1824 [egg-sequelize](319ms) Executed (default): CREATE TABLE IF NOT EXISTS `roles` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25) NOT NULL, `description` VARCHAR(200), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 21:58:39,330 INFO 1824 [egg-sequelize](49ms) Executed (default): SHOW INDEX FROM `roles` FROM `hospital`
+2019-08-16 21:58:39,356 INFO 1824 [egg-sequelize](24ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-08-16 21:58:39,845 INFO 1824 [egg-sequelize](486ms) Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` CHAR(36) BINARY NOT NULL , `username` VARCHAR(30) NOT NULL UNIQUE, `password` VARCHAR(60) NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME, `role_id` CHAR(36) BINARY, PRIMARY KEY (`id`), FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 21:58:40,021 INFO 1824 [egg-sequelize](174ms) Executed (default): SHOW INDEX FROM `users` FROM `hospital`
+2019-08-16 21:58:40,055 INFO 1824 [egg-sequelize](31ms) Executed (default): DROP TABLE IF EXISTS `workInformations`;
+2019-08-16 21:58:40,600 INFO 1824 [egg-sequelize](542ms) Executed (default): CREATE TABLE IF NOT EXISTS `workInformations` (`id` CHAR(36) BINARY NOT NULL , `department` VARCHAR(25), `registerType` VARCHAR(25), `date` DATETIME, `classes` VARCHAR(25), `remaining` INTEGER, `doctorId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`doctorId`) REFERENCES `doctors` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 21:58:40,676 INFO 1824 [egg-sequelize](74ms) Executed (default): SHOW INDEX FROM `workInformations` FROM `hospital`
+2019-08-16 21:58:40,732 INFO 1824 [egg-sequelize](51ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (1,'超级管理员','超级管理员, 最高管理权限');
+2019-08-16 21:58:40,810 INFO 1824 [egg-sequelize](74ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (2,'管理员','普通管理员');
+2019-08-16 21:58:40,919 INFO 1824 [egg-sequelize](105ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (3,'普通用户','普通用户');
+2019-08-16 21:58:44,345 INFO 1824 [egg-sequelize](129ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');
+2019-08-16 21:58:44,546 INFO 1824 [egg-sequelize](198ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (2,'外科');
+2019-08-16 21:58:44,853 INFO 1824 [egg-sequelize](303ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (3,'医技科室');
+2019-08-16 21:58:44,988 INFO 1824 [egg-sequelize](132ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (1,'心血管内一科',1);
+2019-08-16 21:58:45,327 INFO 1824 [egg-sequelize](335ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (2,'消化内科',1);
+2019-08-16 21:58:45,621 INFO 1824 [egg-sequelize](290ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (3,'胃肠疝外科',2);
+2019-08-16 21:58:45,754 INFO 1824 [egg-sequelize](129ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (4,'康复医学科',3);
+2019-08-16 21:58:45,842 INFO 1824 [egg-sequelize](84ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES (1,'曾康华','\\public\\image\\doctor\\face\\doctor1.jpg',2,'副院长','主任医师 、教授','南昌大学硕士生导师、心脏康复学科带头人、江西省政府特殊津贴专家、赣州市政府特殊津贴专家、赣南医学院兼职教授、全国“五一”劳动奖章获得者、江西省人大代表、赣州市“十佳”医务工作者。','中国心脏联盟委员、江西省康复医学会常委、赣州市康复医学会会长、赣州市康复医学会心血管专业委员会主委、赣州市医学会心血管专业委员会副主委。','完成省市级课题多项，多项成果获市科技进步奖。','在冠心病、高血压、心衰的诊断治疗上积累了丰富经验，率先在市级医院开展心脏康复，创建赣州市人民医院心脏康复亚专业。',1);
+2019-08-16 21:58:45,930 INFO 1824 [egg-sequelize](68ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES (2,'罗骏','\\public\\image\\doctor\\face\\doctor2.jpg',1,'党委委员、副院长、心血管内一科主任','主任医师 、教授','博士后，硕士研究生导师，曾在南京医科大学附属南京市第一医院和江西省人民医院长期工作并担任科室主任助理和副主任。曾在美国杜克大学和UCLA大学研修，从事心内科临床工作近三十年在心血管疑难危重病人抢救上积累了丰富的经验。','从事心血管临床工作三十余年，在心脏介入和心血管疑难危重病人诊治上积累了丰富的经验。擅长各种心脏病介入治疗，特别是在复杂冠心病支架术，复杂心律失常射频消融术，三腔起搏器植入及主动脉夹层经皮腔内隔绝等心脏介入治疗上积累丰富经验，年介入量千余台。较早开展房颤射频消融、经桡动脉冠脉介入、主动脉夹层介入治疗，指导省内外数十家医院开展心脏介入治疗。率先在赣州地区独立开展房颤的射频消融治疗、房颤的冷冻消融、左心耳封堵、零X线射频消融、无内腔起搏电极植入、FFR等介入技术。','主持国家自然基金、省自然基金等课题十余项，发表国家级论文数十篇，获市级科技成果奖多项，指导硕士研究生十余人。','硕士生导师、江西省百千万人才工程人选、江西省卫生计生系统有突出贡献中青年专家、江西省卫生系统学术和技术带头人培养对象、中国老年医学会心血管分会委员、江西省生物医学工程学会起博与电生理分会常委兼副秘书长、江西省心血管分会房颤工作组副组长、赣州医学会心血管分会副主任委员。',1);
+2019-08-16 21:58:46,042 INFO 1824 [egg-sequelize](93ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`post`,`title`,`resume`,`concurrent`,`speciality`,`secondOfficeId`) VALUES (3,'汤建华','\\public\\image\\doctor\\face\\doctor3.jpg',1,'主任','主任医师','1986年参加工作，消化专业研究生毕业，获医学硕士学位。一直从事消化内科临床及内镜工作。','江西省肝病学会委员、江西省胃癌学会委员、赣州市消化病学会常委。','长期从事临床消化及内镜工作，理论扎实，经验丰富，擅长于消化系危、急、重症及疑难病例诊治，对消化系统常见病、多发病如食管疾病、胃肠疾病、胰腺病、慢性肝病的诊治有独到之处，熟练掌握上消化道内窥镜诊断及治疗操作，尤其是胆、胰疾病内镜下诊疗如胆管结石、胆管肿瘤、梗阻性黄疸、急慢性胰腺炎、胰腺囊肿、胰腺肿瘤、胰管结石等。',2);
+2019-08-16 21:58:46,158 INFO 1824 [egg-sequelize](110ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES ('f6ef4cd0c02d11e9a434259f70c532c2','陈友佳','\\public\\image\\doctor\\face\\doctor4.jpg',1,'党委委员、工会主席','主任医师','心脏重症学科带头人，中共党员，现任赣州市人民医院党委委员、工会主席。1993年7月毕业于赣南医学院；历任赣州市人民医院介入导管科副主任、放射介入科主任、心血管内科副主任（正科级）、门诊部主任兼心血管内科副主任、医务部主任兼心血管内科副主任；2017年9月起任赣州市人民医院工会主席。','较早在赣州开展介入治疗，在介入和心脏重症救治上积累了丰富经验，特别擅长外周血管和冠心病的介入治疗及危重患者的抢救。','江西省研究性医学会医疗分会副主任委员、江西省心血管专业委员会高血压学组成员、江西省介入心脏病学会第一届理事、赣州市医学会心血管分会常委。','完成省市级课题多项。',2);
+2019-08-16 21:58:46,275 INFO 1824 [egg-sequelize](98ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES ('f70322f0c02d11e9a434259f70c532c2','陈仁华','\\public\\image\\doctor\\face\\doctor5.jpg',1,'副主任医师','医学博士，心血管病专业，毕业于上海交通大学，副主任医师，从事心血管专业临床工作近20年，从事心血管介入诊疗10余年。先后在河北医科大学第一附属医院、南昌大学第一附属医院、首都医科大学附属安贞医院、上海交通大学附属新华医院、上海复旦大学附属中山医院进修、访问或学习，发表SCI论文多篇，理论知识扎实，临床经验丰富','擅长心血管系统危、急、重症抢救(如急性心肌梗死的急诊介入治疗和恶性心律失常的治疗)及疑难病例诊治；对心脏介入治疗如冠心病的支架植入治疗，大动脉夹层的覆膜支架腔内隔绝术等有很高的造诣，尤其擅长心律失常的诊治，如阵发性室上性心动过速、房性心动过速、心房颤动、室性早搏、室性心动速的射频消融治疗，心动过缓，病态窦房结综合征的起搏器植入治疗等。','赣州市心血管专业委员会委员。','主持江西省卫生与计划委员课题一项，完成赣州市科技局课题二项。近年来发表SCI论文多篇。',1);
+2019-08-16 21:58:46,464 INFO 1824 [egg-sequelize](168ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`title`,`resume`,`concurrent`,`achievement`,`secondOfficeId`) VALUES ('f7152450c02d11e9a434259f70c532c2','袁文金','\\public\\image\\doctor\\face\\doctor6.jpg',1,'主任医师','冠心病学科带头人，西部之光访问学者。1990年9月—1995年7月就读于江西赣南医学院临床医学系，获医学学士； 2000年9月—2003年7月就读于广东汕头大学医学院，获医学硕士（内科学）；2005年11月在北京大学人民医院参加第16届高级心脏电生理学习班','曾赴意大利进修学习，从事临床工作二十余年，在各种心脏介入治疗和危重病人抢救上积累了丰富的经验，擅长冠心病的介入治疗，特别是复杂冠心病的介入治疗。','赣州市心血管专业委员会委员。',1);
+2019-08-16 21:58:46,598 INFO 1824 [egg-sequelize](113ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`title`,`concurrent`,`secondOfficeId`) VALUES ('f731fb20c02d11e9a434259f70c532c2','王诚高','\\public\\image\\doctor\\face\\doctor7.jpg',1,'副主任医师','临床规培医师导师，从事冠心病、高血压病、高脂血症、心肌病、心律失常、先心病等心血管疾病诊断及治疗，在冠心病、高血压病、高脂血症、心肌病方面拥有丰富经验，擅长冠心病的介入手术治疗',1);
+2019-08-16 21:58:46,735 INFO 1824 [egg-sequelize](133ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`title`,`secondOfficeId`) VALUES ('f743fc80c02d11e9a434259f70c532c2','谢绍峰','\\public\\image\\doctor\\face\\doctor8.jpg',1,'副主任医师',1);
+2019-08-16 21:58:46,813 INFO 1824 [egg-sequelize](73ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (1,'心血管内一科门诊（南院）','正高号',NULL,'上午',20,1);
+2019-08-16 21:58:46,891 INFO 1824 [egg-sequelize](73ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (2,'心血管内一科门诊（南院）','正高号',NULL,'下午',19,1);
+2019-08-16 21:58:46,968 INFO 1824 [egg-sequelize](73ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (3,'心血管内一科门诊（南院）','正高号',NULL,'上午',20,2);
+2019-08-16 22:01:02,087 INFO 1824 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice` WHERE `firstOffice`.`id` = '1';
+2019-08-16 22:01:02,104 INFO 1824 [egg-sequelize](2ms) Executed (default): SELECT `id` FROM `secondOffices` AS `secondOffice` WHERE `secondOffice`.`firstOfficeId` = '1';
+2019-08-16 22:01:02,109 INFO 1824 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `firstOfficeId` FROM `secondOffices` AS `secondOffice` WHERE `secondOffice`.`id` = '1';
+2019-08-16 22:01:02,124 INFO 1824 [egg-sequelize](1ms) Executed (default): SELECT `id` FROM `doctors` AS `doctor` WHERE `doctor`.`secondOfficeId` = '1';
+2019-08-16 22:01:02,142 INFO 1824 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '1';
+2019-08-16 22:01:02,284 INFO 1824 [egg-sequelize](137ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = '1'
+2019-08-16 22:01:02,361 INFO 1824 [egg-sequelize](73ms) Executed (default): DELETE FROM `doctors` WHERE `id` = '1' LIMIT 1
+2019-08-16 22:01:02,366 INFO 1824 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '2';
+2019-08-16 22:01:02,501 INFO 1824 [egg-sequelize](119ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = '2'
+2019-08-16 22:01:02,572 INFO 1824 [egg-sequelize](69ms) Executed (default): DELETE FROM `doctors` WHERE `id` = '2' LIMIT 1
+2019-08-16 22:01:02,576 INFO 1824 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = 'f70322f0c02d11e9a434259f70c532c2';
+2019-08-16 22:01:02,593 INFO 1824 [egg-sequelize](0ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = 'f70322f0c02d11e9a434259f70c532c2'
+2019-08-16 22:01:02,650 INFO 1824 [egg-sequelize](55ms) Executed (default): DELETE FROM `doctors` WHERE `id` = 'f70322f0c02d11e9a434259f70c532c2' LIMIT 1
+2019-08-16 22:01:02,653 INFO 1824 [egg-sequelize](0ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = 'f7152450c02d11e9a434259f70c532c2';
+2019-08-16 22:01:02,671 INFO 1824 [egg-sequelize](1ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = 'f7152450c02d11e9a434259f70c532c2'
+2019-08-16 22:01:02,728 INFO 1824 [egg-sequelize](55ms) Executed (default): DELETE FROM `doctors` WHERE `id` = 'f7152450c02d11e9a434259f70c532c2' LIMIT 1
+2019-08-16 22:01:02,731 INFO 1824 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = 'f731fb20c02d11e9a434259f70c532c2';
+2019-08-16 22:01:02,734 INFO 1824 [egg-sequelize](0ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = 'f731fb20c02d11e9a434259f70c532c2'
+2019-08-16 22:01:02,805 INFO 1824 [egg-sequelize](68ms) Executed (default): DELETE FROM `doctors` WHERE `id` = 'f731fb20c02d11e9a434259f70c532c2' LIMIT 1
+2019-08-16 22:01:02,810 INFO 1824 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = 'f743fc80c02d11e9a434259f70c532c2';
+2019-08-16 22:01:02,824 INFO 1824 [egg-sequelize](0ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = 'f743fc80c02d11e9a434259f70c532c2'
+2019-08-16 22:01:02,883 INFO 1824 [egg-sequelize](57ms) Executed (default): DELETE FROM `doctors` WHERE `id` = 'f743fc80c02d11e9a434259f70c532c2' LIMIT 1
+2019-08-16 22:01:02,961 INFO 1824 [egg-sequelize](76ms) Executed (default): DELETE FROM `secondOffices` WHERE `id` = '1' LIMIT 1
+2019-08-16 22:01:02,964 INFO 1824 [egg-sequelize](0ms) Executed (default): SELECT `id`, `name`, `firstOfficeId` FROM `secondOffices` AS `secondOffice` WHERE `secondOffice`.`id` = '2';
+2019-08-16 22:01:02,980 INFO 1824 [egg-sequelize](0ms) Executed (default): SELECT `id` FROM `doctors` AS `doctor` WHERE `doctor`.`secondOfficeId` = '2';
+2019-08-16 22:01:02,995 INFO 1824 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '3';
+2019-08-16 22:01:03,011 INFO 1824 [egg-sequelize](1ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = '3'
+2019-08-16 22:01:03,061 INFO 1824 [egg-sequelize](47ms) Executed (default): DELETE FROM `doctors` WHERE `id` = '3' LIMIT 1
+2019-08-16 22:01:03,065 INFO 1824 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = 'f6ef4cd0c02d11e9a434259f70c532c2';
+2019-08-16 22:01:03,069 INFO 1824 [egg-sequelize](1ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = 'f6ef4cd0c02d11e9a434259f70c532c2'
+2019-08-16 22:01:03,138 INFO 1824 [egg-sequelize](66ms) Executed (default): DELETE FROM `doctors` WHERE `id` = 'f6ef4cd0c02d11e9a434259f70c532c2' LIMIT 1
+2019-08-16 22:01:03,216 INFO 1824 [egg-sequelize](76ms) Executed (default): DELETE FROM `secondOffices` WHERE `id` = '2' LIMIT 1
+2019-08-16 22:01:03,332 INFO 1824 [egg-sequelize](114ms) Executed (default): DELETE FROM `firstOffices` WHERE `id` = '1' LIMIT 1
+2019-08-16 22:02:52,087 INFO 1824 [egg-sequelize](353ms) Executed (default): DROP TABLE IF EXISTS `workInformations`;
+2019-08-16 22:02:52,264 INFO 1824 [egg-sequelize](175ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-08-16 22:02:52,564 INFO 1824 [egg-sequelize](298ms) Executed (default): DROP TABLE IF EXISTS `roles`;
+2019-08-16 22:02:52,757 INFO 1824 [egg-sequelize](191ms) Executed (default): DROP TABLE IF EXISTS `floors`;
+2019-08-16 22:02:52,964 INFO 1824 [egg-sequelize](205ms) Executed (default): DROP TABLE IF EXISTS `files`;
+2019-08-16 22:02:53,163 INFO 1824 [egg-sequelize](197ms) Executed (default): DROP TABLE IF EXISTS `introductions`;
+2019-08-16 22:02:53,374 INFO 1824 [egg-sequelize](209ms) Executed (default): DROP TABLE IF EXISTS `doctors`;
+2019-08-16 22:02:53,707 INFO 1824 [egg-sequelize](330ms) Executed (default): DROP TABLE IF EXISTS `secondOffices`;
+2019-08-16 22:02:53,922 INFO 1824 [egg-sequelize](213ms) Executed (default): DROP TABLE IF EXISTS `firstOffices`;
+2019-08-16 22:02:54,118 INFO 1824 [egg-sequelize](194ms) Executed (default): DROP TABLE IF EXISTS `buildings`;
+2019-08-16 22:02:54,328 INFO 1824 [egg-sequelize](207ms) Executed (default): DROP TABLE IF EXISTS `appkeys`;
+2019-08-16 22:02:54,389 INFO 1824 [egg-sequelize](58ms) Executed (default): DROP TABLE IF EXISTS `appkeys`;
+2019-08-16 22:02:54,777 INFO 1824 [egg-sequelize](385ms) Executed (default): CREATE TABLE IF NOT EXISTS `appkeys` (`id` CHAR(36) BINARY NOT NULL , `code` VARCHAR(64), `expire_at` DATETIME, `is_auth` TINYINT(1) DEFAULT false, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 22:02:54,964 INFO 1824 [egg-sequelize](184ms) Executed (default): SHOW INDEX FROM `appkeys` FROM `hospital`
+2019-08-16 22:02:54,994 INFO 1824 [egg-sequelize](28ms) Executed (default): DROP TABLE IF EXISTS `buildings`;
+2019-08-16 22:02:55,310 INFO 1824 [egg-sequelize](313ms) Executed (default): CREATE TABLE IF NOT EXISTS `buildings` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `photoUrl` VARCHAR(256), `isMain` TINYINT(1) DEFAULT false, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 22:02:55,371 INFO 1824 [egg-sequelize](58ms) Executed (default): SHOW INDEX FROM `buildings` FROM `hospital`
+2019-08-16 22:02:55,400 INFO 1824 [egg-sequelize](25ms) Executed (default): DROP TABLE IF EXISTS `firstOffices`;
+2019-08-16 22:02:55,742 INFO 1824 [egg-sequelize](340ms) Executed (default): CREATE TABLE IF NOT EXISTS `firstOffices` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 22:02:55,804 INFO 1824 [egg-sequelize](58ms) Executed (default): SHOW INDEX FROM `firstOffices` FROM `hospital`
+2019-08-16 22:02:55,831 INFO 1824 [egg-sequelize](25ms) Executed (default): DROP TABLE IF EXISTS `secondOffices`;
+2019-08-16 22:02:56,442 INFO 1824 [egg-sequelize](608ms) Executed (default): CREATE TABLE IF NOT EXISTS `secondOffices` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `firstOfficeId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`firstOfficeId`) REFERENCES `firstOffices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 22:02:56,553 INFO 1824 [egg-sequelize](108ms) Executed (default): SHOW INDEX FROM `secondOffices` FROM `hospital`
+2019-08-16 22:02:56,586 INFO 1824 [egg-sequelize](30ms) Executed (default): DROP TABLE IF EXISTS `doctors`;
+2019-08-16 22:02:57,030 INFO 1824 [egg-sequelize](441ms) Executed (default): CREATE TABLE IF NOT EXISTS `doctors` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25), `avatarUrl` VARCHAR(256), `gender` INTEGER, `post` VARCHAR(25), `title` VARCHAR(25), `resume` TEXT, `concurrent` TEXT, `achievement` TEXT, `speciality` TEXT, `secondOfficeId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`secondOfficeId`) REFERENCES `secondOffices` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 22:02:57,097 INFO 1824 [egg-sequelize](64ms) Executed (default): SHOW INDEX FROM `doctors` FROM `hospital`
+2019-08-16 22:02:57,129 INFO 1824 [egg-sequelize](30ms) Executed (default): DROP TABLE IF EXISTS `introductions`;
+2019-08-16 22:02:57,502 INFO 1824 [egg-sequelize](369ms) Executed (default): CREATE TABLE IF NOT EXISTS `introductions` (`id` CHAR(36) BINARY NOT NULL , `message` VARCHAR(25), `description` TEXT, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 22:02:57,582 INFO 1824 [egg-sequelize](78ms) Executed (default): SHOW INDEX FROM `introductions` FROM `hospital`
+2019-08-16 22:02:57,613 INFO 1824 [egg-sequelize](29ms) Executed (default): DROP TABLE IF EXISTS `files`;
+2019-08-16 22:02:58,184 INFO 1824 [egg-sequelize](568ms) Executed (default): CREATE TABLE IF NOT EXISTS `files` (`id` CHAR(36) BINARY NOT NULL , `filename` VARCHAR(64), `extname` VARCHAR(64), `relativePath` VARCHAR(256), `absolutePath` VARCHAR(256), `photoId` CHAR(36) BINARY NOT NULL, `createdAt` DATETIME, PRIMARY KEY (`id`), FOREIGN KEY (`photoId`) REFERENCES `introductions` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 22:02:58,274 INFO 1824 [egg-sequelize](87ms) Executed (default): SHOW INDEX FROM `files` FROM `hospital`
+2019-08-16 22:02:58,305 INFO 1824 [egg-sequelize](29ms) Executed (default): DROP TABLE IF EXISTS `floors`;
+2019-08-16 22:02:58,990 INFO 1824 [egg-sequelize](681ms) Executed (default): CREATE TABLE IF NOT EXISTS `floors` (`id` CHAR(36) BINARY NOT NULL , `name` INTEGER, `photoUrl` VARCHAR(256), `buildingId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`buildingId`) REFERENCES `buildings` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 22:02:59,145 INFO 1824 [egg-sequelize](153ms) Executed (default): SHOW INDEX FROM `floors` FROM `hospital`
+2019-08-16 22:02:59,221 INFO 1824 [egg-sequelize](73ms) Executed (default): DROP TABLE IF EXISTS `roles`;
+2019-08-16 22:02:59,626 INFO 1824 [egg-sequelize](401ms) Executed (default): CREATE TABLE IF NOT EXISTS `roles` (`id` CHAR(36) BINARY NOT NULL , `name` VARCHAR(25) NOT NULL, `description` VARCHAR(200), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-08-16 22:02:59,688 INFO 1824 [egg-sequelize](59ms) Executed (default): SHOW INDEX FROM `roles` FROM `hospital`
+2019-08-16 22:02:59,715 INFO 1824 [egg-sequelize](23ms) Executed (default): DROP TABLE IF EXISTS `users`;
+2019-08-16 22:03:00,436 INFO 1824 [egg-sequelize](719ms) Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` CHAR(36) BINARY NOT NULL , `username` VARCHAR(30) NOT NULL UNIQUE, `password` VARCHAR(60) NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME, `role_id` CHAR(36) BINARY, PRIMARY KEY (`id`), FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 22:03:00,626 INFO 1824 [egg-sequelize](187ms) Executed (default): SHOW INDEX FROM `users` FROM `hospital`
+2019-08-16 22:03:00,658 INFO 1824 [egg-sequelize](29ms) Executed (default): DROP TABLE IF EXISTS `workInformations`;
+2019-08-16 22:03:01,091 INFO 1824 [egg-sequelize](429ms) Executed (default): CREATE TABLE IF NOT EXISTS `workInformations` (`id` CHAR(36) BINARY NOT NULL , `department` VARCHAR(25), `registerType` VARCHAR(25), `date` DATETIME, `classes` VARCHAR(25), `remaining` INTEGER, `doctorId` CHAR(36) BINARY NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`doctorId`) REFERENCES `doctors` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB;
+2019-08-16 22:03:01,164 INFO 1824 [egg-sequelize](71ms) Executed (default): SHOW INDEX FROM `workInformations` FROM `hospital`
+2019-08-16 22:03:01,224 INFO 1824 [egg-sequelize](56ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (1,'超级管理员','超级管理员, 最高管理权限');
+2019-08-16 22:03:01,301 INFO 1824 [egg-sequelize](73ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (2,'管理员','普通管理员');
+2019-08-16 22:03:01,479 INFO 1824 [egg-sequelize](174ms) Executed (default): INSERT INTO `roles` (`id`,`name`,`description`) VALUES (3,'普通用户','普通用户');
+2019-08-16 22:03:04,681 INFO 1824 [egg-sequelize](249ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');
+2019-08-16 22:03:05,030 INFO 1824 [egg-sequelize](346ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (2,'外科');
+2019-08-16 22:03:05,136 INFO 1824 [egg-sequelize](102ms) Executed (default): INSERT INTO `firstOffices` (`id`,`name`) VALUES (3,'医技科室');
+2019-08-16 22:03:05,332 INFO 1824 [egg-sequelize](193ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (1,'心血管内一科',1);
+2019-08-16 22:03:05,535 INFO 1824 [egg-sequelize](199ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (2,'消化内科',1);
+2019-08-16 22:03:05,623 INFO 1824 [egg-sequelize](85ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (3,'胃肠疝外科',2);
+2019-08-16 22:03:05,857 INFO 1824 [egg-sequelize](230ms) Executed (default): INSERT INTO `secondOffices` (`id`,`name`,`firstOfficeId`) VALUES (4,'康复医学科',3);
+2019-08-16 22:03:05,917 INFO 1824 [egg-sequelize](57ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES (1,'曾康华','\\public\\image\\doctor\\face\\doctor1.jpg',2,'副院长','主任医师 、教授','南昌大学硕士生导师、心脏康复学科带头人、江西省政府特殊津贴专家、赣州市政府特殊津贴专家、赣南医学院兼职教授、全国“五一”劳动奖章获得者、江西省人大代表、赣州市“十佳”医务工作者。','中国心脏联盟委员、江西省康复医学会常委、赣州市康复医学会会长、赣州市康复医学会心血管专业委员会主委、赣州市医学会心血管专业委员会副主委。','完成省市级课题多项，多项成果获市科技进步奖。','在冠心病、高血压、心衰的诊断治疗上积累了丰富经验，率先在市级医院开展心脏康复，创建赣州市人民医院心脏康复亚专业。',1);
+2019-08-16 22:03:06,006 INFO 1824 [egg-sequelize](83ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES (2,'罗骏','\\public\\image\\doctor\\face\\doctor2.jpg',1,'党委委员、副院长、心血管内一科主任','主任医师 、教授','博士后，硕士研究生导师，曾在南京医科大学附属南京市第一医院和江西省人民医院长期工作并担任科室主任助理和副主任。曾在美国杜克大学和UCLA大学研修，从事心内科临床工作近三十年在心血管疑难危重病人抢救上积累了丰富的经验。','从事心血管临床工作三十余年，在心脏介入和心血管疑难危重病人诊治上积累了丰富的经验。擅长各种心脏病介入治疗，特别是在复杂冠心病支架术，复杂心律失常射频消融术，三腔起搏器植入及主动脉夹层经皮腔内隔绝等心脏介入治疗上积累丰富经验，年介入量千余台。较早开展房颤射频消融、经桡动脉冠脉介入、主动脉夹层介入治疗，指导省内外数十家医院开展心脏介入治疗。率先在赣州地区独立开展房颤的射频消融治疗、房颤的冷冻消融、左心耳封堵、零X线射频消融、无内腔起搏电极植入、FFR等介入技术。','主持国家自然基金、省自然基金等课题十余项，发表国家级论文数十篇，获市级科技成果奖多项，指导硕士研究生十余人。','硕士生导师、江西省百千万人才工程人选、江西省卫生计生系统有突出贡献中青年专家、江西省卫生系统学术和技术带头人培养对象、中国老年医学会心血管分会委员、江西省生物医学工程学会起博与电生理分会常委兼副秘书长、江西省心血管分会房颤工作组副组长、赣州医学会心血管分会副主任委员。',1);
+2019-08-16 22:03:06,083 INFO 1824 [egg-sequelize](47ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`post`,`title`,`resume`,`concurrent`,`speciality`,`secondOfficeId`) VALUES (3,'汤建华','\\public\\image\\doctor\\face\\doctor3.jpg',1,'主任','主任医师','1986年参加工作，消化专业研究生毕业，获医学硕士学位。一直从事消化内科临床及内镜工作。','江西省肝病学会委员、江西省胃癌学会委员、赣州市消化病学会常委。','长期从事临床消化及内镜工作，理论扎实，经验丰富，擅长于消化系危、急、重症及疑难病例诊治，对消化系统常见病、多发病如食管疾病、胃肠疾病、胰腺病、慢性肝病的诊治有独到之处，熟练掌握上消化道内窥镜诊断及治疗操作，尤其是胆、胰疾病内镜下诊疗如胆管结石、胆管肿瘤、梗阻性黄疸、急慢性胰腺炎、胰腺囊肿、胰腺肿瘤、胰管结石等。',2);
+2019-08-16 22:03:06,161 INFO 1824 [egg-sequelize](71ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`post`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES ('91ee8f70c02e11e9a434259f70c532c2','陈友佳','\\public\\image\\doctor\\face\\doctor4.jpg',1,'党委委员、工会主席','主任医师','心脏重症学科带头人，中共党员，现任赣州市人民医院党委委员、工会主席。1993年7月毕业于赣南医学院；历任赣州市人民医院介入导管科副主任、放射介入科主任、心血管内科副主任（正科级）、门诊部主任兼心血管内科副主任、医务部主任兼心血管内科副主任；2017年9月起任赣州市人民医院工会主席。','较早在赣州开展介入治疗，在介入和心脏重症救治上积累了丰富经验，特别擅长外周血管和冠心病的介入治疗及危重患者的抢救。','江西省研究性医学会医疗分会副主任委员、江西省心血管专业委员会高血压学组成员、江西省介入心脏病学会第一届理事、赣州市医学会心血管分会常委。','完成省市级课题多项。',2);
+2019-08-16 22:03:06,250 INFO 1824 [egg-sequelize](57ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`title`,`resume`,`concurrent`,`achievement`,`speciality`,`secondOfficeId`) VALUES ('91fe6df0c02e11e9a434259f70c532c2','陈仁华','\\public\\image\\doctor\\face\\doctor5.jpg',1,'副主任医师','医学博士，心血管病专业，毕业于上海交通大学，副主任医师，从事心血管专业临床工作近20年，从事心血管介入诊疗10余年。先后在河北医科大学第一附属医院、南昌大学第一附属医院、首都医科大学附属安贞医院、上海交通大学附属新华医院、上海复旦大学附属中山医院进修、访问或学习，发表SCI论文多篇，理论知识扎实，临床经验丰富','擅长心血管系统危、急、重症抢救(如急性心肌梗死的急诊介入治疗和恶性心律失常的治疗)及疑难病例诊治；对心脏介入治疗如冠心病的支架植入治疗，大动脉夹层的覆膜支架腔内隔绝术等有很高的造诣，尤其擅长心律失常的诊治，如阵发性室上性心动过速、房性心动过速、心房颤动、室性早搏、室性心动速的射频消融治疗，心动过缓，病态窦房结综合征的起搏器植入治疗等。','赣州市心血管专业委员会委员。','主持江西省卫生与计划委员课题一项，完成赣州市科技局课题二项。近年来发表SCI论文多篇。',1);
+2019-08-16 22:03:06,328 INFO 1824 [egg-sequelize](71ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`title`,`resume`,`concurrent`,`achievement`,`secondOfficeId`) VALUES ('92080ae0c02e11e9a434259f70c532c2','袁文金','\\public\\image\\doctor\\face\\doctor6.jpg',1,'主任医师','冠心病学科带头人，西部之光访问学者。1990年9月—1995年7月就读于江西赣南医学院临床医学系，获医学学士； 2000年9月—2003年7月就读于广东汕头大学医学院，获医学硕士（内科学）；2005年11月在北京大学人民医院参加第16届高级心脏电生理学习班','曾赴意大利进修学习，从事临床工作二十余年，在各种心脏介入治疗和危重病人抢救上积累了丰富的经验，擅长冠心病的介入治疗，特别是复杂冠心病的介入治疗。','赣州市心血管专业委员会委员。',1);
+2019-08-16 22:03:06,405 INFO 1824 [egg-sequelize](72ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`title`,`concurrent`,`secondOfficeId`) VALUES ('9213cab0c02e11e9a434259f70c532c2','王诚高','\\public\\image\\doctor\\face\\doctor7.jpg',1,'副主任医师','临床规培医师导师，从事冠心病、高血压病、高脂血症、心肌病、心律失常、先心病等心血管疾病诊断及治疗，在冠心病、高血压病、高脂血症、心肌病方面拥有丰富经验，擅长冠心病的介入手术治疗',1);
+2019-08-16 22:03:06,483 INFO 1824 [egg-sequelize](72ms) Executed (default): INSERT INTO `doctors` (`id`,`name`,`avatarUrl`,`gender`,`title`,`secondOfficeId`) VALUES ('921f6370c02e11e9a434259f70c532c2','谢绍峰','\\public\\image\\doctor\\face\\doctor8.jpg',1,'副主任医师',1);
+2019-08-16 22:03:06,572 INFO 1824 [egg-sequelize](84ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (1,'心血管内一科门诊（南院）','正高号',NULL,'上午',20,1);
+2019-08-16 22:03:06,649 INFO 1824 [egg-sequelize](73ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (2,'心血管内一科门诊（南院）','正高号',NULL,'下午',19,1);
+2019-08-16 22:03:06,811 INFO 1824 [egg-sequelize](157ms) Executed (default): INSERT INTO `workInformations` (`id`,`department`,`registerType`,`date`,`classes`,`remaining`,`doctorId`) VALUES (3,'心血管内一科门诊（南院）','正高号',NULL,'上午',20,2);
+2019-08-17 08:50:32,398 INFO 16156 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 08:50:42,502 INFO 15624 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 08:50:55,963 INFO 15528 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 08:51:07,357 INFO 9484 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 08:51:09,368 INFO 16172 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 08:51:34,200 INFO 16224 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 08:52:01,105 INFO 16152 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 08:52:03,286 INFO 10120 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 08:52:55,126 INFO 16232 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 08:53:19,997 INFO 15180 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 08:54:02,380 INFO 9484 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 08:55:20,829 INFO 14940 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 11:44:23,172 INFO 15000 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 11:44:25,202 INFO 15188 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-08-17 11:54:11,288 INFO 12800 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-18 13:01:14,588 INFO 5712 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-18 13:01:50,192 INFO 5712 [egg-sequelize](0ms) Executed (7c74b99b-19f5-46da-b3e4-a71b536b502f): START TRANSACTION;
+2019-08-18 13:01:50,305 INFO 5712 [egg-sequelize](107ms) Executed (7c74b99b-19f5-46da-b3e4-a71b536b502f): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice`;
+2019-08-18 13:01:50,309 INFO 5712 [egg-sequelize](0ms) Executed (7c74b99b-19f5-46da-b3e4-a71b536b502f): COMMIT;
+2019-08-18 15:52:14,121 INFO 5712 [egg-sequelize](0ms) Executed (9cc57238-6c25-4ec5-b2e6-f149009623e4): START TRANSACTION;
+2019-08-18 15:52:14,125 INFO 5712 [egg-sequelize](1ms) Executed (9cc57238-6c25-4ec5-b2e6-f149009623e4): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice`;
+2019-08-18 15:52:14,139 INFO 5712 [egg-sequelize](0ms) Executed (9cc57238-6c25-4ec5-b2e6-f149009623e4): COMMIT;
+2019-08-18 17:42:33,588 INFO 5712 [egg-sequelize](0ms) Executed (be218006-1351-444d-b1ca-187e4dad0833): START TRANSACTION;
+2019-08-18 17:42:33,592 INFO 5712 [egg-sequelize](1ms) Executed (be218006-1351-444d-b1ca-187e4dad0833): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice`;
+2019-08-18 17:42:33,607 INFO 5712 [egg-sequelize](0ms) Executed (be218006-1351-444d-b1ca-187e4dad0833): COMMIT;
+2019-08-18 17:42:43,078 INFO 5712 [egg-sequelize](1ms) Executed (ba11f313-d0d2-4705-8760-e1847c94341a): START TRANSACTION;
+2019-08-18 17:42:43,143 INFO 5712 [egg-sequelize](57ms) Executed (ba11f313-d0d2-4705-8760-e1847c94341a): INSERT INTO `firstOffices` (`id`,`name`) VALUES ('86b83970c19c11e9a60ef1be0134fd00','全能科');
+2019-08-18 17:42:43,247 INFO 5712 [egg-sequelize](102ms) Executed (ba11f313-d0d2-4705-8760-e1847c94341a): COMMIT;
+2019-08-18 17:42:49,214 INFO 5712 [egg-sequelize](0ms) Executed (ca9ce913-3e15-44bc-94aa-ed4276ba072b): START TRANSACTION;
+2019-08-18 17:42:49,217 INFO 5712 [egg-sequelize](1ms) Executed (ca9ce913-3e15-44bc-94aa-ed4276ba072b): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice`;
+2019-08-18 17:42:49,219 INFO 5712 [egg-sequelize](1ms) Executed (ca9ce913-3e15-44bc-94aa-ed4276ba072b): COMMIT;
+2019-08-18 17:42:50,945 INFO 5712 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice` WHERE `firstOffice`.`id` = '86b83970c19c11e9a60ef1be0134fd00';
+2019-08-18 17:42:51,018 INFO 5712 [egg-sequelize](58ms) Executed (default): SELECT `id` FROM `secondOffices` AS `secondOffice` WHERE `secondOffice`.`firstOfficeId` = '86b83970c19c11e9a60ef1be0134fd00';
+2019-08-18 17:42:51,178 INFO 5712 [egg-sequelize](156ms) Executed (default): DELETE FROM `firstOffices` WHERE `id` = '86b83970c19c11e9a60ef1be0134fd00' LIMIT 1
+2019-08-18 17:42:51,504 INFO 5712 [egg-sequelize](1ms) Executed (d3c986e4-5889-4773-9942-89e35c706c17): START TRANSACTION;
+2019-08-18 17:42:51,507 INFO 5712 [egg-sequelize](1ms) Executed (d3c986e4-5889-4773-9942-89e35c706c17): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice`;
+2019-08-18 17:42:51,509 INFO 5712 [egg-sequelize](1ms) Executed (d3c986e4-5889-4773-9942-89e35c706c17): COMMIT;
+2019-08-18 18:00:37,446 INFO 5712 [egg-sequelize](0ms) Executed (fd072ea9-fb49-408c-8181-c4ee176b2b18): START TRANSACTION;
+2019-08-18 18:00:37,450 INFO 5712 [egg-sequelize](1ms) Executed (fd072ea9-fb49-408c-8181-c4ee176b2b18): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice`;
+2019-08-18 18:00:37,465 INFO 5712 [egg-sequelize](1ms) Executed (fd072ea9-fb49-408c-8181-c4ee176b2b18): COMMIT;
+2019-08-18 18:15:40,056 INFO 9460 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2019-08-18 18:15:41,936 INFO 3400 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2019-08-18 18:15:43,730 INFO 13956 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-08-18 20:07:56,654 INFO 13956 [egg-sequelize](1ms) Executed (ce4f8c04-ecb1-4fbe-9f89-782dfe08fa8a): START TRANSACTION;
+2019-08-18 20:07:56,662 INFO 13956 [egg-sequelize](2ms) Executed (ce4f8c04-ecb1-4fbe-9f89-782dfe08fa8a): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice`;
+2019-08-18 20:07:56,674 INFO 13956 [egg-sequelize](1ms) Executed (ce4f8c04-ecb1-4fbe-9f89-782dfe08fa8a): COMMIT;
+2019-08-18 20:47:13,123 INFO 13956 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice` WHERE `firstOffice`.`id` = '1';
+2019-08-18 20:47:13,139 INFO 13956 [egg-sequelize](4ms) Executed (default): SELECT `id` FROM `secondOffices` AS `secondOffice` WHERE `secondOffice`.`firstOfficeId` = '1';
+2019-08-18 20:47:13,189 INFO 13956 [egg-sequelize](46ms) Executed (default): SELECT `id`, `name`, `firstOfficeId` FROM `secondOffices` AS `secondOffice` WHERE `secondOffice`.`id` = '1';
+2019-08-18 20:47:13,231 INFO 13956 [egg-sequelize](28ms) Executed (default): SELECT `id` FROM `doctors` AS `doctor` WHERE `doctor`.`secondOfficeId` = '1';
+2019-08-18 20:47:13,237 INFO 13956 [egg-sequelize](3ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '1';
+2019-08-18 20:47:13,423 INFO 13956 [egg-sequelize](182ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = '1'
+2019-08-18 20:47:13,490 INFO 13956 [egg-sequelize](63ms) Executed (default): DELETE FROM `doctors` WHERE `id` = '1' LIMIT 1
+2019-08-18 20:47:13,494 INFO 13956 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '2';
+2019-08-18 20:47:13,568 INFO 13956 [egg-sequelize](57ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = '2'
+2019-08-18 20:47:13,689 INFO 13956 [egg-sequelize](118ms) Executed (default): DELETE FROM `doctors` WHERE `id` = '2' LIMIT 1
+2019-08-18 20:47:13,693 INFO 13956 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '91fe6df0c02e11e9a434259f70c532c2';
+2019-08-18 20:47:13,709 INFO 13956 [egg-sequelize](1ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = '91fe6df0c02e11e9a434259f70c532c2'
+2019-08-18 20:47:13,775 INFO 13956 [egg-sequelize](64ms) Executed (default): DELETE FROM `doctors` WHERE `id` = '91fe6df0c02e11e9a434259f70c532c2' LIMIT 1
+2019-08-18 20:47:13,778 INFO 13956 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '92080ae0c02e11e9a434259f70c532c2';
+2019-08-18 20:47:13,781 INFO 13956 [egg-sequelize](1ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = '92080ae0c02e11e9a434259f70c532c2'
+2019-08-18 20:47:13,863 INFO 13956 [egg-sequelize](81ms) Executed (default): DELETE FROM `doctors` WHERE `id` = '92080ae0c02e11e9a434259f70c532c2' LIMIT 1
+2019-08-18 20:47:13,866 INFO 13956 [egg-sequelize](0ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '9213cab0c02e11e9a434259f70c532c2';
+2019-08-18 20:47:13,884 INFO 13956 [egg-sequelize](0ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = '9213cab0c02e11e9a434259f70c532c2'
+2019-08-18 20:47:13,952 INFO 13956 [egg-sequelize](65ms) Executed (default): DELETE FROM `doctors` WHERE `id` = '9213cab0c02e11e9a434259f70c532c2' LIMIT 1
+2019-08-18 20:47:13,956 INFO 13956 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '921f6370c02e11e9a434259f70c532c2';
+2019-08-18 20:47:13,975 INFO 13956 [egg-sequelize](1ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = '921f6370c02e11e9a434259f70c532c2'
+2019-08-18 20:47:14,041 INFO 13956 [egg-sequelize](64ms) Executed (default): DELETE FROM `doctors` WHERE `id` = '921f6370c02e11e9a434259f70c532c2' LIMIT 1
+2019-08-18 20:47:14,117 INFO 13956 [egg-sequelize](74ms) Executed (default): DELETE FROM `secondOffices` WHERE `id` = '1' LIMIT 1
+2019-08-18 20:47:14,120 INFO 13956 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `firstOfficeId` FROM `secondOffices` AS `secondOffice` WHERE `secondOffice`.`id` = '2';
+2019-08-18 20:47:14,140 INFO 13956 [egg-sequelize](1ms) Executed (default): SELECT `id` FROM `doctors` AS `doctor` WHERE `doctor`.`secondOfficeId` = '2';
+2019-08-18 20:47:14,144 INFO 13956 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '3';
+2019-08-18 20:47:14,165 INFO 13956 [egg-sequelize](0ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = '3'
+2019-08-18 20:47:14,216 INFO 13956 [egg-sequelize](49ms) Executed (default): DELETE FROM `doctors` WHERE `id` = '3' LIMIT 1
+2019-08-18 20:47:14,219 INFO 13956 [egg-sequelize](0ms) Executed (default): SELECT `id`, `name`, `avatarUrl`, `gender`, `post`, `title`, `resume`, `concurrent`, `achievement`, `speciality`, `secondOfficeId` FROM `doctors` AS `doctor` WHERE `doctor`.`id` = '91ee8f70c02e11e9a434259f70c532c2';
+2019-08-18 20:47:14,222 INFO 13956 [egg-sequelize](0ms) Executed (default): DELETE FROM `workInformations` WHERE `doctorId` = '91ee8f70c02e11e9a434259f70c532c2'
+2019-08-18 20:47:14,305 INFO 13956 [egg-sequelize](81ms) Executed (default): DELETE FROM `doctors` WHERE `id` = '91ee8f70c02e11e9a434259f70c532c2' LIMIT 1
+2019-08-18 20:47:14,383 INFO 13956 [egg-sequelize](75ms) Executed (default): DELETE FROM `secondOffices` WHERE `id` = '2' LIMIT 1
+2019-08-18 20:47:14,472 INFO 13956 [egg-sequelize](87ms) Executed (default): DELETE FROM `firstOffices` WHERE `id` = '1' LIMIT 1
+2019-08-18 20:47:14,530 INFO 13956 [egg-sequelize](1ms) Executed (29cf8090-742e-4c20-a7f5-a63861fcee94): START TRANSACTION;
+2019-08-18 20:47:14,532 INFO 13956 [egg-sequelize](0ms) Executed (29cf8090-742e-4c20-a7f5-a63861fcee94): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice`;
+2019-08-18 20:47:14,550 INFO 13956 [egg-sequelize](0ms) Executed (29cf8090-742e-4c20-a7f5-a63861fcee94): COMMIT;
+2019-08-18 20:50:51,088 INFO 13956 [egg-sequelize](0ms) Executed (2b3bed80-f60f-40cf-ba02-a2631dc05f0c): START TRANSACTION;
+2019-08-18 20:50:51,092 INFO 13956 [egg-sequelize](1ms) Executed (2b3bed80-f60f-40cf-ba02-a2631dc05f0c): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice`;
+2019-08-18 20:50:51,094 INFO 13956 [egg-sequelize](1ms) Executed (2b3bed80-f60f-40cf-ba02-a2631dc05f0c): COMMIT;
+2019-08-18 20:54:38,272 INFO 13956 [egg-sequelize](1ms) Executed (6224648b-c417-4c4f-b770-22fd6820bcbc): START TRANSACTION;
+2019-08-18 20:54:38,275 INFO 13956 [egg-sequelize](1ms) Executed (6224648b-c417-4c4f-b770-22fd6820bcbc): SELECT `id`, `name` FROM `firstOffices` AS `firstOffice`;
+2019-08-18 20:54:38,277 INFO 13956 [egg-sequelize](1ms) Executed (6224648b-c417-4c4f-b770-22fd6820bcbc): COMMIT;

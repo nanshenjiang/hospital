@@ -19,14 +19,13 @@ module.exports = app => {
     },
     message: STRING(25),     //要介绍的信息(简略信息)
     description: TEXT,  //具体描述
-    // avatarUrl: STRING(200),      //图片的相对地址url  
   }, { 
     timestamps: false,  //是否为表添加cteatedAt和updatadAt字段
   });  
  
   Introduction.associate = function() {
     //SecondOffice表与doctor表是一对多的关系
-    app.model.Introduction.hasMany(app.model.File, {foreignKey: 'photoId'});
+    app.model.Introduction.hasMany(app.model.IntroducePhoto, {foreignKey: 'introductionId'});
   };
   return Introduction;
 };

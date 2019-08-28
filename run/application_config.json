@@ -112,6 +112,7 @@
         "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-session-redis\\config\\locales",
         "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-cors\\config\\locales",
         "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-validate\\config\\locales",
+        "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-bcrypt\\config\\locales",
         "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\locales",
         "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\locales"
       ],
@@ -138,7 +139,7 @@
       "directory": []
     },
     "multipart": {
-      "mode": "stream",
+      "mode": "file",
       "autoFields": false,
       "defaultCharset": "utf8",
       "fieldNameSize": 100,
@@ -190,7 +191,8 @@
       "host": "127.0.0.1",
       "port": 3306,
       "username": "root",
-      "password": "<String len: 6>"
+      "password": "<String len: 6>",
+      "timezone": "+08:00"
     },
     "redis": {
       "default": {},
@@ -206,6 +208,9 @@
       "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
     },
     "validate": {},
+    "bcrypt": {
+      "saltRounds": 10
+    },
     "env": "local",
     "name": "cloud-reinforce-server",
     "keys": "<String len: 41>",
@@ -225,7 +230,9 @@
       "dependencies": {
         "await-stream-ready": "^1.0.1",
         "bcrypt": "^3.0.5",
+        "body-parser": "^1.19.0",
         "egg": "^2.23.0",
+        "egg-bcrypt": "^1.1.0",
         "egg-cors": "^2.2.0",
         "egg-redis": "^2.3.0",
         "egg-scripts": "^2.11.0",
@@ -269,7 +276,7 @@
         "type": "git",
         "url": ""
       },
-      "author": "Payne",
+      "author": "nanshenjiang",
       "license": "MIT",
       "main": ".autod.conf.js",
       "directories": {
@@ -298,8 +305,8 @@
     "bodyParser": {
       "enable": true,
       "encoding": "utf8",
-      "formLimit": "100kb",
-      "jsonLimit": "100kb",
+      "formLimit": "6mb",
+      "jsonLimit": "5mb",
       "strict": true,
       "queryString": {
         "arrayLimit": 100,
@@ -362,6 +369,7 @@
       "session",
       "securities",
       "i18n",
+      "multipart",
       "eggLoaderTrace"
     ],
     "workerStartTimeout": 600000,
@@ -601,6 +609,17 @@
       "from": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\plugin.js",
       "path": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-validate",
       "version": "2.0.2"
+    },
+    "bcrypt": {
+      "enable": true,
+      "package": "egg-bcrypt",
+      "name": "bcrypt",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\plugin.js",
+      "path": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-bcrypt",
+      "version": "1.1.0"
     }
   }
 }

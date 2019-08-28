@@ -1,86 +1,51 @@
 'use strict';
 
-const bcrypt = require('bcrypt');  //egg封装的加密器
 const Controller = require('egg').Controller;
 
 
 /**
- * 登录-控制层
+ * 初始化，所有接口进行数据库的初始化
  */
 class SetupController extends Controller {
-  //初始化数据库中的role类：包括超级管理员，管理员，普通用户
+
+  /**
+   * 初始化数据库中的role类：包括超级管理员，管理员，普通用户
+   */
   async initDatabase() {
     const { ctx } = this;
 
     console.log('initDatabase!');
+    // 初始化测试管理员、一般管理员、一般用户账号若干
+    // const hash = await bcrypt.hash('123456', 10);   //对123456进行hash至10位
 
     // 初始化数据表
     await this.app.model.sync({ force: true });
 
     console.log('finish sync!');
 
-    // 初始化角色
+    // 初始化权限
     await this.app.model.Role.create({
-      id: 1,
-      name: '超级管理员',
-      description: '超级管理员, 最高管理权限',
-      is_admin: true,
-    });
-    await this.app.model.Role.create({
-      id: 2,
       name: '管理员',
-      description: '普通管理员',
-      is_admin: true,
+      description: '管理员权限：可以查询所有用户信息，修改用户账号密码',
     });
     await this.app.model.Role.create({
-      id: 3,
-      name: '普通用户',
-      description: '普通用户',
-      is_admin: false,
-    });
-    ctx.body = 'success';
-  }
-
-  //初始数据库：包括一个超级管理员，一个管理员和一个普通账户
-  async initDevDatabase() {
-    const { ctx } = this;
-
-    // 初始化测试管理员、一般管理员、一般用户账号若干
-    const hash = await bcrypt.hash('123456', 10);   //对123456进行hash至10位
-    await ctx.model.User.create({
-      id: 1,
-      email: 'master@sample.com',
-      phone: '13800138000',
-      password: hash,
-      name: '平台管理员',
-      role_id: 1,
-      is_valid: true,
+      name: '用户',
+      description: '用户：可以进行普通操作',
     });
 
-    await ctx.model.User.create({
-      id: 2,
-      email: 'admin@sample.com',
-      phone: '13800138001',
-      password: hash,
-      name: '管理员',
-      role_id: 2,
-      is_valid: true,
-    });
-
-    await ctx.model.User.create({
-      id: 3,
-      email: 'user1@sample.com',
-      phone: '13800138002',
-      password: hash,
-      name: '张三',
-      role_id: 3,
-      is_valid: true,
+    //初始化医院大楼（总楼层）
+    await this.app.model.Building.create({
+      name: '医院总览图',
+      isMain: true,
     });
 
     ctx.body = 'success';
   }
-
-  async initOtherDatabase(){
+  
+  /**
+   * 初始化数据库信息
+   */
+  async initDevDatabase(){
     const ctx=this.ctx;
     /**
      * 插入一级科室
@@ -242,6 +207,59 @@ class SetupController extends Controller {
       classes: '上午',
       remaining: 20,
       doctorId: 2,
+    })
+
+    /**
+     * 插入医院介绍
+     */
+    await ctx.model.Introduction.create({
+      id: 1,
+      message: '医院',
+      description: '赣州市人民医院始建于1939年7月，位于有着千年宋城美誉的赣州中心城区，现已形成“一院两区”格局，集医疗、教学、科研、保健、康复于一体，是南昌大学附属医院，国家支持的区域性医疗中心，江西省首家第三周期三级甲等综合医院，赣州市规模最大、技术力量最雄厚、医疗设备和管理及服务理念最先进的现代化医院。在江西省推行的DRGs综合评价排名中，取得了综合服务能力全省第三、地市级医院第一的优异成绩，牢固确立了在全省地市级医院中的领军地位。'
+    })
+    await ctx.model.Introduction.create({
+      id: 2,
+      message: '门诊大厅',
+      description: 'test',
+    })
+    await ctx.model.Introduction.create({
+      message: '血液净化中心',
+      description: 'test',
+    })
+    await ctx.model.IntroducePhoto.create({
+      photoUrl: '\\public\\image\\hosptial\\message\\hospital1.jpg',
+      introductionId: 1,
+    })
+    await ctx.model.IntroducePhoto.create({
+      photoUrl: '\\public\\image\\hosptial\\message\\hospital2.jpg',
+      introductionId: 1,
+    })
+    await ctx.model.IntroducePhoto.create({
+      photoUrl: '\\public\\image\\hosptial\\message\\hospital3.jpg',
+      introductionId: 2,
+    })
+
+    /**
+     * 医院导航的插入
+     */
+    await ctx.model.Building.create({
+      id: 1,
+      name: '门诊楼',
+      photoUrl: '\\public\\image\\hosptial\\building\\building1.jpg',
+    })
+    await ctx.model.Building.create({
+      name: '急诊楼',
+      photoUrl: '\\public\\image\\hosptial\\building\\building1.jpg',
+    })
+    await ctx.model.Floor.create({
+      name: 1,
+      photoUrl: '\\public\\image\\hosptial\\building\\floors\\floor1.jpg',
+      buildingId: 1,
+    })
+    await ctx.model.Floor.create({
+      name: 2,
+      photoUrl: '\\public\\image\\hosptial\\building\\floors\\floor2.jpg',
+      buildingId: 1,
     })
 
     ctx.body='success';

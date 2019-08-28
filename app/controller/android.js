@@ -7,6 +7,7 @@ const Controller = require('egg').Controller;
  */
 class AndroidController extends Controller {
 
+  /*-----------------医生信息-------------------*/
   /**
    * 获取全部一级科室信息
    */
@@ -23,7 +24,6 @@ class AndroidController extends Controller {
     const {id}=ctx.params;
     ctx.body=await ctx.service.office.findSecondOffice(id);
   }
-
   /**
    * 获取医生列表: 使用到了分页规则
    */
@@ -53,11 +53,61 @@ class AndroidController extends Controller {
   /**
    * 获取具体医生信息
    */
-  async showOne() {
+  async showOneDoctor() {
     const { ctx } = this;
     const { id } = ctx.params;
     const doctor=await ctx.service.doctor.findById(id);
     ctx.body = { doctor };
+  }
+
+  /*----------------医院信息介绍--------------------*/
+  /**
+   * 查找所有医院信息
+   */
+  async findAllIntroduction(){
+    const {ctx,service}=this;
+    const res=await service.introduction.findAllByAndroid();
+    ctx.body={res}
+  }
+
+  /**
+   *查找某个医院信息 
+   */
+  async findOneIntroduction(){
+    const {ctx,service} = this;
+    const { id } = ctx.params;
+    const res = await service.introduction.findOne(id);
+    ctx.body={res}
+  } 
+
+  /*----------------医院导航介绍--------------------*/
+  /**
+   * 查询所有医院建筑信息
+   */
+  async findAllBuildings() {
+    const {ctx,service}=this;
+    const res=await service.building.findAllBuildingsByAndroid();
+    ctx.body={res}
+  }
+
+  /**
+   * 根据id查询某个具体医院建筑信息
+   */
+  async findOneBuilding(){
+    const {ctx,service} = this;
+    const { id } = ctx.params;
+    const res = await service.building.findOneBuildingById(id);
+    ctx.body={res}
+  }
+
+  /**
+   * 根据id查询某个具体楼层
+   */
+  async findOneFloor(){
+    const {ctx,service} = this;
+    const { id } = ctx.params;
+    const res = await service.building.findOneFloorById(id);
+    ctx.body={res}
   }
 
 }

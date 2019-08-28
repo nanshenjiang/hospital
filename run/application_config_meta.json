@@ -7,11 +7,12 @@
     "host": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
     "port": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
     "username": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
-    "password": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js"
+    "password": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+    "timezone": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js"
   },
   "multipart": {
     "fileSize": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
-    "mode": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
+    "mode": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
     "autoFields": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
     "defaultCharset": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
     "fieldNameSize": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js",
@@ -80,6 +81,22 @@
   "cors": {
     "origin": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
     "allowMethods": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "jsonLimit": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+    "formLimit": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+    "enable": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
+    "strict": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
+      "depth": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js"
+    },
+    "onerror": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bcrypt": {
+    "saltRounds": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js"
   },
   "session": {
     "maxAge": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-session\\config\\config.default.js",
@@ -183,7 +200,9 @@
     "dependencies": {
       "await-stream-ready": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "bcrypt": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
+      "body-parser": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
+      "egg-bcrypt": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg-cors": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg-redis": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg-scripts": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
@@ -252,19 +271,6 @@
   },
   "siteFile": {
     "/favicon.ico": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js"
-  },
-  "bodyParser": {
-    "enable": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
-    "formLimit": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
-    "jsonLimit": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
-    "strict": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
-    "queryString": {
-      "arrayLimit": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
-      "depth": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
-      "parameterLimit": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js"
-    },
-    "onerror": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js"
   },
   "logger": {
     "dir": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",

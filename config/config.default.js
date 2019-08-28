@@ -58,5 +58,21 @@ module.exports = appInfo => {
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
   };
 
+  config.bodyParser = {
+    jsonLimit: '5mb',
+    formLimit: '6mb',
+  };
+
+  //bcrypt
+  config.bcrypt = {
+    saltRounds: 10 // default 10
+  };
+
+  //开启上传文件
+  config.multipart = {
+    fileSize: '50mb',
+    mode: 'file',
+  };
+
   return config;
 };

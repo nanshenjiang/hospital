@@ -1,9 +1,11 @@
 'use strict';
-const path = require('path');
-const fs = require('fs');
-const sendToWormhole = require('stream-wormhole');
-const awaitStreamReady = require('await-stream-ready').write;
+// const fs = require('fs');
+// const sendToWormhole = require('stream-wormhole');
+// const awaitStreamReady = require('await-stream-ready').write;
 const Controller = require('egg').Controller;
+const fs = require('mz/fs');
+const path = require('path');
+const pump = require('mz-modules/pump');
 
 //用于validate验证的自定义参数
 const createRule = {
@@ -128,35 +130,51 @@ class DoctorController extends Controller {
   /**
    * 上传头像
    */
-  async uploadAvatar() {
-    const { ctx, config } = this;
-    //获取要上传头像的医生的id
+  async uploadAvatar() {   
+    const {ctx,service,config}=this;
     const {id}=ctx.params;
-    // console.log('===========================');
-    const url = '/public/image/doctor/face';   //设置相对路径的一部分
-    const baseDir=path.join(config.baseDir,'app',url);   //获取绝对路径的一部分
-    const stream = await ctx.getFileStream()   //获取文件流
-    const extname = path.extname(stream.filename).toLowerCase() // 文件扩展名称
-    //判断是否为图片格式
-    if(extname !== '.jpg' && extname !== '.png' && extname !== '.gif' && extname!=='.jpeg') {
-      ctx.throw(400,'头像上传的图片格式不支持!');
-    }
-    // 生成文件名 ( 时间 + 10000以内的随机数 )
-    const filename=Date.now() + Number.parseInt(Math.random() * 10000);
-    const relativePath = path.join(url, `${filename}${extname}`)  //相对路径
-    // 组装参数 stream
-    const target = path.join(baseDir , `${filename}${extname}`);   //绝对路径
-    const writeStream = fs.createWriteStream(target)
-    // 文件处理，上传到云存储等等
-    try {
-        await awaitStreamReady(stream.pipe(writeStream))
-    } catch (err) {
-      // 必须将上传的文件流消费掉，要不然浏览器响应会卡死
-      await sendToWormhole(stream)
-      ctx.throw(400, 'upload failed！！');
+    let relativePath;
+    //获取用户输入的上传流
+    const file=ctx.request.files[0];
+    //判断是否有文件流，有就进行操作
+    if(file!==undefined&&file!==null){
+      //文件流操作
+      //获取绝对路径的一部分
+      const baseDir=config.baseDir;
+      //设置相对路径的一部分
+      const url = '/public/image/doctor/face';
+      // 文件扩展名称
+      const extname = path.extname(file.filename).toLowerCase();
+      //判断是否为图片格式
+      if(extname !== '.jpg' && extname !== '.png' && extname !== '.gif' && extname!=='.jpeg') {
+        ctx.throw(400,'上传的图片格式不支持!');
+      }
+      //判断是否存在文件，不存在生成文件夹
+      const filepath=path.join(baseDir,'app',url);
+      //递归生成
+      fs.mkdir(filepath, { recursive: true }, (err) => {
+          if (err) throw err;
+      });
+      // 生成文件名 ( 时间 + 10000以内的随机数 )
+      const filename=Date.now() + Number.parseInt(Math.random() * 10000);
+      // 相对路径
+      relativePath = path.join(url, `${filename}${extname}`)  //相对路径
+      // 组装参数（用于生成文件）
+      const targetPath = path.join(baseDir ,'app', url , `${filename}${extname}`);   //绝对路径
+      const target = fs.createWriteStream(targetPath);
+      const source=fs.createReadStream(file.filepath);
+      // 文件处理，上传到云存储等等
+      try {
+        await pump(source, target);
+      }finally{
+        // 必须将上传的文件流消费掉，要不然浏览器响应会卡死
+        await ctx.cleanupRequestFiles();
+      }
+    }else{
+      ctx.throw(400,'请先点击图片再进行上传')
     }
     //更新医生中的头像关联
-    const res=await ctx.service.doctor.updateDoctor(id , {avatarUrl: relativePath},true); 
+    const res=await service.doctor.updateDoctor(id,{avatarUrl: relativePath},true); 
     // 设置响应内容和响应状态码
     ctx.helper.success({ctx,res});
   }

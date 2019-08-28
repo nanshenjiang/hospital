@@ -7,7 +7,7 @@ module.exports = app => {
   const { STRING, INTEGER, UUID} = app.Sequelize;
   const uuidv1=require("uuid/v1");
 
-  //model of 楼层
+  //model of 楼层 
   const Floor = app.model.define('floor', {
     id: {   //设置id格式：uuid
       type: UUID,

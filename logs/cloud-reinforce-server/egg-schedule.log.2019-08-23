@@ -1,0 +1,297 @@
+2019-08-23 19:05:48,846 INFO 7508 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:05:48,846 INFO 7508 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:05:48,846 INFO 7508 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:05:52,631 INFO 9820 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 33847376ms at 2019-08-24 04:30:00.007
+2019-08-23 19:05:52,631 INFO 9820 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 17647369ms at 2019-08-24 00:00:00.000
+2019-08-23 19:05:52,632 INFO 9820 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 17648369ms at 2019-08-24 00:00:01.001
+2019-08-23 19:05:54,786 INFO 14188 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:05:54,786 INFO 14188 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:05:54,786 INFO 14188 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:06:46,979 INFO 3748 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:06:46,979 INFO 3748 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:06:46,979 INFO 3748 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:14:32,779 INFO 10488 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:14:32,779 INFO 10488 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:14:32,779 INFO 10488 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:14:44,789 INFO 4848 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:14:44,789 INFO 4848 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:14:44,790 INFO 4848 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:17:19,974 INFO 16100 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:17:19,974 INFO 16100 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:17:19,974 INFO 16100 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:20:21,587 INFO 15180 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:20:21,587 INFO 15180 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:20:21,587 INFO 15180 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:20:22,689 INFO 3172 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 32977318ms at 2019-08-24 04:30:00.007
+2019-08-23 19:20:22,689 INFO 3172 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 16777311ms at 2019-08-24 00:00:00.000
+2019-08-23 19:20:22,690 INFO 3172 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 16778310ms at 2019-08-24 00:00:01.000
+2019-08-23 19:21:47,997 INFO 13764 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:21:47,997 INFO 13764 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:21:47,997 INFO 13764 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:22:29,069 INFO 13348 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:22:29,069 INFO 13348 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:22:29,069 INFO 13348 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:24:17,333 INFO 10912 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:24:17,333 INFO 10912 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:24:17,333 INFO 10912 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:24:40,046 INFO 15448 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:24:40,046 INFO 15448 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:24:40,046 INFO 15448 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:36:14,808 INFO 8508 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:36:14,808 INFO 8508 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:36:14,808 INFO 8508 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:38:10,979 INFO 8996 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:38:10,979 INFO 8996 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:38:10,979 INFO 8996 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:38:53,084 INFO 13644 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:38:53,085 INFO 13644 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:38:53,085 INFO 13644 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:38:54,463 INFO 12020 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 31865544ms at 2019-08-24 04:30:00.007
+2019-08-23 19:38:54,464 INFO 12020 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 15665537ms at 2019-08-24 00:00:00.001
+2019-08-23 19:38:54,464 INFO 12020 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 15666536ms at 2019-08-24 00:00:01.000
+2019-08-23 19:39:07,160 INFO 3044 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:39:07,160 INFO 3044 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:39:07,160 INFO 3044 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:41:29,792 INFO 4508 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:41:29,793 INFO 4508 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:41:29,793 INFO 4508 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:49:14,384 INFO 3340 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 31245620ms at 2019-08-24 04:30:00.004
+2019-08-23 19:49:14,384 INFO 3340 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 15045616ms at 2019-08-24 00:00:00.000
+2019-08-23 19:49:14,384 INFO 3340 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 15046616ms at 2019-08-24 00:00:01.000
+2019-08-23 19:49:13,708 INFO 268 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:49:13,708 INFO 268 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:49:13,708 INFO 268 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:53:33,690 INFO 15916 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:53:33,690 INFO 15916 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:53:33,690 INFO 15916 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:56:01,469 INFO 14156 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:56:01,469 INFO 14156 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:56:01,469 INFO 14156 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 19:56:31,378 INFO 15408 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 19:56:31,378 INFO 15408 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 19:56:31,378 INFO 15408 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:07:02,101 INFO 15220 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:07:02,101 INFO 15220 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:07:02,101 INFO 15220 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:07:05,288 INFO 15916 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:07:05,288 INFO 15916 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:07:05,288 INFO 15916 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:07:37,165 INFO 14584 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:07:37,165 INFO 14584 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:07:37,165 INFO 14584 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:09:37,805 INFO 16196 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:09:37,805 INFO 16196 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:09:37,805 INFO 16196 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:12:16,251 INFO 11940 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:12:16,251 INFO 11940 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:12:16,251 INFO 11940 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:14:30,370 INFO 1712 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:14:30,370 INFO 1712 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:14:30,370 INFO 1712 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:16:48,183 INFO 1840 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:16:48,184 INFO 1840 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:16:48,184 INFO 1840 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:17:48,728 INFO 9752 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:17:48,729 INFO 9752 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:17:48,729 INFO 9752 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:23:49,388 INFO 10780 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:23:49,389 INFO 10780 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:23:49,389 INFO 10780 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:23:51,022 INFO 16112 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 29168987ms at 2019-08-24 04:30:00.009
+2019-08-23 20:23:51,023 INFO 16112 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 12968977ms at 2019-08-24 00:00:00.000
+2019-08-23 20:23:51,024 INFO 16112 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 12969977ms at 2019-08-24 00:00:01.001
+2019-08-23 20:23:53,868 INFO 2656 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:23:53,868 INFO 2656 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:23:53,868 INFO 2656 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:26:55,463 INFO 1360 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:26:55,463 INFO 1360 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:26:55,463 INFO 1360 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:27:27,920 INFO 7936 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:27:27,920 INFO 7936 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:27:27,920 INFO 7936 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:29:03,502 INFO 10584 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:29:03,502 INFO 10584 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:29:03,502 INFO 10584 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:30:23,433 INFO 844 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:30:23,433 INFO 844 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:30:23,433 INFO 844 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:30:28,172 INFO 16364 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:30:28,172 INFO 16364 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:30:28,172 INFO 16364 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:32:37,636 INFO 15116 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:32:37,636 INFO 15116 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:32:37,636 INFO 15116 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:33:11,153 INFO 14660 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:33:11,153 INFO 14660 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:33:11,153 INFO 14660 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:33:12,177 INFO 15468 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 28607828ms at 2019-08-24 04:30:00.004
+2019-08-23 20:33:12,177 INFO 15468 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 12407823ms at 2019-08-24 00:00:00.000
+2019-08-23 20:33:12,178 INFO 15468 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 12408823ms at 2019-08-24 00:00:01.000
+2019-08-23 20:33:34,951 INFO 8000 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:33:34,951 INFO 8000 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:33:34,951 INFO 8000 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:41:06,604 INFO 13224 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:41:06,604 INFO 13224 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:41:06,604 INFO 13224 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:41:10,132 INFO 15976 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:41:10,132 INFO 15976 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:41:10,132 INFO 15976 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:45:43,348 INFO 15808 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:45:43,348 INFO 15808 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:45:43,348 INFO 15808 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:46:05,925 INFO 14688 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:46:05,925 INFO 14688 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:46:05,925 INFO 14688 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:47:12,059 INFO 16120 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:47:12,059 INFO 16120 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:47:12,059 INFO 16120 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:47:21,848 INFO 14728 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:47:21,849 INFO 14728 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:47:21,849 INFO 14728 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:47:43,392 INFO 15708 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:47:43,393 INFO 15708 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:47:43,393 INFO 15708 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:51:16,317 INFO 13824 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:51:16,318 INFO 13824 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:51:16,318 INFO 13824 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:58:13,076 INFO 8988 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:58:13,076 INFO 8988 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:58:13,077 INFO 8988 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 20:58:20,476 INFO 10676 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 20:58:20,476 INFO 10676 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 20:58:20,476 INFO 10676 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:00:21,564 INFO 10044 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:00:21,564 INFO 10044 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:00:21,564 INFO 10044 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:00:30,190 INFO 7320 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:00:30,191 INFO 7320 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:00:30,191 INFO 7320 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:01:42,880 INFO 4308 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:01:42,880 INFO 4308 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:01:42,880 INFO 4308 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:01:51,488 INFO 7936 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:01:51,488 INFO 7936 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:01:51,488 INFO 7936 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:03:20,033 INFO 12156 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:03:20,033 INFO 12156 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:03:20,033 INFO 12156 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:03:35,767 INFO 11148 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:03:35,767 INFO 11148 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:03:35,767 INFO 11148 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:05:17,767 INFO 5960 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:05:17,767 INFO 5960 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:05:17,767 INFO 5960 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:05:30,257 INFO 12680 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:05:30,257 INFO 12680 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:05:30,257 INFO 12680 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:05:55,721 INFO 13868 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:05:55,721 INFO 13868 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:05:55,721 INFO 13868 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:10:39,072 INFO 14512 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:10:39,073 INFO 14512 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:10:39,073 INFO 14512 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:10:47,271 INFO 15280 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:10:47,271 INFO 15280 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:10:47,271 INFO 15280 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:11:41,744 INFO 10348 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:11:41,744 INFO 10348 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:11:41,744 INFO 10348 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:13:50,654 INFO 13792 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:13:50,655 INFO 13792 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:13:50,655 INFO 13792 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:14:02,548 INFO 15912 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:14:02,548 INFO 15912 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:14:02,548 INFO 15912 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:16:08,052 INFO 5896 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:16:08,052 INFO 5896 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:16:08,052 INFO 5896 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:20:54,428 INFO 9664 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:20:54,429 INFO 9664 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:20:54,429 INFO 9664 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:22:14,105 INFO 6632 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:22:14,105 INFO 6632 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:22:14,105 INFO 6632 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:23:17,897 INFO 14060 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:23:17,897 INFO 14060 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:23:17,897 INFO 14060 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 21:23:26,870 INFO 8608 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 21:23:26,870 INFO 8608 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 21:23:26,870 INFO 8608 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 22:46:59,724 INFO 12012 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 22:46:59,724 INFO 12012 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 22:46:59,724 INFO 12012 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 22:47:01,076 INFO 15436 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 20578927ms at 2019-08-24 04:30:00.003
+2019-08-23 22:47:01,076 INFO 15436 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 4378924ms at 2019-08-24 00:00:00.000
+2019-08-23 22:47:01,077 INFO 15436 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 4379924ms at 2019-08-24 00:00:01.001
+2019-08-23 22:47:01,156 INFO 6396 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 22:47:01,156 INFO 6396 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 22:47:01,156 INFO 6396 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 22:47:03,218 INFO 10916 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 22:47:03,218 INFO 10916 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 22:47:03,218 INFO 10916 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 22:49:13,762 INFO 15524 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 22:49:13,762 INFO 15524 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 22:49:13,762 INFO 15524 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 22:51:46,573 INFO 15128 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 22:51:46,574 INFO 15128 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 22:51:46,574 INFO 15128 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 22:53:29,986 INFO 15320 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 22:53:29,986 INFO 15320 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 22:53:29,986 INFO 15320 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:12:51,522 INFO 2576 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:12:51,522 INFO 2576 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:12:51,522 INFO 2576 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:12:53,618 INFO 8528 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:12:53,618 INFO 8528 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:12:53,618 INFO 8528 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:12:56,470 INFO 352 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:12:56,470 INFO 352 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:12:56,470 INFO 352 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:13:50,708 INFO 13584 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:13:50,708 INFO 13584 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:13:50,708 INFO 13584 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:13:51,303 INFO 15540 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 18968701ms at 2019-08-24 04:30:00.004
+2019-08-23 23:13:51,303 INFO 15540 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 2768697ms at 2019-08-24 00:00:00.000
+2019-08-23 23:13:51,304 INFO 15540 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 2769697ms at 2019-08-24 00:00:01.001
+2019-08-23 23:20:31,555 INFO 1468 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:20:31,555 INFO 1468 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:20:31,555 INFO 1468 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:21:56,196 INFO 2152 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:21:56,196 INFO 2152 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:21:56,196 INFO 2152 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:28:54,364 INFO 1476 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:28:54,364 INFO 1476 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:28:54,364 INFO 1476 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:28:56,019 INFO 11212 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 18063984ms at 2019-08-24 04:30:00.003
+2019-08-23 23:28:56,020 INFO 11212 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 1863980ms at 2019-08-24 00:00:00.000
+2019-08-23 23:28:56,020 INFO 11212 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 1864980ms at 2019-08-24 00:00:01.000
+2019-08-23 23:30:38,788 INFO 544 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:30:38,788 INFO 544 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:30:38,788 INFO 544 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:33:21,847 INFO 4480 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:33:21,847 INFO 4480 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:33:21,847 INFO 4480 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:34:36,835 INFO 14848 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:34:36,835 INFO 14848 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:34:36,835 INFO 14848 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:35:06,493 INFO 5764 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:35:06,493 INFO 5764 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:35:06,493 INFO 5764 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:37:17,414 INFO 10420 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:37:17,414 INFO 10420 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:37:17,414 INFO 10420 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:37:22,166 INFO 14804 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:37:22,166 INFO 14804 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:37:22,166 INFO 14804 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:37:50,472 INFO 14960 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:37:50,472 INFO 14960 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:37:50,472 INFO 14960 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-23 23:45:15,638 INFO 2928 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-08-23 23:45:15,638 INFO 2928 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-08-23 23:45:15,638 INFO 2928 [egg-schedule]: register schedule D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-08-24 00:00:00,005 INFO 11212 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 86399997ms at 2019-08-25 00:00:00.002
+2019-08-24 00:00:00,002 INFO 2928 [Job#156657600000120781320184001] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js executing by app
+2019-08-24 00:00:00,011 INFO 2928 [Job#156657600000120781320184001] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\clean_log.js execute succeed, used 8ms
+2019-08-24 00:00:01,003 INFO 11212 [Timer] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 86399999ms at 2019-08-25 00:00:01.002
+2019-08-24 00:00:01,001 INFO 2928 [Job#156657600100020791316100991] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js executing by app
+2019-08-24 00:00:01,053 INFO 2928 [Job#156657600100020791316100991] D:\nodejs\nodejs\node_project\hospital\node_modules\egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 52ms

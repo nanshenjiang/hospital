@@ -1,0 +1,739 @@
+2019-08-23 19:16:31,238 ERROR 4848 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'filename' of undefined
+    at BuildingController.updateBuilding (D:\nodejs\nodejs\node_project\hospital\app\controller\building.js:100:43)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:9:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 4848
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 19:18:32,443 ERROR 16100 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: the multipart request can't be consumed twice
+    at Object.multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\extend\context.js:155:35)
+    at Object.getFileStream (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\extend\context.js:193:24)
+    at BuildingController.saveBuilding (D:\nodejs\nodejs\node_project\hospital\app\controller\building.js:35:26)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:9:12)
+
+pid: 16100
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 19:23:44,973 ERROR 13348 [-/127.0.0.1/-/1ms GET /] nodejs.ReferenceError: path is not defined
+    at TestController.upload (D:\nodejs\nodejs\node_project\hospital\app\controller\test.js:11:42)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:9:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13348
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 19:24:23,294 ERROR 10912 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'put' of undefined
+    at TestController.upload (D:\nodejs\nodejs\node_project\hospital\app\controller\test.js:16:30)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:9:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 10912
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 19:24:44,656 ERROR 15448 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError [ERR_INVALID_CALLBACK]: Callback must be a function
+    at makeCallback (fs.js:136:11)
+    at Object.unlink (fs.js:943:14)
+    at TestController.upload (D:\nodejs\nodejs\node_project\hospital\app\controller\test.js:19:16)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:9:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 15448
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 19:38:21,388 ERROR 8996 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'put' of undefined
+    at TestController.upload (D:\nodejs\nodejs\node_project\hospital\app\controller\test.js:16:30)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:9:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8996
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 19:38:21,450 ERROR 8996 nodejs.ReferenceError: filepath is not defined (uncaughtException throw 1 times on pid:8996)
+    at D:\nodejs\nodejs\node_project\hospital\app\controller\test.js:23:27
+    at FSReqWrap.args [as oncomplete] (fs.js:140:20)
+
+pid: 8996
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 19:39:16,079 ERROR 3044 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'put' of undefined
+    at TestController.upload (D:\nodejs\nodejs\node_project\hospital\app\controller\test.js:17:30)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:9:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 3044
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 19:39:16,129 ERROR 3044 nodejs.ReferenceError: filepath is not defined (uncaughtException throw 1 times on pid:3044)
+    at D:\nodejs\nodejs\node_project\hospital\app\controller\test.js:24:27
+    at FSReqWrap.args [as oncomplete] (fs.js:140:20)
+
+pid: 3044
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 19:42:12,431 ERROR 4508 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: Cannot read property 'put' of undefined
+    at TestController.upload (D:\nodejs\nodejs\node_project\hospital\app\controller\test.js:17:30)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:9:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 4508
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 19:49:19,658 ERROR 268 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: path is not defined
+    at TestController.upload (D:\nodejs\nodejs\node_project\hospital\app\controller\test.js:13:42)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:9:12)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 268
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 19:56:06,150 ERROR 14156 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: res is not defined
+    at TestController.upload (D:\nodejs\nodejs\node_project\hospital\app\controller\test.js:30:12)
+
+pid: 14156
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 20:07:06,386 ERROR 3340 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 3340
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 20:11:42,589 ERROR 16196 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: res is not defined
+    at BuildingController.updateBuilding (D:\nodejs\nodejs\node_project\hospital\app\controller\building.js:125:14)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 16196
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 20:30:33,767 ERROR 16364 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: this.build(...).save is not a function
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at BuildingService.saveBuilding (D:\nodejs\nodejs\node_project\hospital\app\service\building.js:63:46)
+    at BuildingController.saveBuilding (D:\nodejs\nodejs\node_project\hospital\app\controller\building.js:80:38)
+
+pid: 16364
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 20:33:18,357 ERROR 14660 [-/127.0.0.1/-/1ms GET /] nodejs.ReferenceError: t is not defined
+    at BuildingService.saveBuilding (D:\nodejs\nodejs\node_project\hospital\app\service\building.js:63:75)
+    at BuildingController.saveBuilding (D:\nodejs\nodejs\node_project\hospital\app\controller\building.js:80:38)
+
+pid: 14660
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 20:33:47,333 ERROR 8000 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: this.build(...).save is not a function
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at BuildingService.saveBuilding (D:\nodejs\nodejs\node_project\hospital\app\service\building.js:63:46)
+    at BuildingController.saveBuilding (D:\nodejs\nodejs\node_project\hospital\app\controller\building.js:80:38)
+
+pid: 8000
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 20:36:33,766 ERROR 8000 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: the multipart request can't be consumed twice
+    at Object.multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\extend\context.js:155:35)
+    at Object.getFileStream (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\extend\context.js:193:24)
+    at BuildingController.saveFloor (D:\nodejs\nodejs\node_project\hospital\app\controller\building.js:167:26)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:9:12)
+
+pid: 8000
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 20:38:10,142 ERROR 8000 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: the multipart request can't be consumed twice
+    at Object.multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\extend\context.js:155:35)
+    at Object.getFileStream (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\extend\context.js:193:24)
+    at BuildingController.saveFloor (D:\nodejs\nodejs\node_project\hospital\app\controller\building.js:167:26)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:9:12)
+
+pid: 8000
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 20:38:35,561 ERROR 8000 [-/127.0.0.1/-/1ms GET /] nodejs.TypeError: this.build(...).save is not a function
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at BuildingService.saveBuilding (D:\nodejs\nodejs\node_project\hospital\app\service\building.js:63:46)
+    at BuildingController.saveBuilding (D:\nodejs\nodejs\node_project\hospital\app\controller\building.js:80:38)
+
+pid: 8000
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 20:41:35,480 ERROR 15976 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: this.build(...).save is not a function
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at BuildingService.saveBuilding (D:\nodejs\nodejs\node_project\hospital\app\service\building.js:63:46)
+    at BuildingController.saveBuilding (D:\nodejs\nodejs\node_project\hospital\app\controller\building.js:80:38)
+
+pid: 15976
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 20:42:38,454 ERROR 15976 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: this.build(...).save is not a function
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at BuildingService.saveBuilding (D:\nodejs\nodejs\node_project\hospital\app\service\building.js:63:46)
+    at BuildingController.saveBuilding (D:\nodejs\nodejs\node_project\hospital\app\controller\building.js:80:38)
+
+pid: 15976
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 21:01:52,816 ERROR 15468 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15468
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 21:05:01,572 ERROR 11148 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: building is not defined
+    at BuildingController.updateFloor (D:\nodejs\nodejs\node_project\hospital\app\controller\building.js:267:19)
+
+pid: 11148
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 21:05:30,335 ERROR 5960 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: building is not defined
+    at BuildingController.updateFloor (D:\nodejs\nodejs\node_project\hospital\app\controller\building.js:267:55)
+
+pid: 5960
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 21:10:45,984 ERROR 14512 [-/127.0.0.1/-/1ms GET /] nodejs.InternalServerError: Internal Server Error
+    at Object.throw (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\lib\context.js:97:11)
+    at BuildingService.deleteBuilding (D:\nodejs\nodejs\node_project\hospital\app\service\building.js:144:20)
+message: "Internal Server Error"
+pid: 14512
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 21:10:56,440 ERROR 15280 [-/127.0.0.1/-/1ms GET /] nodejs.InternalServerError: Internal Server Error
+    at Object.throw (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\lib\context.js:97:11)
+    at BuildingService.deleteBuilding (D:\nodejs\nodejs\node_project\hospital\app\service\building.js:144:20)
+message: "Internal Server Error"
+pid: 15280
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 21:15:31,098 ERROR 15912 [-/127.0.0.1/-/0ms GET /] nodejs.TypeError: the multipart request can't be consumed twice
+    at Object.multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\extend\context.js:155:35)
+    at Object.getFileStream (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\extend\context.js:193:24)
+    at DoctorController.uploadAvatar (D:\nodejs\nodejs\node_project\hospital\app\controller\doctor.js:138:30)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at limit (D:\nodejs\nodejs\node_project\hospital\app\middleware\limit.js:32:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:9:12)
+
+pid: 15912
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 21:23:26,968 ERROR 15468 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15468
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 23:13:10,682 ERROR 352 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Cannot delete or update a parent row: a foreign key constraint fails
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.dropTable (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:298:27)
+    at Function.drop (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:1223:32)
+    at Promise.each.model (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:776:48)
+From previous event:
+    at Sequelize.drop (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:776:20)
+    at Promise.try.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:707:21)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Sequelize.sync (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:705:8)
+    at SetupController.initDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:17:26)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:5:38)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_ROW_IS_REFERENCED","errno":1217,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails","sql":"DROP TABLE IF EXISTS `introductions`;"}
+original: {"code":"ER_ROW_IS_REFERENCED","errno":1217,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails","sql":"DROP TABLE IF EXISTS `introductions`;"}
+sql: "DROP TABLE IF EXISTS `introductions`;"
+pid: 352
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 23:13:28,483 ERROR 352 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Cannot delete or update a parent row: a foreign key constraint fails
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.dropTable (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:298:27)
+    at Function.drop (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:1223:32)
+    at Promise.each.model (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:776:48)
+From previous event:
+    at Sequelize.drop (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:776:20)
+    at Promise.try.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:707:21)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Sequelize.sync (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:705:8)
+    at SetupController.initDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:17:26)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:5:38)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_ROW_IS_REFERENCED","errno":1217,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails","sql":"DROP TABLE IF EXISTS `introductions`;"}
+original: {"code":"ER_ROW_IS_REFERENCED","errno":1217,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails","sql":"DROP TABLE IF EXISTS `introductions`;"}
+sql: "DROP TABLE IF EXISTS `introductions`;"
+pid: 352
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 23:13:37,504 ERROR 352 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Cannot delete or update a parent row: a foreign key constraint fails
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.dropTable (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:298:27)
+    at Function.drop (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:1223:32)
+    at Promise.each.model (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:776:48)
+From previous event:
+    at Sequelize.drop (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:776:20)
+    at Promise.try.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:707:21)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Sequelize.sync (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:705:8)
+    at SetupController.initDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:17:26)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:5:38)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_ROW_IS_REFERENCED","errno":1217,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails","sql":"DROP TABLE IF EXISTS `introductions`;"}
+original: {"code":"ER_ROW_IS_REFERENCED","errno":1217,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails","sql":"DROP TABLE IF EXISTS `introductions`;"}
+sql: "DROP TABLE IF EXISTS `introductions`;"
+pid: 352
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 23:18:56,523 ERROR 13584 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Cannot delete or update a parent row: a foreign key constraint fails
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.dropTable (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:298:27)
+    at Function.drop (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:1223:32)
+    at Promise.each.model (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:776:48)
+From previous event:
+    at Sequelize.drop (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:776:20)
+    at Promise.try.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:707:21)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Sequelize.sync (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:705:8)
+    at SetupController.initDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:17:26)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:5:38)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_ROW_IS_REFERENCED","errno":1217,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails","sql":"DROP TABLE IF EXISTS `introductions`;"}
+original: {"code":"ER_ROW_IS_REFERENCED","errno":1217,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails","sql":"DROP TABLE IF EXISTS `introductions`;"}
+sql: "DROP TABLE IF EXISTS `introductions`;"
+pid: 13584
+hostname: LAPTOP-57LT11PC
+
+2019-08-23 23:20:36,178 ERROR 1468 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeDatabaseError: Cannot delete or update a parent row: a foreign key constraint fails
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.dropTable (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:298:27)
+    at Function.drop (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:1223:32)
+    at Promise.each.model (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:776:48)
+From previous event:
+    at Sequelize.drop (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:776:20)
+    at Promise.try.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:707:21)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Sequelize.sync (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:705:8)
+    at SetupController.initDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:17:26)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at multipart (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-multipart\app\middleware\multipart.js:5:38)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_ROW_IS_REFERENCED","errno":1217,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails","sql":"DROP TABLE IF EXISTS `introductions`;"}
+original: {"code":"ER_ROW_IS_REFERENCED","errno":1217,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails","sql":"DROP TABLE IF EXISTS `introductions`;"}
+sql: "DROP TABLE IF EXISTS `introductions`;"
+pid: 1468
+hostname: LAPTOP-57LT11PC
+

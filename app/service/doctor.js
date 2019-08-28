@@ -88,7 +88,6 @@ class DoctorService extends Service {
     }
   }
 
-
   //安卓需求：根据二级科室查询所有医生及其数量
   async findBySecondOfficeIdNeedByAndroid(id){
     const {ctx,app}=this;
@@ -218,7 +217,7 @@ class DoctorService extends Service {
         fs.unlinkSync(oldpath);
       }
       //更新医生信息
-      const res=await await doctorExp.update(doctor,{transaction:t});
+      const res=await doctorExp.update(doctor,{transaction:t});
       await t.commit();
       return res;
     }catch(e){
@@ -261,7 +260,6 @@ class DoctorService extends Service {
       await ctx.service.doctor.deleteDoctorById(obj.id);
     }
   }
-
   
 }
 

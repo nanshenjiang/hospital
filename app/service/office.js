@@ -54,7 +54,7 @@ class OfficeService extends Service {
     let t;
     try {
       t=await ctx.model.transaction();
-      const Office = await this.ctx.model.FirstOffice.create(office,{transaction:t});
+      const Office = await ctx.model.FirstOffice.create(office,{transaction:t});
       if(!office){
         ctx.throw();
       }

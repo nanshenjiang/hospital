@@ -32,3 +32,10 @@ exports.validate = {
   package: 'egg-validate',
 };
 
+//安全bcrypt所需的一些包
+exports.bcrypt = {
+  enable: true,
+  package: 'egg-bcrypt'
+};
+
+

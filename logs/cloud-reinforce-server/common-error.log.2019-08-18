@@ -1,0 +1,367 @@
+2019-08-16 20:16:36,212 ERROR 15344 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15344
+hostname: LAPTOP-57LT11PC
+
+2019-08-16 20:24:37,711 ERROR 15576 [-/127.0.0.1/-/0ms GET /] nodejs.ENOENTError: ENOENT: no such file or directory, unlink 'D:\nodejs\nodejs\node_project\hospital\app\public\image\doctor\face\doctor.jpg'
+    at Object.unlinkSync (fs.js:956:3)
+    at DoctorService.deleteDoctorById (D:\nodejs\nodejs\node_project\hospital\app\service\doctor.js:242:8)
+errno: -4058
+syscall: "unlink"
+code: "ENOENT"
+path: "D:\\nodejs\\nodejs\\node_project\\hospital\\app\\public\\image\\doctor\\face\\doctor.jpg"
+name: "ENOENTError"
+pid: 15576
+hostname: LAPTOP-57LT11PC
+
+2019-08-16 20:28:13,779 ERROR 15576 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.insert (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:901:27)
+    at Promise.try.then.then.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3685:53)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3661:8)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at SetupController.initOtherDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:88:33)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"1","origin":"DB","instance":{"id":1,"name":"内科"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"PRIMARY":"1"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+sql: "INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"
+pid: 15576
+hostname: LAPTOP-57LT11PC
+
+2019-08-16 20:28:55,391 ERROR 15576 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.insert (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:901:27)
+    at Promise.try.then.then.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3685:53)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3661:8)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at SetupController.initOtherDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:88:33)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"1","origin":"DB","instance":{"id":1,"name":"内科"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"PRIMARY":"1"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+sql: "INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"
+pid: 15576
+hostname: LAPTOP-57LT11PC
+
+2019-08-16 21:58:20,798 ERROR 1824 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeValidationError: notNull Violation: user.username cannot be null
+    at Promise.all.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:72:7)
+    at runHooks.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:107:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:106:8)
+    at InstanceValidator.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\instance-validator.js:90:38)
+    at model.validate (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3823:49)
+    at Promise.try (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3600:21)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3597:23)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at SetupController.initDevDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:50:26)
+name: "SequelizeValidationError"
+errors: [{"message":"user.username cannot be null","type":"notNull Violation","path":"username","value":null,"origin":"CORE","instance":{"id":1,"password":"$2b$10$hl2u.zM7VPyhy/iSvDQODOsFiE2xpsIZsI2/uvZYqm6N3sifrmieK","role_id":1,"updated_at":"2019-08-16T13:58:20.791Z","created_at":"2019-08-16T13:58:20.791Z"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 1824
+hostname: LAPTOP-57LT11PC
+
+2019-08-16 21:58:25,161 ERROR 1824 [-/127.0.0.1/-/0ms GET /] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:226:16)
+    at Query.handler [as onResult] (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (D:\nodejs\nodejs\node_project\hospital\node_modules\mysql2\lib\connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:558:8)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (D:\nodejs\nodejs\node_project\hospital\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\sequelize.js:457:28)
+    at QueryInterface.insert (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\query-interface.js:901:27)
+    at Promise.try.then.then.then (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3685:53)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at model.save (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:3661:8)
+    at Function.create (D:\nodejs\nodejs\node_project\hospital\node_modules\sequelize\lib\model.js:2023:8)
+    at SetupController.initOtherDatabase (D:\nodejs\nodejs\node_project\hospital\app\controller\setup.js:88:33)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at next (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:45:18)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:44:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\app\middleware\error_handler.js:9:13
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\nodejs\nodejs\node_project\hospital\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\nodejs\nodejs\node_project\hospital\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"1","origin":"DB","instance":{"id":1,"name":"内科"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"PRIMARY":"1"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '1' for key 'PRIMARY'","sql":"INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"}
+sql: "INSERT INTO `firstOffices` (`id`,`name`) VALUES (1,'内科');"
+pid: 1824
+hostname: LAPTOP-57LT11PC
+
+2019-08-17 08:54:07,909 ERROR 9484 [egg-redis] client error: Error: read ECONNRESET
+2019-08-17 08:54:07,910 ERROR 9484 nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "ECONNRESETError"
+pid: 9484
+hostname: LAPTOP-57LT11PC
+
+2019-08-17 08:54:09,978 ERROR 9484 [egg-redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+2019-08-17 08:54:09,979 ERROR 9484 nodejs.ECONNREFUSEDError: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 6379
+name: "ECONNREFUSEDError"
+pid: 9484
+hostname: LAPTOP-57LT11PC
+
+2019-08-17 08:54:12,098 ERROR 9484 [egg-redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+2019-08-17 08:54:12,099 ERROR 9484 nodejs.ECONNREFUSEDError: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 6379
+name: "ECONNREFUSEDError"
+pid: 9484
+hostname: LAPTOP-57LT11PC
+
+2019-08-17 08:54:14,255 ERROR 9484 [egg-redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+2019-08-17 08:54:14,256 ERROR 9484 nodejs.ECONNREFUSEDError: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 6379
+name: "ECONNREFUSEDError"
+pid: 9484
+hostname: LAPTOP-57LT11PC
+
+2019-08-17 08:54:16,476 ERROR 9484 [egg-redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+2019-08-17 08:54:16,477 ERROR 9484 nodejs.ECONNREFUSEDError: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 6379
+name: "ECONNREFUSEDError"
+pid: 9484
+hostname: LAPTOP-57LT11PC
+
+2019-08-17 08:54:18,734 ERROR 9484 [egg-redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+2019-08-17 08:54:18,736 ERROR 9484 nodejs.ECONNREFUSEDError: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 6379
+name: "ECONNREFUSEDError"
+pid: 9484
+hostname: LAPTOP-57LT11PC
+
+2019-08-17 08:54:21,044 ERROR 9484 [egg-redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+2019-08-17 08:54:21,046 ERROR 9484 nodejs.ECONNREFUSEDError: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 6379
+name: "ECONNREFUSEDError"
+pid: 9484
+hostname: LAPTOP-57LT11PC
+
+2019-08-17 08:54:23,411 ERROR 9484 [egg-redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+2019-08-17 08:54:23,413 ERROR 9484 nodejs.ECONNREFUSEDError: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 6379
+name: "ECONNREFUSEDError"
+pid: 9484
+hostname: LAPTOP-57LT11PC
+
+2019-08-17 08:54:25,838 ERROR 9484 [egg-redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+2019-08-17 08:54:25,839 ERROR 9484 nodejs.ECONNREFUSEDError: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 6379
+name: "ECONNREFUSEDError"
+pid: 9484
+hostname: LAPTOP-57LT11PC
+
+2019-08-17 08:54:28,307 ERROR 9484 [egg-redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+2019-08-17 08:54:28,309 ERROR 9484 nodejs.ECONNREFUSEDError: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 6379
+name: "ECONNREFUSEDError"
+pid: 9484
+hostname: LAPTOP-57LT11PC
+
+2019-08-17 08:54:30,826 ERROR 9484 [egg-redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+2019-08-17 08:54:30,828 ERROR 9484 nodejs.ECONNREFUSEDError: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 6379
+name: "ECONNREFUSEDError"
+pid: 9484
+hostname: LAPTOP-57LT11PC
+
+2019-08-17 08:54:33,404 ERROR 9484 [egg-redis] client error: Error: connect ECONNREFUSED 127.0.0.1:6379
+2019-08-17 08:54:33,405 ERROR 9484 nodejs.ECONNREFUSEDError: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 6379
+name: "ECONNREFUSEDError"
+pid: 9484
+hostname: LAPTOP-57LT11PC
+
