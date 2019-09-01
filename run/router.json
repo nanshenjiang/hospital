@@ -6,6 +6,104 @@
       "GET"
     ],
     "paramNames": [],
+    "path": "/android/bootup/video",
+    "regexp": "/^\\/android\\/bootup\\/video(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/android/ai/face/all",
+    "regexp": "/^\\/android\\/ai\\/face\\/all(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/android/ai/face/part",
+    "regexp": "/^\\/android\\/ai\\/face\\/part(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/android/ai/face/one/:id",
+    "regexp": "/^\\/android\\/ai\\/face\\/one\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/android/ai/face/save",
+    "regexp": "/^\\/android\\/ai\\/face\\/save(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/android/ai/face/update/:id",
+    "regexp": "/^\\/android\\/ai\\/face\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
     "path": "/android/doctor/all",
     "regexp": "/^\\/android\\/doctor\\/all(?:\\/(?=$))?$/",
     "stack": [
@@ -198,6 +296,170 @@
   {
     "name": null,
     "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/web/loginin",
+    "regexp": "/^\\/web\\/loginin(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/web/loginout",
+    "regexp": "/^\\/web\\/loginout(?:\\/(?=$))?$/",
+    "stack": [
+      "anonymous",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/web/users/all",
+    "regexp": "/^\\/web\\/users\\/all(?:\\/(?=$))?$/",
+    "stack": [
+      "anonymous",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/web/users/one/:id",
+    "regexp": "/^\\/web\\/users\\/one\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "anonymous",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/web/users/save",
+    "regexp": "/^\\/web\\/users\\/save(?:\\/(?=$))?$/",
+    "stack": [
+      "anonymous",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/web/users/update/:id",
+    "regexp": "/^\\/web\\/users\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "anonymous",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "DELETE"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/web/users/delete/:id",
+    "regexp": "/^\\/web\\/users\\/delete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "anonymous",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/web/bootup/video",
+    "regexp": "/^\\/web\\/bootup\\/video(?:\\/(?=$))?$/",
+    "stack": [
+      "anonymous",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/web/bootup/video/update/:id",
+    "regexp": "/^\\/web\\/bootup\\/video\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "anonymous",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
       "HEAD",
       "GET"
     ],
@@ -205,7 +467,7 @@
     "path": "/web/office/first/all",
     "regexp": "/^\\/web\\/office\\/first\\/all(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -230,7 +492,7 @@
     "path": "/web/office/second/all/:id",
     "regexp": "/^\\/web\\/office\\/second\\/all\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -243,7 +505,7 @@
     "path": "/web/office/first/save",
     "regexp": "/^\\/web\\/office\\/first\\/save(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -256,7 +518,7 @@
     "path": "/web/office/second/save",
     "regexp": "/^\\/web\\/office\\/second\\/save(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -280,7 +542,7 @@
     "path": "/web/office/first/update/:id",
     "regexp": "/^\\/web\\/office\\/first\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -304,7 +566,7 @@
     "path": "/web/office/second/update/:id",
     "regexp": "/^\\/web\\/office\\/second\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -328,7 +590,7 @@
     "path": "/web/office/first/delete/:id",
     "regexp": "/^\\/web\\/office\\/first\\/delete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -352,7 +614,7 @@
     "path": "/web/office/second/delete/:id",
     "regexp": "/^\\/web\\/office\\/second\\/delete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -377,7 +639,7 @@
     "path": "/web/doctor/all/:id",
     "regexp": "/^\\/web\\/doctor\\/all\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -402,7 +664,7 @@
     "path": "/web/doctor/one/:id",
     "regexp": "/^\\/web\\/doctor\\/one\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -415,7 +677,7 @@
     "path": "/web/doctor/save",
     "regexp": "/^\\/web\\/doctor\\/save(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -439,7 +701,7 @@
     "path": "/web/doctor/update/:id",
     "regexp": "/^\\/web\\/doctor\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -463,7 +725,7 @@
     "path": "/web/doctor/delete/:id",
     "regexp": "/^\\/web\\/doctor\\/delete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -487,7 +749,7 @@
     "path": "/web/doctor/uploadAvatar/:id",
     "regexp": "/^\\/web\\/doctor\\/uploadAvatar\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -512,7 +774,7 @@
     "path": "/web/workinfo/all/:id",
     "regexp": "/^\\/web\\/workinfo\\/all\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -525,7 +787,7 @@
     "path": "/web/workinfo/save",
     "regexp": "/^\\/web\\/workinfo\\/save(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -549,7 +811,7 @@
     "path": "/web/workinfo/update/:id",
     "regexp": "/^\\/web\\/workinfo\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -573,7 +835,7 @@
     "path": "/web/workinfo/delete/:id",
     "regexp": "/^\\/web\\/workinfo\\/delete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -587,7 +849,7 @@
     "path": "/web/introduction/all",
     "regexp": "/^\\/web\\/introduction\\/all(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -612,7 +874,7 @@
     "path": "/web/introduction/one/:id",
     "regexp": "/^\\/web\\/introduction\\/one\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -625,7 +887,7 @@
     "path": "/web/introduction/save",
     "regexp": "/^\\/web\\/introduction\\/save(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -649,7 +911,7 @@
     "path": "/web/introduction/update/:id",
     "regexp": "/^\\/web\\/introduction\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -673,7 +935,7 @@
     "path": "/web/introduction/delete/:id",
     "regexp": "/^\\/web\\/introduction\\/delete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -697,7 +959,7 @@
     "path": "/web/introduction/photo/upload/:id",
     "regexp": "/^\\/web\\/introduction\\/photo\\/upload\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -721,7 +983,7 @@
     "path": "/web/introduction/photo/delete/:id",
     "regexp": "/^\\/web\\/introduction\\/photo\\/delete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -735,7 +997,7 @@
     "path": "/web/building/all",
     "regexp": "/^\\/web\\/building\\/all(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -760,7 +1022,7 @@
     "path": "/web/building/one/:id",
     "regexp": "/^\\/web\\/building\\/one\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -785,7 +1047,7 @@
     "path": "/web/building/floor/all/:id",
     "regexp": "/^\\/web\\/building\\/floor\\/all\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -822,7 +1084,7 @@
     "path": "/web/building/save",
     "regexp": "/^\\/web\\/building\\/save(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -835,7 +1097,7 @@
     "path": "/web/building/floor/save",
     "regexp": "/^\\/web\\/building\\/floor\\/save(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -859,7 +1121,7 @@
     "path": "/web/building/update/:id",
     "regexp": "/^\\/web\\/building\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -883,7 +1145,7 @@
     "path": "/web/building/floor/update/:id",
     "regexp": "/^\\/web\\/building\\/floor\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -907,7 +1169,7 @@
     "path": "/web/building/floor/delete/:id",
     "regexp": "/^\\/web\\/building\\/floor\\/delete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },
@@ -931,7 +1193,7 @@
     "path": "/web/building/delete/:id",
     "regexp": "/^\\/web\\/building\\/delete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
-      "limit",
+      "anonymous",
       "wrappedController"
     ]
   },

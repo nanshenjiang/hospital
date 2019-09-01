@@ -5,7 +5,8 @@ const path = require('path');
 const fs = require('fs');
 
 /**
- * 医院介绍类的service层
+ * 医院介绍功能：
+ * 所有service接口
  */
 class IntroductionService extends Service {
   //查找全部信息
@@ -19,7 +20,7 @@ class IntroductionService extends Service {
           model: app.model.IntroducePhoto
         }
       },{transaction:t});
-      if(!Object.getOwnPropertyNames(list).length){  //判断对象是否为空
+      if(Object.keys(list).length===0){  //判断对象是否为空
         ctx.throw();
       }
       await t.commit();
@@ -31,18 +32,16 @@ class IntroductionService extends Service {
   }
 
   //在查找全部信息的基础上
-  //查找数量
+  //查找数量 
   async findAllByAndroid(){
-    const {app,ctx}=this;
+    const {ctx}=this;
     let t;
     try {
       t=await ctx.model.transaction();  //事务操作
       const list=await ctx.model.Introduction.findAndCountAll({
-        include: {
-          model: app.model.IntroducePhoto
-        }
+        attributes: ['id','message'],
       },{transaction:t});
-      if(!Object.getOwnPropertyNames(list).length){  //判断对象是否为空
+      if(Object.keys(list).length===0){  //判断对象是否为空
         ctx.throw();
       }
       await t.commit();

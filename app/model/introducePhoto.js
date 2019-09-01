@@ -1,7 +1,8 @@
 'use strict';
 
 /**
- * 文件流
+ * 医院介绍功能：
+ * 医院介绍图片model
  */
 module.exports = app => {
   const { STRING, DATE, UUID} = app.Sequelize;
@@ -26,7 +27,7 @@ module.exports = app => {
   });
 
   IntroducePhoto.associate = function() {
-    //关系数据库中医院介绍表的主键--photo.id
+    //绑定introduction
     app.model.IntroducePhoto.belongsTo(app.model.Introduction, { foreignKey: 'introductionId', targetKey: 'id' });    
   };
   return IntroducePhoto;

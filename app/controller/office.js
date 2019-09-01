@@ -2,6 +2,10 @@
 
 const Controller = require('egg').Controller;
 
+/**
+ * 医生信息功能
+ * 其中的科室控制层
+ */
 class OfficeController extends Controller {
   /**
    * 获取全部一级科室信息

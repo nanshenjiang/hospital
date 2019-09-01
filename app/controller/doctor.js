@@ -7,34 +7,6 @@ const fs = require('mz/fs');
 const path = require('path');
 const pump = require('mz-modules/pump');
 
-//用于validate验证的自定义参数
-const createRule = {
-  name: {
-    type: 'string',
-    max: 30,
-    trim: true,
-  }
-}
-//用于validate验证的分页中的参数
-const pagination = {
-  secondOfficeId: {
-    type: 'int',
-    required: true,
-  },
-  page: {
-    type: 'int',
-    convertType: 'int',
-    min: 1,
-    default: 1,
-    required: false,
-  },
-  pageSize: {
-    type: 'int',
-    convertType: 'int',
-    default: 1,
-    required: false,
-  },
-};
 
 class DoctorController extends Controller {
   /**
@@ -42,8 +14,6 @@ class DoctorController extends Controller {
    */
   async showPartDoctor() {
     const ctx = this.ctx;
-    //对query的参数进行校验
-    // ctx.validate(pagination, ctx.request.query);
     const { page, pageSize, secondOfficeId } = ctx.query;
     const res = await ctx.service.doctor.queryByPage(secondOfficeId,page,pageSize);
     res = {
@@ -59,8 +29,6 @@ class DoctorController extends Controller {
    */
   async showAllDoctor() {
     const ctx = this.ctx;
-    //对query的参数进行校验
-    // ctx.validate(pagination, ctx.request.query);
     const { id } = ctx.params;
     const res = await ctx.service.doctor.findBySecondOfficeId(id);
     ctx.helper.success({ctx,res}); 
@@ -80,7 +48,6 @@ class DoctorController extends Controller {
    */
   async create() {
     const { ctx ,config} = this;
-    // ctx.validate(createRule, ctx.request.body);
     const doctor = ctx.request.body || {};
     //复制默认文件夹中的医生头像设置为默认初始化头像
     //初始化头像存放路径
@@ -111,7 +78,6 @@ class DoctorController extends Controller {
    */
   async update() {
     const { ctx } = this;
-    // ctx.validate(createRule, ctx.request.body);
     const {id}=ctx.params;
     const doctor = ctx.request.body || {};
     const doctorExp=await ctx.service.doctor.updateDoctor(id,doctor);

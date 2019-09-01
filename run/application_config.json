@@ -113,6 +113,7 @@
         "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-cors\\config\\locales",
         "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-validate\\config\\locales",
         "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-bcrypt\\config\\locales",
+        "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-jwt\\config\\locales",
         "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\locales",
         "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\locales"
       ],
@@ -211,6 +212,10 @@
     "bcrypt": {
       "saltRounds": 10
     },
+    "jwt": {
+      "secret": "<String len: 11>",
+      "enable": false
+    },
     "env": "local",
     "name": "cloud-reinforce-server",
     "keys": "<String len: 41>",
@@ -234,6 +239,7 @@
         "egg": "^2.23.0",
         "egg-bcrypt": "^1.1.0",
         "egg-cors": "^2.2.0",
+        "egg-jwt": "^3.1.6",
         "egg-redis": "^2.3.0",
         "egg-scripts": "^2.11.0",
         "egg-sequelize": "^4.3.1",
@@ -387,6 +393,7 @@
     },
     "onClientError": null,
     "middleware": [
+      "jwt",
       "errorHandler"
     ],
     "coreMiddlewares": "~config~coreMiddleware",
@@ -620,6 +627,19 @@
       "from": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\plugin.js",
       "path": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-bcrypt",
       "version": "1.1.0"
+    },
+    "jwt": {
+      "enable": true,
+      "package": "egg-jwt",
+      "name": "jwt",
+      "dependencies": [],
+      "optionalDependencies": [
+        "onerror"
+      ],
+      "env": [],
+      "from": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\plugin.js",
+      "path": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-jwt",
+      "version": "3.1.6"
     }
   }
 }

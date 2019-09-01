@@ -1,6 +1,7 @@
 'use strict';
 
 /**
+ * 医院介绍功能：
  * 医院介绍类
  */
 module.exports = app => { 
@@ -24,7 +25,7 @@ module.exports = app => {
   });  
  
   Introduction.associate = function() {
-    //SecondOffice表与doctor表是一对多的关系
+    //绑定introducePhoto
     app.model.Introduction.hasMany(app.model.IntroducePhoto, {foreignKey: 'introductionId'});
   };
   return Introduction;

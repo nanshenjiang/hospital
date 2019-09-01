@@ -16,7 +16,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1554464047950_6708';
 
   // 添加中间件
-  config.middleware = ['errorHandler'];    //'limit'中间件还没绑定
+  config.middleware = ['errorHandler'];  
 
   //ORM配置：mysql配置
   config.sequelize = {
@@ -58,12 +58,18 @@ module.exports = appInfo => {
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
   };
 
+  //指定jwt配置
+  config.jwt = {
+    secret: 'egg-xie-jwt',  //设置任意属性
+  };
+
+  //修改传输body的大小
   config.bodyParser = {
     jsonLimit: '5mb',
     formLimit: '6mb',
   };
 
-  //bcrypt
+  //bcrypt加密
   config.bcrypt = {
     saltRounds: 10 // default 10
   };

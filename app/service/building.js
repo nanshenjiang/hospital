@@ -5,7 +5,7 @@ const path = require('path');
 const fs = require('fs');
 
 /**
- * 医院导航类
+ * 医院导航功能：
  * 包括医院建筑和医院楼层的所有service层均存放在此处
  */
 class BuildingService extends Service {
@@ -17,7 +17,7 @@ class BuildingService extends Service {
       try {
         t=await ctx.model.transaction();
         const list= await ctx.model.Building.findAll({transaction:t});
-        if(!Object.getOwnPropertyNames(list).length){
+        if(Object.keys(list).length===0){
           ctx.throw();
         }
         await t.commit()
@@ -35,8 +35,13 @@ class BuildingService extends Service {
       let t;
       try {
         t=await ctx.model.transaction();
-        const list= await ctx.model.Building.findAndCountAll({transaction:t});
-        if(!Object.getOwnPropertyNames(list).length){
+        const list= await ctx.model.Building.findAndCountAll({
+          attributes: ['id','name'],
+          order: [
+            ['isMain','DESC']
+          ],
+        },{transaction:t});
+        if(Object.keys(list).length===0){
           ctx.throw();
         }
         await t.commit()
@@ -196,7 +201,7 @@ class BuildingService extends Service {
             ['name','ASC']
           ],
         },{transaction:t});
-        if(!Object.getOwnPropertyNames(list).length){
+        if(Object.keys(list).length===0){
           ctx.throw();
         }
         await t.commit();

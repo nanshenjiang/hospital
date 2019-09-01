@@ -1,6 +1,7 @@
 'use strict';
 
 /**
+ * 科室导航功能：
  * 二级科室
  */
 module.exports = app => {

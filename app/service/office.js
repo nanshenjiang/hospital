@@ -3,6 +3,7 @@
 const Service = require('egg').Service;
 
 /**
+ * 医生信息功能中：
  * 科室的service层
  */
 class OfficeService extends Service {
@@ -15,7 +16,7 @@ class OfficeService extends Service {
       t=await ctx.model.transaction();  //事务操作
       const list=await ctx.model.FirstOffice.findAll({transaction:t});
       // console.log(list);
-      if(!Object.getOwnPropertyNames(list).length){  //判断对象是否为空
+      if(Object.keys(list).length===0){  //判断对象是否为空
         ctx.throw();
       }
       await t.commit();
@@ -37,7 +38,7 @@ class OfficeService extends Service {
           firstOfficeId: firstOfficeId,
         }
       },{transaction:t});
-      if(!Object.getOwnPropertyNames(list).length){
+      if(Object.keys(list).length===0){
         ctx.throw();
       }
       await t.commit();

@@ -1,6 +1,7 @@
 'use strict';
 
 /**
+ * 医院导航功能：
  * 医院楼层类
  */
 module.exports = app => { 

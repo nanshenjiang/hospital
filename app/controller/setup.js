@@ -1,49 +1,74 @@
 'use strict';
 
 const Controller = require('egg').Controller;
+const fs = require('mz/fs');
+const path = require('path');
 
 
 /**
- * 初始化，所有接口进行数据库的初始化
+ * 初始化：进行数据库的初始化
+ * 包括生成所有表，及生成一些信息用于测试
  */
 class SetupController extends Controller {
 
   /**
-   * 初始化数据库中的role类：包括超级管理员，管理员，普通用户
+   * 初始化数据库
+   * 同时插入医院大楼信息（初始化时进行操作）
    */
   async initDatabase() {
-    const { ctx } = this;
+    const { ctx ,config} = this;
 
     console.log('initDatabase!');
-    // 初始化测试管理员、一般管理员、一般用户账号若干
-    // const hash = await bcrypt.hash('123456', 10);   //对123456进行hash至10位
 
     // 初始化数据表
     await this.app.model.sync({ force: true });
 
     console.log('finish sync!');
 
-    // 初始化权限
-    await this.app.model.Role.create({
-      name: '管理员',
-      description: '管理员权限：可以查询所有用户信息，修改用户账号密码',
-    });
-    await this.app.model.Role.create({
-      name: '用户',
-      description: '用户：可以进行普通操作',
-    });
-
     //初始化医院大楼（总楼层）
     await this.app.model.Building.create({
       name: '医院总览图',
       isMain: true,
     });
+    
+    /**
+     * 初始化一个管理员账号
+     * 账号：root
+     * 密码：123456
+     */
+    const pass=await ctx.genHash('123456');
+    await this.app.model.User.create({
+      username: 'root',
+      password: pass,
+      isAdmin: true,
+    })
+
+    /**
+     * 初始化一个开机视频
+     */
+    const oldpath=path.join(config.baseDir,'app/public/origin','welcome.mp4');  //初始化视频存放的路径
+    const url='/public/video/bootup/';
+    //判断是否存在文件，不存在递归生成文件夹
+    const filepath=path.join(config.baseDir,'app',url);
+    //递归生成
+    fs.mkdir(filepath, { recursive: true }, (err) => {
+        if (err) throw err;
+    });
+    const filename=Date.now() + Number.parseInt(Math.random() * 10000)+'.mp4';
+    const newpath=path.join('app',url,filename);
+    //生成相对路径
+    const videoUrl=path.join(url,filename);
+    //复制
+    fs.createReadStream(oldpath).pipe(fs.createWriteStream(newpath));
+    await this.app.model.BootUpVideo.create({
+      videoUrl: videoUrl,
+    })
 
     ctx.body = 'success';
   }
   
   /**
-   * 初始化数据库信息
+   * 初始化数据库信息：插入部分测试信息
    */
   async initDevDatabase(){
     const ctx=this.ctx;

@@ -1,6 +1,7 @@
 'use strict';
 
 /**
+ * 人脸识别功能：
  * 病人病历类(用于人脸识别中的存储)
  */
 module.exports = app => { 
@@ -19,7 +20,7 @@ module.exports = app => {
     }, 
     IDnumber: INTEGER(20),   //身份证号
     name: STRING(25),     //名字
-    faceBitmap: BLOB,  //人脸图片
+    faceBitmap: BLOB('medium'),  //人脸图片
     embeddngs: FLOAT,   //人脸特征
    }, {
     timestamps: false,  //是否为表添加cteatedAt和updatadAt字段

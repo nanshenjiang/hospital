@@ -1,6 +1,7 @@
 'use strict';
 
 /**
+ * 医生信息功能：
  * 一级科室
  */
 module.exports = app => {

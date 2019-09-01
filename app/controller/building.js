@@ -9,7 +9,7 @@ class BuildingController extends Controller {
   /**
    * 查询所有医院建筑信息
    */
-  async findAllBuildings() {
+  async findAllBuildings() { 
     const {ctx,service}=this;
     const res=await service.building.findAllBuildings();
     ctx.helper.success({ctx,res});

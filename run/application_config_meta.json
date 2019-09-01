@@ -82,6 +82,10 @@
     "origin": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
     "allowMethods": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js"
   },
+  "jwt": {
+    "secret": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+    "enable": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-jwt\\config\\config.default.js"
+  },
   "bodyParser": {
     "jsonLimit": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
     "formLimit": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
@@ -204,6 +208,7 @@
       "egg": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg-bcrypt": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg-cors": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
+      "egg-jwt": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg-redis": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg-scripts": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg-sequelize": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",

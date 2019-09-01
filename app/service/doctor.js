@@ -5,7 +5,8 @@ const fs = require('fs');
 const path = require('path');
 
 /**
- * 医生service层
+ * 医生信息功能：
+ * 所有医生service层操作
  */
 class DoctorService extends Service { 
 
@@ -53,7 +54,8 @@ class DoctorService extends Service {
           model: app.model.WorkInformation
         }
       },{transaction:t})
-      if(!Object.getOwnPropertyNames(list).length){
+      //原本判断是否为空的方法：!Object.getOwnPropertyNames(list).length
+      if(Object.keys(list).length===0){
         ctx.throw();
       }
       /*原本规则，关于头像独立存放时要进行的操作
@@ -90,7 +92,7 @@ class DoctorService extends Service {
 
   //安卓需求：根据二级科室查询所有医生及其数量
   async findBySecondOfficeIdNeedByAndroid(id){
-    const {ctx,app}=this;
+    const {ctx}=this;
     let t;
     try {
       t=await ctx.model.transaction();

@@ -32,10 +32,16 @@ exports.validate = {
   package: 'egg-validate',
 };
 
-//安全bcrypt所需的一些包
+//加密bcrypt
 exports.bcrypt = {
   enable: true,
   package: 'egg-bcrypt'
+};
+
+//开启jwt（认证，令牌）
+exports.jwt = {
+  enable: true,
+  package: "egg-jwt"
 };
 
 

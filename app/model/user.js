@@ -25,14 +25,15 @@ module.exports = app => {
     password: {   //用户密码
       type: STRING(60),
       allowNull: false,
-    },  
+    }, 
+    isAdmin: {   //是否为管理员
+      type: BOOLEAN,
+      allowNull: false,
+      defaultValue: false,   //默认为普通用户
+    }, 
   }, {
     paranoid: true,  //只在启用时间戳时工作
   });
-
-  User.associate = function() {
-    app.model.User.belongsTo(app.model.Role, { as: 'role' });   //关系数据库中role表的主键--role.id
-  };
 
   return User;
 };

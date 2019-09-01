@@ -3,6 +3,7 @@
 const Service = require('egg').Service;
 
 /**
+ * 医生信息中：
  * 医生出诊信息service层
  */
 class WorkInfoService extends Service {
@@ -18,7 +19,7 @@ class WorkInfoService extends Service {
           doctorId: doctorId,
         }
       },{transaction:t})
-      if(!Object.getOwnPropertyNames(list).length){  //判断对象是否为空
+      if(Object.keys(list).length===0){  //判断对象是否为空
         ctx.throw();
       }
       await t.commit();

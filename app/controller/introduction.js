@@ -9,7 +9,7 @@ const path = require('path');
 const pump = require('mz-modules/pump');
 
 /**
- * 医院信息的controller类
+ * 医院信息功能
  */
 class IntroductionController extends Controller {
 

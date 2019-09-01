@@ -4,8 +4,29 @@ const Controller = require('egg').Controller;
 
 /**
  * 安卓端需要的接口
+ * 功能都是获取信息
  */
 class AndroidController extends Controller {
+
+  /*-----------------开机视频功能-------------------*/
+  /**
+   * 获取开机视频
+   */
+  async getBootUpVideo(){
+    const {ctx}=this;
+    let t;
+    try {
+      t=await ctx.model.transaction();
+      const res=await ctx.model.BootUpVideo.findAll({transaction:t})
+      await t.commit();
+      ctx.body={
+        res: res[0].videoUrl,
+      }     
+    }catch(e){
+      await t.rollback();
+      ctx.throw(404,'Not Found');
+    }
+  }
 
   /*-----------------医生信息-------------------*/
   /**
