@@ -26,6 +26,23 @@
       "cron": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-multipart\\config\\config.default.js"
     }
   },
+  "emqtt": {
+    "client": {
+      "host": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+      "username": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+      "password": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+      "clientId": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+      "options": {
+        "keepalive": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+        "protocolId": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+        "protocolVersion": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+        "clean": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+        "reconnectPeriod": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+        "connectTimeout": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
+        "rejectUnauthorized": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js"
+      }
+    }
+  },
   "security": {
     "csrf": {
       "enable": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\config.default.js",
@@ -176,15 +193,6 @@
     "defaultViewEngine": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-view\\config\\config.default.js",
     "mapping": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-view\\config\\config.default.js"
   },
-  "redis": {
-    "default": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-redis\\config\\config.default.js",
-    "app": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-redis\\config\\config.default.js",
-    "agent": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-redis\\config\\config.default.js",
-    "supportTimeCommand": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-redis\\config\\config.default.js"
-  },
-  "sessionRedis": {
-    "name": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-session-redis\\config\\config.default.js"
-  },
   "validate": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-validate\\config\\config.default.js",
   "env": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
   "name": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
@@ -208,6 +216,7 @@
       "egg": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg-bcrypt": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg-cors": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
+      "egg-emqtt": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg-jwt": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg-redis": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",
       "egg-scripts": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg\\config\\config.default.js",

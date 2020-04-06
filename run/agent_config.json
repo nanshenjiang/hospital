@@ -155,15 +155,6 @@
       "password": "<String len: 6>",
       "timezone": "+08:00"
     },
-    "redis": {
-      "default": {},
-      "app": true,
-      "agent": false,
-      "supportTimeCommand": true
-    },
-    "sessionRedis": {
-      "name": ""
-    },
     "cors": {
       "origin": "*",
       "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
@@ -199,6 +190,7 @@
         "egg": "^2.23.0",
         "egg-bcrypt": "^1.1.0",
         "egg-cors": "^2.2.0",
+        "egg-emqtt": "^1.0.0",
         "egg-jwt": "^3.1.6",
         "egg-redis": "^2.3.0",
         "egg-scripts": "^2.11.0",
@@ -348,6 +340,23 @@
     "middleware": [
       "errorHandler"
     ],
+    "emqtt": {
+      "client": {
+        "host": "mqtt://123.207.108.39/",
+        "username": "admin",
+        "password": "<String len: 6>",
+        "clientId": "local-xie",
+        "options": {
+          "keepalive": 60,
+          "protocolId": "MQTT",
+          "protocolVersion": 4,
+          "clean": true,
+          "reconnectPeriod": 1000,
+          "connectTimeout": 30000,
+          "rejectUnauthorized": false
+        }
+      }
+    },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
     "appMiddleware": "~config~middleware"
@@ -511,29 +520,16 @@
       "path": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-sequelize",
       "version": "4.3.1"
     },
-    "redis": {
+    "emqtt": {
       "enable": true,
-      "package": "egg-redis",
-      "name": "redis",
+      "package": "egg-emqtt",
+      "name": "emqtt",
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
       "from": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\plugin.js",
-      "path": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-redis",
-      "version": "2.4.0"
-    },
-    "sessionRedis": {
-      "enable": true,
-      "package": "egg-session-redis",
-      "name": "sessionRedis",
-      "dependencies": [
-        "redis"
-      ],
-      "optionalDependencies": [],
-      "env": [],
-      "from": "D:\\nodejs\\nodejs\\node_project\\hospital\\config\\plugin.js",
-      "path": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-session-redis",
-      "version": "2.1.0"
+      "path": "D:\\nodejs\\nodejs\\node_project\\hospital\\node_modules\\egg-emqtt",
+      "version": "1.0.0"
     },
     "cors": {
       "enable": true,

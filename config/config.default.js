@@ -22,17 +22,17 @@ module.exports = appInfo => {
   config.sequelize = {
     dialect: 'mysql',
     database: 'hospital', 
-    host: '127.0.0.1',
+    host: 'xx.xx.xx.xx',
     port: 3306,
-    username: 'root',
-    password: '123456',
+    username: 'xxx',
+    password: 'xxxx',
     timezone: '+08:00', // 东八时区
   };
 
   // // redis配置
   // config.redis = {
   //   client: {
-  //     host: '127.0.0.1',
+  //     host: 'xx.xx.xx.xx',
   //     port: '6379',
   //     password: '',
   //     db: '0',
@@ -44,6 +44,26 @@ module.exports = appInfo => {
   config.multipart = {
     fileSize: '50mb',
   };
+
+  //开启mqtt消息队列
+  config.emqtt = {
+    client: {
+      host:'mqtt://xxx.xxx.xxx.xxx',  //添加mqtt服务器地址
+      username:'xxx',
+      password:'xxx',
+      clientId:'xxx',  //自己命名
+      options: {
+        keepalive: 60,
+        protocolId: 'MQTT',
+        protocolVersion: 4,
+        clean: true,
+        reconnectPeriod: 1000,
+        connectTimeout: 30 * 1000,
+        rejectUnauthorized: false,
+      },
+      // msgMiddleware: [ 'mqtt' ],
+    },
+  }
 
   //安全配置：关闭csrf
   config.security = {
@@ -60,7 +80,7 @@ module.exports = appInfo => {
 
   //指定jwt配置
   config.jwt = {
-    secret: 'egg-xie-jwt',  //设置任意属性
+    secret: 'egg-jwt',  //设置任意属性
   };
 
   //修改传输body的大小

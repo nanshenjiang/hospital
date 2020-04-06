@@ -13,6 +13,7 @@
     "egg": "^2.23.0",
     "egg-bcrypt": "^1.1.0",
     "egg-cors": "^2.2.0",
+    "egg-emqtt": "^1.0.0",
     "egg-jwt": "^3.1.6",
     "egg-redis": "^2.3.0",
     "egg-scripts": "^2.11.0",

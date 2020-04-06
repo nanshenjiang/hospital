@@ -75,7 +75,7 @@ class OfficeController extends Controller {
     ctx.helper.success({ctx}); 
   }
   /**
-   * 删除一级科室
+   * 删除二级科室
    */
   async deleteSecondOffice() {
     const {ctx} =this;

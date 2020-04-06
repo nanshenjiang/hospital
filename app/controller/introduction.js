@@ -46,7 +46,7 @@ class IntroductionController extends Controller {
       //文件流操作
       //获取绝对路径的一部分
       let baseDir=config.baseDir;
-      //设置相对路径的一部分
+      //设置相对路径的部分路径
       let url = '/public/image/hosptial/message';
       // 文件扩展名称
       let extname = path.extname(file.filename).toLowerCase();
@@ -79,7 +79,7 @@ class IntroductionController extends Controller {
       }
       await service.introduction.savePhoto(introduction.id,relativePath);
     }
-    const res=await    service.introduction.findOne(introduction.id);
+    const res=await service.introduction.findOne(introduction.id);
     // 设置响应内容和响应状态码
     ctx.helper.success({ctx,res});
   }

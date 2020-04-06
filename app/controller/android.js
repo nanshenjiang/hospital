@@ -28,6 +28,56 @@ class AndroidController extends Controller {
     }
   }
 
+  /*-----------------可定制祝福页-------------------*/
+  /**
+   * 查询祝福信息
+   */
+  async getAllBless(){
+    const ctx = this.ctx;
+    const res = await ctx.service.benediction.findAll();
+    ctx.body=res; 
+  }
+
+  /*-----------------自定义节目-------------------*/
+  /**
+   * 查询所有节目
+   */
+  async getAllProgramVideo(){
+    const {ctx}=this;
+    let t;
+    try {
+      t=await ctx.model.transaction();
+      const res=await ctx.model.SelfProgram.findAll({
+        attributes: ['id','name','videoUrl'],  
+      },{transaction:t})
+      await t.commit();
+      ctx.body=res;      
+    }catch(e){
+      await t.rollback();
+      ctx.throw(404,'Not Found');
+    }
+  }
+
+  /**
+   * 查询某个节目
+   */
+  async getOneProgramVideo(){
+    const {ctx}=this;
+    const {id}=ctx.params;
+    let t;
+    try {
+      t=await ctx.model.transaction();
+      const res=await ctx.model.SelfProgram.findById(id,{
+        attributes: ['id','name','videoUrl'],  
+      },{transaction:t})
+      await t.commit();
+      ctx.body=res;      
+    }catch(e){
+      await t.rollback();
+      ctx.throw(404,'Not Found');
+    }
+  }
+
   /*-----------------医生信息-------------------*/
   /**
    * 获取全部一级科室信息

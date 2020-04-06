@@ -274,7 +274,7 @@ class SetupController extends Controller {
     })
     await ctx.model.Building.create({
       name: '急诊楼',
-      photoUrl: '\\public\\image\\hosptial\\building\\building1.jpg',
+      photoUrl: '\\public\\image\\hosptial\\building\\building2.jpg',
     })
     await ctx.model.Floor.create({
       name: 1,

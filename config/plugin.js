@@ -5,14 +5,20 @@ exports.sequelize = {
   package: 'egg-sequelize',
 };
 
-exports.sessionRedis = {
-  enable: true,
-  package: 'egg-session-redis',
-};
+// exports.sessionRedis = {
+//   enable: true,
+//   package: 'egg-session-redis',
+// };
 
-exports.redis = {
-  enable: true,
-  package: 'egg-redis',
+// exports.redis = {
+//   enable: true,
+//   package: 'egg-redis',
+// };
+
+//开启mqtt消息队列
+exports.emqtt = { 
+  enable: true,     
+  package: 'egg-emqtt',  
 };
 
 //开启跨域

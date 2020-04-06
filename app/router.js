@@ -17,10 +17,13 @@ module.exports = app => {
   const user = app.middleware.jwt({type: 'user'});   //普通用户权限
 
 
-
   /*------------------------安卓端所需接口-----------------------------------*/
                  /*-----------开机视频-------------*/ 
+  //获取开机视频
   router.get('/android/bootup/video',controller.android.getBootUpVideo);
+                 /*-----------可定制祝福-------------*/ 
+  //获取可定制祝福
+  router.get('/android/bootup/bless',controller.android.getAllBless);  
                  /*-----------人脸识别(未完成)-------------*/ 
   router.get('/android/ai/face/all',controller.faceRecognition.getAll);
   router.get('/android/ai/face/part',controller.faceRecognition.getPart);
@@ -50,6 +53,12 @@ module.exports = app => {
   router.get('/android/building/one/:id',controller.android.findOneBuilding);
   //查找某个楼层信息
   router.get('/android/building/floor/one/:id',controller.android.findOneFloor);
+                 /*-----------自定义节目-------------*/  
+  //查询所有节目
+  router.get('/android/program/all',controller.android.getAllProgramVideo);
+  //查询某个节目
+  router.get('/android/program/one/:id',controller.android.getOneProgramVideo);
+  
 
 
 
@@ -70,11 +79,29 @@ module.exports = app => {
   router.put('/web/users/update/:id',admin,controller.login.update);
   //删除某个账号密码
   router.delete('/web/users/delete/:id',admin,controller.login.delete);
-                /*-----------科室中所包含接口-------------*/
+                /*-----------开机视频中所包含接口-------------*/
   //查询开机视频
   router.get('/web/bootup/video',user,controller.bootUpVideo.getOne);
   //更新开机视频
   router.put('/web/bootup/video/update/:id',user,controller.bootUpVideo.update);
+                /*-----------可定制祝福中所包含接口-------------*/
+  //查询祝福信息
+  router.get('/web/bootup/bless/all',user,controller.benediction.showAllBenediction);
+  //添加祝福信息
+  router.post('/web/bootup/bless/save',user,controller.benediction.create);
+  //更新祝福信息
+  router.put('/web/bootup/bless/update/:id',user,controller.benediction.update);
+  //删除祝福信息
+  router.delete('/web/bootup/bless/delete/:id',user,controller.benediction.delete);
+                /*-----------自办节目中所包含接口-------------*/
+  //查询全部节目
+  router.get('/web/program/video/all',user,controller.selfProgram.getAll);
+  //查询部分节目
+  router.get('/web/program/video/one/:id',user,controller.selfProgram.getOne);
+  //添加节目
+  router.post('/web/program/video/save',user,controller.selfProgram.save);
+  //删除节目
+  router.delete('/web/program/video/delete/:id',user,controller.selfProgram.delete);
                 /*-----------科室中所包含接口-------------*/
   //查询所有一级科室信息
   router.get('/web/office/first/all',user,controller.office.getAllFirstOffice);
@@ -150,6 +177,9 @@ module.exports = app => {
   router.delete('/web/building/floor/delete/:id',user,controller.building.deleteFloor);
   //删除某个医院建筑信息
   router.delete('/web/building/delete/:id',user,controller.building.deleteBuilding);
+             /*-----------强制插播中所包含接口-------------*/
+  //前端发送消息给后端，安卓端订阅获取信息
+  router.post('/web/force/insert',user,controller.custom.forceInsert);
 
 
 
