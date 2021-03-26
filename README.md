@@ -59,9 +59,7 @@ config.emqtt = {
 
 ## 部署
 
-具体部署可参考：
-
-[egg.js官网]: https://eggjs.org/zh-cn/core/deployment.html
+具体部署可参考：[egg.js官网部署文档](https://eggjs.org/zh-cn/core/deployment.html)
 
 ## 接口文档
 
